@@ -17,7 +17,7 @@ export default function Navbar() {
                         className="h-32 w-auto logo-animation"
                     />
 
-                    <h1 className="ml-4 text-3xl font-bold text-purple-700 title-animation">
+                    <h1 className="ml-4 text-3xl font-bold text-purple-700 title-animation hidden sm:block">
                         ImaginElles Bzh
                     </h1>
                 </Link>
