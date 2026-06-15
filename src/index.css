@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-150px) scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.logo-animation {
+  animation: slideInLeft 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.title-animation {
+  opacity: 0;
+  animation: slideInLeft 1.2s ease-out 0.4s forwards;
+}
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
