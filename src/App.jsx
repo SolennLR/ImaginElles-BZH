@@ -7,6 +7,9 @@ import Home from "./pages/Home";
 
 import Adhesion from "./pages/Adhesion";
 import Archives from "./pages/Archives";
+import Association from "./pages/Association";
+import MentionsLegales from "./pages/MentionsLegales";
+import Confidentialite from "./pages/Confidentialite";
 
 
 export default function App() {
@@ -16,9 +19,11 @@ export default function App() {
 
           <Routes>
               <Route path="/" element={<Home/>}/>
-
+              <Route path="/association" element={<Association />} />
               <Route path="/adhesion" element={<Adhesion/>} />
               <Route path="/archives" element={<Archives/>} />
+              <Route path="/mentions-legales" element={<MentionsLegales />} />
+              <Route path="/confidentialite" element={<Confidentialite />} />
               <Route path="*" element={<Home />} />
           </Routes>
 
