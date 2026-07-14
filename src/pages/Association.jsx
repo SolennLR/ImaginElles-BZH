@@ -1,18 +1,30 @@
 import ValuesSection from "../components/ValuesSection";
 import Timeline from "../components/Timeline";
+import groupeImg from "../assets/groupe.jpg";
 
 export default function Association() {
     return (
         <main>
-            <section className="py-24 text-center bg-gray-50 dark:bg-gray-900">
-                <h1 className="text-5xl font-bold text-purple-700 mb-6">
-                    L’association
-                </h1>
+            <section className="py-12 md:py-20 text-center bg-gray-50 dark:bg-gray-900">
+                <div className="max-w-5xl mx-auto px-6">
+                    <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-6">
+                        L’association
+                    </h1>
 
-                <p className="text-xl max-w-3xl mx-auto text-gray-700 dark:text-gray-300">
-                    ImaginElles Bzh est née d’un collectif de femmes lesbiennes souhaitant créer des espaces de partage,
-                    d’échange et de sororité en Bretagne.
-                </p>
+                    <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-700 dark:text-gray-300 mb-10">
+                        ImaginElles Bzh est née d’un collectif de femmes lesbiennes souhaitant créer des espaces de
+                        partage, d’échange et de sororité en Bretagne.
+                    </p>
+
+                    {/* Photo équipe */}
+                    <div className="max-w-5xl mx-auto">
+                        <img
+                            src={groupeImg}
+                            alt="L'équipe ImaginElles Bzh"
+                            className="w-full aspect-video object-cover rounded-2xl shadow-lg"
+                        />
+                    </div>
+                </div>
             </section>
 
             <section className="py-20 px-6 max-w-5xl mx-auto">
@@ -21,7 +33,7 @@ export default function Association() {
                 </h2>
 
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-center">
-                    À l’origine, ImaginElles Bzh est un groupe de femmes qui souhaitaient sortir de l’isolement et créer
+                    À l’origine, ImaginElles Bzh est un groupe de femmes lesbiennes qui souhaitaient sortir de l’isolement et créer
                     des moments simples de rencontre.
                     <br/><br/>
                     Très vite, ces rencontres sont devenues des sorties, des ateliers, puis une véritable dynamique

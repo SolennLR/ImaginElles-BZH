@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import {FaInstagram, FaFacebook, FaEnvelope} from "react-icons/fa";
 
 export default function Footer() {
     return (
@@ -16,8 +16,13 @@ export default function Footer() {
                         Contact
                     </h3>
 
-                    <p className="mb-2">📍 Bretagne, France</p>
-                    <p className="mb-2">📧 imaginelles-bzh@ikmail.com</p>
+                    <p className="mb-2">📍 Pays de Lorient, Bretagne, France</p>
+                    <p className="flex items-center gap-2">
+                        <FaEnvelope className="text-pink-500"/>
+                        <a href="mailto:imaginelles-bzh@ikmail.com?subject=Contact%20ImaginElles%20Bzh"
+                            className="hover:text-purple-700 transition-colors"> imaginelles-bzh@ikmail.com
+                        </a>
+                    </p>
                     <p>🤝 ImaginElles Bzh</p>
                 </div>
 

@@ -25,7 +25,7 @@ export default function Home() {
 
             {/* HERO */}
             <section
-                className="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 text-center px-6">
+                className="min-h-[70vh] md:min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 text-center px-6 py-8">
                 <h1 className="text-5xl md:text-6xl font-bold text-purple-700 mb-6">
                     ImaginElles Bzh
                 </h1>
@@ -52,7 +52,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                    ImaginElles Bzh est née d’un collectif de femmes souhaitant créer des espaces de partage, d’échange et de solidarité.
+                    ImaginElles Bzh est née d’un collectif de femmes lesbiennes souhaitant créer des espaces de partage, d’échange et de solidarité.
                     <br /><br />
                     L’association propose des activités culturelles, sportives et conviviales afin de favoriser le lien social et rompre l’isolement.
                 </p>

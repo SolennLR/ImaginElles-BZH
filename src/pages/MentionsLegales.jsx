@@ -26,14 +26,18 @@ export default function MentionsLegales() {
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Contact</h2>
                     <p>
-                        Email : imaginelles-bzh@ikmail.com
+                        Email :{" "}
+                        <a href="mailto:imaginelles-bzh@ikmail.com?subject=Mentions%20légales%20ImaginElles%20Bzh"
+                            className="hover:text-purple-700 transition-colors">
+                            imaginelles-bzh@ikmail.com
+                        </a>
                     </p>
                 </div>
 
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Hébergement</h2>
                     <p>
-                        Le site est hébergé par Vercel Inc.<br />
+                        Le site est hébergé par Vercel Inc.<br/>
                         440 N Barranca Ave #4133, Covina, CA 91723, USA
                     </p>
                 </div>

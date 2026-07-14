@@ -46,7 +46,13 @@ export default function Confidentialite() {
                     <p>
                         Conformément au RGPD, vous disposez d’un droit d’accès,
                         de rectification et de suppression de vos données personnelles.
-                        Vous pouvez exercer ces droits en contactant : imaginelles-bzh@ikmail.com
+                        Vous pouvez exercer ces droits en contactant :{" "}
+                        <a
+                            href="mailto:imaginelles-bzh@ikmail.com?subject=Confidentialité%20ImaginElles%20Bzh"
+                            className="text-purple-700 hover:underline"
+                        >
+                            imaginelles-bzh@ikmail.com
+                        </a>
                     </p>
                 </div>
 
