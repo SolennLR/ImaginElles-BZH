@@ -6,6 +6,8 @@ export default async function handler(req, res) {
     try {
         // Configuration API
         const apiKey = process.env.BREVO_API_KEY;
+        console.log("BREVO_API_KEY présente :", !!apiKey);
+        console.log("Longueur de la clé :", apiKey ? apiKey.length : 0);
 
         // Ajout du contact
         const contactsApi = new Brevo.ContactsApi();
