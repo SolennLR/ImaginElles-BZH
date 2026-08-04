@@ -1,4 +1,4 @@
-import Brevo from "@getbrevo/brevo";
+import * as Brevo from "@getbrevo/brevo";
 
 export default async function handler(req, res) {
     const { nom, prenom, email, message } = req.body;
