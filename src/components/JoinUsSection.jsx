@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export default function JoinUsSection() {
     return (
         <section className="py-20 px-6">
@@ -25,13 +23,6 @@ export default function JoinUsSection() {
                         ✨ Construire des projets ensemble
                     </div>
                 </div>
-
-                <Link
-                    to="/adhesion"
-                    className="bg-purple-700 text-white px-8 py-4 rounded-full hover:bg-purple-800 transition"
-                >
-                    Rejoindre ImaginElles Bzh
-                </Link>
             </div>
         </section>
     );

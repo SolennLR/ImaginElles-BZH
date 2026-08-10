@@ -52,7 +52,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                    ImaginElles Bzh est née d’un collectif de femmes lesbiennes souhaitant créer des espaces de partage, d’échange et de solidarité.
+                    ImaginElles Bzh est née d’un collectif de femmes souhaitant créer des espaces de partage, d’échange et de solidarité.
                     <br /><br />
                     L’association propose des activités culturelles, sportives et conviviales afin de favoriser le lien social et rompre l’isolement.
                 </p>
@@ -99,11 +99,10 @@ export default function Home() {
                     Venez partager des moments conviviaux, rencontrer d'autres femmes et construire ensemble des projets solidaires.
                 </p>
 
-                <Link to="/contact" className="bg-white text-purple-700 px-8 py-4 rounded-full font-bold hover:opacity-90 transition">
-                    Nous contacter
+                <Link to="/adhesion" className="bg-white text-purple-700 px-8 py-4 rounded-full font-bold hover:opacity-90 transition">
+                    J'adhère
                 </Link>
             </section>
-
         </div>
     )
 }

@@ -1,5 +1,6 @@
-import { Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 
@@ -14,21 +15,25 @@ import Confidentialite from "./pages/Confidentialite";
 
 export default function App() {
   return (
-      <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen transition-colors">
-          <Navbar/>
+      <BrowserRouter>
+          <ScrollToTop />
+          <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen transition-colors">
+              <Navbar/>
 
-          <Routes>
-              <Route path="/" element={<Home/>}/>
-              <Route path="/association" element={<Association />} />
-              <Route path="/adhesion" element={<Adhesion/>} />
-              <Route path="/archives" element={<Archives/>} />
-              <Route path="/mentions-legales" element={<MentionsLegales />} />
-              <Route path="/confidentialite" element={<Confidentialite />} />
-              <Route path="*" element={<Home />} />
-          </Routes>
-
-          <Footer/>
-      </div>
+              <main className="flex-grow">
+                  <Routes>
+                      <Route path="/" element={<Home/>}/>
+                      <Route path="/association" element={<Association/>}/>
+                      <Route path="/adhesion" element={<Adhesion/>}/>
+                      <Route path="/archives" element={<Archives/>}/>
+                      <Route path="/mentions-legales" element={<MentionsLegales/>}/>
+                      <Route path="/confidentialite" element={<Confidentialite/>}/>
+                      <Route path="*" element={<Home/>}/>
+                  </Routes>
+              </main>
+              <Footer/>
+          </div>
+      </BrowserRouter>
   );
 }
 
