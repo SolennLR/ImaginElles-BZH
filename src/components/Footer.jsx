@@ -39,6 +39,7 @@ export default function Footer() {
                             <a
                                 href="https://instagram.com"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 className="hover:text-pink-500 transition"
                                 aria-label="Instagram"
                             >
@@ -48,6 +49,7 @@ export default function Footer() {
                             <a
                                 href="https://facebook.com"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 className="hover:text-blue-600 transition"
                                 aria-label="Facebook"
                             >
