@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar"
@@ -15,7 +15,7 @@ import Confidentialite from "./pages/Confidentialite";
 
 export default function App() {
   return (
-      <BrowserRouter>
+      <>
           <ScrollToTop />
           <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen transition-colors">
               <Navbar/>
@@ -33,7 +33,7 @@ export default function App() {
               </main>
               <Footer/>
           </div>
-      </BrowserRouter>
+      </>
   );
 }
 
