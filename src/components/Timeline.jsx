@@ -17,9 +17,9 @@ export default function Timeline() {
 
     const formatDate = (date) => {
         const [year, month] = date.split("-");
-        const monthNames = [ "JAN", "FÉV", "MAR",
-            "AVR", "MAI", "JUIN", "JUIL", "AOÛ", "SEP",
-            "OCT", "NOV", "DÉC" ];
+        const monthNames = [ "JANVIER", "FÉVRIER", "MARS",
+            "AVRIL", "MAI", "JUIN", "JUILLET", "AOÛT", "SEPTEMBRE",
+            "OCTOBRE", "NOVEMBRE", "DÉCEMBRE" ];
         return `${monthNames[parseInt(month, 10) - 1]} ${year}`;
     };
 
