@@ -12,7 +12,7 @@ export default function Association() {
                     </h1>
 
                     <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-700 dark:text-gray-300 mb-10">
-                        ImaginElles Bzh est née d’un collectif de femmes lesbiennes souhaitant créer des espaces de
+                        ImaginElles Bzh est née d’un collectif de femmes souhaitant créer des espaces de
                         partage, d’échange et de sororité en Bretagne.
                     </p>
 
@@ -33,7 +33,7 @@ export default function Association() {
                 </h2>
 
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-center">
-                    À l’origine, ImaginElles Bzh est un groupe de femmes lesbiennes qui souhaitaient sortir de l’isolement et créer
+                    À l’origine, ImaginElles Bzh est un groupe d'amies lesbiennes qui souhaitaient sortir de l’isolement et créer
                     des moments simples de rencontre.
                     <br/><br/>
                     Très vite, ces rencontres sont devenues des sorties, des ateliers, puis une véritable dynamique

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import {FaInstagram, FaFacebook, FaEnvelope} from "react-icons/fa";
+import {FaInstagram, FaFacebook, FaEnvelope, FaArrowUp} from "react-icons/fa";
 
 export default function Footer() {
+    const handleBackToTop = () => { window.scrollTo({ top: 0, behavior: "smooth", }); };
     return (
         <footer className="relative bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 mt-20">
 
@@ -74,6 +75,16 @@ export default function Footer() {
                     </div>
 
                 </div>
+
+            {/* RETOUR EN HAUT */}
+            <div className="flex justify-center pb-8">
+                <button
+                    onClick={handleBackToTop} aria-label="Retour en haut de la page"
+                    className=" w-11 h-11 rounded-full bg-purple-700 text-white flex items-center justify-center shadow-md hover:bg-purple-800 hover:-translate-y-1 transition-all "
+                >
+                    <FaArrowUp />
+                </button>
+            </div>
 
                 {/* BAS DE FOOTER */}
             <div className="border-t border-gray-300 dark:border-gray-700 text-center py-6 text-sm">
