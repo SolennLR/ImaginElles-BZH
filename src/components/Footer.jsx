@@ -90,7 +90,7 @@ export default function Footer() {
 
                 {/* BAS DE FOOTER */}
             <div className="border-t border-gray-300 dark:border-gray-700 text-center py-6 text-sm">
-                © {new Date().getFullYear()} ImaginElles Bzh - Tous droits réservés
+                © {new Date().getFullYear()} Imagin’Elles Bzh - Tous droits réservés
             </div>
 
         </footer>

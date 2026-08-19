@@ -11,7 +11,7 @@ export default function MentionsLegales() {
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Éditeur du site</h2>
                     <p>
-                        Le site ImaginElles Bzh est édité par l’association ImaginElles Bzh,
+                        Le site Imagin’Elles Bzh est édité par l’association Imagin’Elles Bzh,
                         association loi 1901.
                     </p>
                 </div>
@@ -19,7 +19,7 @@ export default function MentionsLegales() {
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Responsable de publication</h2>
                     <p>
-                        La responsable de publication est Solenn LE ROUZIC, membre de la collègiale de l'association ImaginElles Bzh.
+                        La responsable de publication est Solenn LE ROUZIC, membre de la collègiale de l'association Imagin’Elles Bzh.
                     </p>
                 </div>
 

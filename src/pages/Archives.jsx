@@ -1,9 +1,13 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import ActivityCard from "../components/ActivityCard";
+import ActivityModal from "../components/ActivityModal";
 
 import { activities } from "../data/activities";
 
 export default function Archives() {
+
+    const [selectedActivity, setSelectedActivity] = useState(null);
+
     // 📅 date du jour normalisée
     const today = useMemo(() => {
         const d = new Date();
@@ -25,17 +29,17 @@ export default function Archives() {
             </h1>
 
             <p className="text-gray-600 dark:text-gray-300 mb-8">
-                Retrouvez ici les événements passés de l’association ImaginElles Bzh.
+                Retrouvez ici les événements passés de l’association Imagin’Elles Bzh.
             </p>
 
             {/* Grid */}
             {archivedActivities.length > 0 ? (
                 <div className="grid md:grid-cols-3 gap-6">
-                    {archivedActivities.map((activity, i) => (
+                    {archivedActivities.map((activity) => (
                         <ActivityCard
-                            key={i}
+                            key={activity.title + activity.date}
                             {...activity}
-                            // pas de modal ici volontairement
+                            onClick={() => setSelectedActivity(activity)}
                         />
                     ))}
                 </div>
@@ -44,6 +48,11 @@ export default function Archives() {
                     Aucune archive pour le moment.
                 </div>
             )}
+            {/* Modal */}
+            <ActivityModal
+                activity={selectedActivity}
+                onClose={() => setSelectedActivity(null)}
+            />
         </div>
     );
 }

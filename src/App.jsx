@@ -11,6 +11,7 @@ import Archives from "./pages/Archives";
 import Association from "./pages/Association";
 import MentionsLegales from "./pages/MentionsLegales";
 import Confidentialite from "./pages/Confidentialite";
+import FAQ from "./pages/FAQ";
 
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
                       <Route path="/archives" element={<Archives/>}/>
                       <Route path="/mentions-legales" element={<MentionsLegales/>}/>
                       <Route path="/confidentialite" element={<Confidentialite/>}/>
+                      <Route path="/faq" element={<FAQ />} />
                       <Route path="*" element={<Home/>}/>
                   </Routes>
               </main>

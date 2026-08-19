@@ -18,7 +18,7 @@ export default function Navbar() {
                     />
 
                     <h1 className="ml-4 text-3xl font-bold text-purple-700 title-animation hidden sm:block">
-                        ImaginElles Bzh
+                        Imagin’Elles Bzh
                     </h1>
                 </Link>
 
@@ -38,6 +38,10 @@ export default function Navbar() {
 
                     <Link to="/archives" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200">
                         Archives
+                    </Link>
+
+                    <Link to="/faq" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200">
+                        FAQ
                     </Link>
 
                     <Link to="/contact" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200">
@@ -72,6 +76,7 @@ export default function Navbar() {
                         <Link className="text-lg font-medium" to="/association" onClick={() => setOpen(false)}>L’asso</Link>
                         <Link className="text-lg font-medium" to="/adhesion" onClick={() => setOpen(false)}>Adhérer</Link>
                         <Link className="text-lg font-medium" to="/archives" onClick={() => setOpen(false)}>Archives</Link>
+                        <Link className="text-lg font-medium" to="/faq" onClick={() => setOpen(false)}>FAQ</Link>
                         <Link className="text-lg font-medium" to="/contact" onClick={() => setOpen(false)}>Contact</Link>
                     </div>
                 </div>

@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { FiMail } from "react-icons/fi";
-import { FiHeart } from "react-icons/fi";
 
 export default function Adhesion() {
     const [formData, setFormData] = useState({
@@ -50,7 +48,7 @@ export default function Adhesion() {
     return (
         <main className="max-w-5xl mx-auto px-6 py-12">
             <h1 className="text-4xl font-bold text-center text-purple-700 mb-8">
-                Rejoindre ImaginElles Bzh
+                Rejoindre Imagin’Elles Bzh
             </h1>
 
             <div className="bg-gray-200 rounded-2xl shadow-lg p-8">
@@ -63,7 +61,7 @@ export default function Adhesion() {
                 </p>
 
                 <p className="text-gray-700 mb-4">
-                    Pour rejoindre ImaginElles Bzh, il est nécessaire d'adhérer aux statuts de l'association,
+                    Pour rejoindre Imagin’Elles Bzh, il est nécessaire d'adhérer aux statuts de l'association,
                     de participer à une rencontre d'accueil et de s'acquitter de la cotisation annuelle,
                     dont le montant est fixé lors de l'assemblée générale.
                 </p>
@@ -167,7 +165,6 @@ export default function Adhesion() {
                             type="submit"
                             className="inline-flex items-center justify-center gap-2 bg-purple-700 hover:bg-purple-800 text-white px-8 py-3 rounded-full transition w-full md:w-auto"
                         >
-                            <FiMail size={18}/>
                             Envoyer ma demande
                         </button>
 
@@ -178,7 +175,6 @@ export default function Adhesion() {
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-2 bg-purple-700 hover:bg-purple-800 text-white px-8 py-3 rounded-full transition w-full md:w-auto"
                         >
-                            <FiHeart size={18}/>
                             J'adhère via HelloAsso
                         </a>
                     </div>

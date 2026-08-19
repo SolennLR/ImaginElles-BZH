@@ -6,6 +6,9 @@ export default function ActivityCard({
                                          image,
                                          onClick,
                                      }) {
+
+    const formattedDate = new Date(date).toLocaleDateString('fr-FR');
+
     return (
         <div onClick={onClick} className="bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-2xl shadow-lg p-6 cursor-pointer border border-gray-200 dark:border-gray-700 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                 {/* IMAGE BLOCK */}
@@ -29,9 +32,9 @@ export default function ActivityCard({
                 <div className="p-6">
                     {/* Badge */}
                     <div
-                        className="inline-block mb-3 text-purple-700 dark:text-purple-200 text-sm px-3 py-1 rounded-full"
+                        className="inline-block mb-3 text-white text-sm px-3 py-1 rounded-full"
                         style={{ backgroundColor: color }} >
-                        📅 {date}
+                        📅 {formattedDate}
                     </div>
 
                     <h3
@@ -41,7 +44,7 @@ export default function ActivityCard({
                         {title}
                     </h3>
 
-                    <p className="leading-relaxed">
+                    <p className="leading-relaxed whitespace-pre-line text-justify">
                         {description}
                     </p>
                 </div>

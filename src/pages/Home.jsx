@@ -27,7 +27,7 @@ export default function Home() {
             <section
                 className="min-h-[70vh] md:min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 text-center px-6 py-8">
                 <h1 className="text-5xl md:text-6xl font-bold text-purple-700 mb-6">
-                    ImaginElles Bzh
+                    Imagin’Elles Bzh
                 </h1>
 
                 <p className="max-w-2xl text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8">
@@ -35,7 +35,7 @@ export default function Home() {
                 </p>
 
                 <div className="flex gap-4 flex-col sm:flex-row">
-                    <Link to="/association" className="bg-purple-700 text-white px-8 py-4 rounded-full text-lg hover:opacity-90 transition">
+                    <Link to="/association" className="bg-purple-700 text-white px-8 py-4 rounded-full text-lg border border-purple-700 hover:bg-transparent hover:text-purple-700 transition">
                         Découvrir l’association
                     </Link>
 
@@ -52,7 +52,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                    ImaginElles Bzh est née d’un collectif de femmes souhaitant créer des espaces de partage, d’échange et de solidarité.
+                    Imagin’Elles Bzh est née d’un collectif de femmes souhaitant créer des espaces de partage, d’échange et de solidarité.
                     <br /><br />
                     L’association propose des activités culturelles, sportives et conviviales afin de favoriser le lien social et rompre l’isolement.
                 </p>
@@ -68,7 +68,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-gray-600 dark:text-gray-300 mb-8">
-                    Retrouvez ici les événements à venir de l’association ImaginElles Bzh.
+                    Retrouvez ici les événements à venir de l’association Imagin’Elles Bzh.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6">
@@ -92,7 +92,7 @@ export default function Home() {
             {/* CTA FINAL */}
             <section className="py-24 text-center bg-purple-700 text-white">
                 <h2 className="text-4xl font-bold mb-6">
-                    Rejoindre ImaginElles Bzh
+                    Rejoindre Imagin’Elles Bzh
                 </h2>
 
                 <p className="mb-8 text-lg max-w-2xl mx-auto">

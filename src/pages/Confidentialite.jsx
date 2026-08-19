@@ -11,7 +11,7 @@ export default function Confidentialite() {
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Collecte des données</h2>
                     <p>
-                        Le site ImaginElles Bzh peut collecter des données personnelles
+                        Le site Imagin’Elles Bzh peut collecter des données personnelles
                         via son formulaire de contact (nom, email, message).
                     </p>
                 </div>
@@ -59,7 +59,7 @@ export default function Confidentialite() {
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Responsable du traitement</h2>
                     <p>
-                        Le responsable du traitement des données est l’association ImaginElles Bzh.
+                        Le responsable du traitement des données est l’association Imagin’Elles Bzh.
                     </p>
                 </div>
 

@@ -31,8 +31,8 @@ export default function ActivityModal({ activity, onClose }) {
                         {activity.where}
                     </p>
 
-                    <p>
-                        <strong>Description détaillée</strong><br />
+                    <p className="leading-relaxed whitespace-pre-line">
+                        <strong>Description détaillée</strong><br/>
                         {activity.details}
                     </p>
 
