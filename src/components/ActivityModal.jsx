@@ -17,17 +17,22 @@ export default function ActivityModal({ activity, onClose }) {
                 <div className="space-y-4">
 
                     <p>
-                        <strong>Qui ?</strong><br />
+                        <strong>Votre référente : </strong>
+                        {activity.referente}
+                    </p>
+
+                    <p>
+                        <strong>Qui ?</strong><br/>
                         {activity.who}
                     </p>
 
                     <p>
-                        <strong>Quand ?</strong><br />
+                        <strong>Quand ?</strong><br/>
                         {activity.when}
                     </p>
 
                     <p>
-                        <strong>Où ?</strong><br />
+                        <strong>Où ?</strong><br/>
                         {activity.where}
                     </p>
 
