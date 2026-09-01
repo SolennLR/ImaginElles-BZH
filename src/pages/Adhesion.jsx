@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 
 export default function Adhesion() {
     const [formData, setFormData] = useState({
@@ -170,7 +170,7 @@ export default function Adhesion() {
 
                         {/* Bouton HelloAsso */}
                         <a
-                            href="https://www.helloasso.com/associations/imaginelles/adhesions/adhesion-2026-2027"
+                            href="https://www.helloasso.com/associations/imagin-elles/adhesions/adhesion-2026-2027"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-2 bg-purple-700 hover:bg-purple-800 text-white px-8 py-3 rounded-full transition w-full md:w-auto"
