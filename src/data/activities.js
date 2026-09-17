@@ -162,7 +162,7 @@ export const activities = [
     {
         title: 'Randonnée',
         date: "2027-04-25",
-        description: '🏳️‍🌈 Ria Garden Womens 🏳️‍🌈',
+        description: 'Ria Garden Womens',
         color: '#FF8C00',
         image: randonneeImg1,
 
