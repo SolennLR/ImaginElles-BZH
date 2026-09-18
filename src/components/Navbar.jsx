@@ -32,6 +32,10 @@ export default function Navbar() {
                         L’asso
                     </Link>
 
+                    <Link to="/activites" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200" >
+                        Activités
+                    </Link>
+
                     <Link to="/adhesion" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200">
                         Adhérer
                     </Link>
@@ -74,6 +78,7 @@ export default function Navbar() {
                     <div className="flex flex-col items-center gap-6 text-center">
                         <Link className="text-lg font-medium" to="/" onClick={() => setOpen(false)}>Accueil</Link>
                         <Link className="text-lg font-medium" to="/association" onClick={() => setOpen(false)}>L’asso</Link>
+                        <Link className="text-lg font-medium" to="/activites" onClick={() => setOpen(false)} > Activités </Link>
                         <Link className="text-lg font-medium" to="/adhesion" onClick={() => setOpen(false)}>Adhérer</Link>
                         <Link className="text-lg font-medium" to="/archives" onClick={() => setOpen(false)}>Archives</Link>
                         <Link className="text-lg font-medium" to="/faq" onClick={() => setOpen(false)}>FAQ</Link>

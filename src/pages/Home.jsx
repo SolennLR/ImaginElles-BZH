@@ -25,21 +25,25 @@ export default function Home() {
 
             {/* HERO */}
             <section
-                className="min-h-[70vh] md:min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 text-center px-6 py-8">
-                <h1 className="text-5xl md:text-6xl font-bold text-purple-700 mb-6">
+                className="min-h-[40vh] md:min-h-[50vh] flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 text-center px-6 py-6">
+                <h1 className="text-5xl md:text-6xl font-bold text-purple-700 mb-4">
                     Imagin’Elles Bzh
                 </h1>
 
-                <p className="max-w-2xl text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8">
+                <p className="max-w-2xl text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6">
                     Un espace bienveillant de partage, de rencontres et de sororité en Bretagne.
                 </p>
 
-                <div className="flex gap-4 flex-col sm:flex-row">
-                    <Link to="/association" className="bg-purple-700 text-white px-8 py-4 rounded-full text-lg border border-purple-700 hover:bg-transparent hover:text-purple-700 transition">
+                <div className="flex gap-3 flex-col sm:flex-row">
+                    <Link to="/association" className="bg-purple-700 text-white px-7 py-3 rounded-full text-lg border border-purple-700 hover:bg-transparent hover:text-purple-700 transition">
                         Découvrir l’association
                     </Link>
 
-                    <Link to="/adhesion" className="border border-purple-700 text-purple-700 px-8 py-4 rounded-full text-lg hover:bg-purple-700 hover:text-white transition">
+                    <Link to="/activites" className="border border-purple-700 text-purple-700 px-7 py-3 rounded-full text-lg hover:bg-purple-700 hover:text-white transition" >
+                        Nos activités
+                    </Link>
+
+                    <Link to="/adhesion" className="bg-purple-700 text-white px-7 py-3 rounded-full text-lg border border-purple-700 hover:bg-transparent hover:text-purple-700 transition">
                         Adhérer
                     </Link>
                 </div>
@@ -47,7 +51,7 @@ export default function Home() {
 
             {/* PRESENTATION */}
             <section className="py-20 px-6 max-w-4xl mx-auto text-center">
-                <h2 className="text-4xl font-bold mb-6 text-purple-700">
+                <h2 className="text-3xl md:text-4xl font-bold mb-5 text-purple-700">
                     Qui sommes-nous ?
                 </h2>
 
@@ -62,8 +66,8 @@ export default function Home() {
             <ValuesSection />
 
             {/* ACTIVITIES */}
-            <section className="py-10">
-                <h2 className="text-3xl font-bold text-center mb-10">
+            <section className="py-20 px-6 max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-5 text-purple-700">
                     Nos activités
                 </h2>
 
@@ -72,13 +76,21 @@ export default function Home() {
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6">
-                    {upcomingActivities.map((activity, i) => (
+                    {upcomingActivities.slice(0, 3).map((activity, i) => (
                         <ActivityCard
                             key={i}
                             {...activity}
                             onClick={() => setSelectedActivity(activity)}
                         />
                     ))}
+                </div>
+                <div className="text-center mt-10">
+                    <Link
+                        to="/activites"
+                        className="inline-block border border-purple-700 text-purple-700 px-6 py-3 rounded-full hover:bg-purple-700 hover:text-white transition"
+                    >
+                        Voir toutes les activités
+                    </Link>
                 </div>
                 <ActivityModal
                     activity={selectedActivity}
@@ -87,7 +99,7 @@ export default function Home() {
             </section>
 
             {/* JOIN US */}
-            <JoinUsSection />
+            <JoinUsSection/>
 
             {/* CTA FINAL */}
             <section className="py-24 text-center bg-purple-700 text-white">
