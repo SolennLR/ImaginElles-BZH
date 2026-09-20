@@ -28,7 +28,7 @@ export default function Association() {
                     <div className="max-w-5xl mx-auto">
                         <img
                             src={groupeImg}
-                            alt="L'équipe ImaginElles Bzh"
+                            alt="Les femmes de l’association Imagin’Elles"
                             className="w-full aspect-video object-cover rounded-2xl shadow-lg"
                         />
                     </div>

@@ -13,7 +13,7 @@ export default function Navbar() {
                 <Link to="/" className="flex items-center">
                     <img
                         src={logo}
-                        alt="Logo Imagin'Elles"
+                        alt="Logo Imagin’Elles"
                         className="h-32 w-auto logo-animation"
                     />
                 </Link>

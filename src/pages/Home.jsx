@@ -31,13 +31,13 @@ export default function Home() {
 
             {/* HERO */}
             <section
-                className="py-10 px-6 flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-800 text-center px-6">
+                className="py-10 px-6 flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-800 text-center">
                 <h1 className="text-3xl md:text-4xl font-bold text-purple-700 mb-4">
                     Imagin’Elles
                 </h1>
 
                 <p className="max-w-2xl text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6">
-                    Un espace bienveillant de partage, de rencontres et de sororité en Bretagne.
+                    Une association pour les femmes dans le Pays de Lorient, autour du partage, des rencontres et de la sororité.
                 </p>
 
                 <div className="flex gap-3 flex-col sm:flex-row">
@@ -62,7 +62,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Imagin’Elles est née d’un collectif de femmes souhaitant créer des espaces de partage, d’échange et de solidarité.
+                    Imagin’Elles est née d’un collectif de femmes souhaitant créer des espaces de partage, d’échange et de solidarité dans le Pays de Lorient.
                     <br /><br />
                     L’association propose des activités culturelles, sportives et conviviales afin de favoriser le lien social et rompre l’isolement.
                 </p>
@@ -78,7 +78,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-gray-600 dark:text-gray-300 mb-8">
-                    Retrouvez ici les événements à venir de l’association Imagin’Elles.
+                    Découvrez les activités, sorties et rencontres proposées par Imagin’Elles dans le Pays de Lorient.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-8">
