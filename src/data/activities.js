@@ -451,24 +451,6 @@ export const activities = [
     },
     {
         title: 'Café discussion',
-        date: "2026-09-19",
-        description: 'Échanges libres et bienveillants.',
-        color: "#24408E",
-        image: cafeImg,
-
-        referente : "Juliette",
-        who: "Ouvert à toutes les adhérentes et non adhérentes",
-        when: "Vendredi 19 septembre 2026 - 18h00",
-        where: "Au Jameson",
-        price: "Gratuit",
-        helloasso: "https://www.helloasso.com/associations/...",
-
-        details:
-            "Nous partagerons un café autour des discussions sur les activités du mois suivant."
-
-    },
-    {
-        title: 'Café discussion',
         date: "2026-10-16",
         description: "Présentation officielle de l'association",
         color: "#24408E",
