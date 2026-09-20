@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 import ValuesSection from "../components/ValuesSection";
 import Timeline from "../components/Timeline";
@@ -6,6 +7,12 @@ import groupeImg from "../assets/groupe.jpg";
 export default function Association() {
     return (
         <main>
+
+            <SEO
+                title="L’association Imagin’Elles – Pays de Lorient"
+                description="Découvrez Imagin’Elles, une association pour les femmes dans le Pays de Lorient, fondée autour de la bienveillance, de la sororité, de l’inclusion et de la convivialité."
+            />
+
             <section className="py-12 md:py-20 text-center bg-gray-50 dark:bg-gray-900">
                 <div className="max-w-5xl mx-auto px-6">
                     <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-6">

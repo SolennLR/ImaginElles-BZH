@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { useMemo, useState } from "react";
 import ActivityCard from "../components/ActivityCard";
 import ActivityModal from "../components/ActivityModal";
@@ -20,6 +21,11 @@ export default function Activites() {
 
     return (
         <div className="px-6">
+
+            <SEO
+                title="Activités et sorties pour les femmes – Imagin’Elles"
+                description="Découvrez les activités, sorties et rencontres proposées par Imagin’Elles aux femmes dans le Pays de Lorient et ses environs."
+            />
 
             {/* HEADER */}
             <section className="py-12 text-center">

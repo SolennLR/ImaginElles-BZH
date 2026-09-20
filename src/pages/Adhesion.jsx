@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import {useState} from "react";
 
 export default function Adhesion() {
@@ -47,6 +48,12 @@ export default function Adhesion() {
 
     return (
         <main className="max-w-5xl mx-auto px-6 py-12">
+
+            <SEO
+                title="Adhérer à Imagin’Elles – Association pour les femmes"
+                description="Envie de rejoindre Imagin’Elles ? Découvrez comment adhérer à cette association pour les femmes dans le Pays de Lorient et participer à ses activités et rencontres."
+            />
+
             <h1 className="text-4xl font-bold text-center text-purple-700 mb-8">
                 Rejoindre Imagin’Elles
             </h1>

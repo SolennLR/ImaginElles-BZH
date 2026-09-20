@@ -1,3 +1,5 @@
+import SEO from "../components/SEO";
+
 const faqItems = [
     {
         question: "Qui peut adhérer à l’association Imagin’Elles ?",
@@ -34,6 +36,11 @@ const faqItems = [
 export default function FAQ() {
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 px-6 py-10">
+
+            <SEO
+                title="FAQ – Imagin’Elles"
+                description="Retrouvez les réponses aux questions fréquentes sur Imagin’Elles, ses activités, son fonctionnement et son adhésion dans le Pays de Lorient."
+            />
 
             <h1 className="text-3xl font-bold text-purple-700 mb-8">
                 Foire aux questions

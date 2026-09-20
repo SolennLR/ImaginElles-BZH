@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 import ActivityCard from '../components/ActivityCard'
 import ActivityModal from "../components/ActivityModal";
@@ -22,6 +23,11 @@ export default function Home() {
 
     return (
         <div className="px-6">
+
+            <SEO
+                title="Imagin’Elles – Association pour les femmes dans le Pays de Lorient"
+                description="Imagin’Elles est une association pour les femmes dans le Pays de Lorient. Elle propose des activités, sorties et rencontres autour de la bienveillance, de la sororité et de la convivialité."
+            />
 
             {/* HERO */}
             <section

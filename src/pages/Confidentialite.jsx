@@ -1,6 +1,13 @@
+import SEO from "../components/SEO";
+
 export default function Confidentialite() {
     return (
         <main className="max-w-5xl mx-auto px-6 py-20 text-gray-700 dark:text-gray-300">
+
+            <SEO
+                title="Politique de confidentialité – Imagin’Elles"
+                description="Consultez la politique de confidentialité et les informations relatives à la protection des données personnelles du site Imagin’Elles."
+            />
 
             <h1 className="text-4xl font-bold text-purple-700 mb-10">
                 Politique de confidentialité

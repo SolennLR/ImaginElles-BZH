@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { useMemo, useState } from "react";
 import ActivityCard from "../components/ActivityCard";
 import ActivityModal from "../components/ActivityModal";
@@ -22,6 +23,11 @@ export default function Archives() {
 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 px-6 py-10">
+
+            <SEO
+                title="Archives des activités – Imagin’Elles"
+                description="Retrouvez les activités, sorties et rencontres passées organisées par Imagin’Elles pour les femmes dans le Pays de Lorient."
+            />
 
             {/* HEADER */}
             <section className="py-12 text-center">
