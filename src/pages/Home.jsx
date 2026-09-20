@@ -25,7 +25,7 @@ export default function Home() {
 
             {/* HERO */}
             <section
-                className="py-20 px-6 flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-800 text-center px-6">
+                className="py-10 px-6 flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-800 text-center px-6">
                 <h1 className="text-3xl md:text-4xl font-bold text-purple-700 mb-4">
                     Imagin’Elles
                 </h1>
@@ -50,7 +50,7 @@ export default function Home() {
             </section>
 
             {/* PRESENTATION */}
-            <section className="py-20 px-6 max-w-4xl mx-auto text-center">
+            <section className="py-10 px-6 max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-5 text-purple-700">
                     Qui sommes-nous ?
                 </h2>
@@ -66,7 +66,7 @@ export default function Home() {
             <ValuesSection />
 
             {/* ACTIVITIES */}
-            <section className="py-20 px-6 max-w-7xl mx-auto text-center">
+            <section className="py-10 px-6 max-w-7xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-5 text-purple-700">
                     Nos activités
                 </h2>
@@ -102,8 +102,8 @@ export default function Home() {
             <JoinUsSection/>
 
             {/* CTA FINAL */}
-            <section className="py-24 text-center bg-purple-700 text-white">
-                <h2 className="text-4xl font-bold mb-6">
+            <section className="py-10 text-center bg-purple-700 text-white">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
                     Rejoindre Imagin’Elles
                 </h2>
 
