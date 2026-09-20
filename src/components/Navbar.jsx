@@ -1,62 +1,58 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/Logo.png";
+import logo from "../assets/logo transparent.PNG";
 import DarkToggle from "./DarkToggle";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="bg-white dark:bg-gray-900 shadow-md px-6 py-4">
+        <nav className="bg-white shadow-md px-6 py-4">
             <div className="flex items-center">
                 {/* Logo + Nom */}
-                <Link to="/" className="flex items-center flex-shrink-0">
+                <Link to="/" className="flex items-center">
                     <img
                         src={logo}
-                        alt="Logo ImaginElles Bzh"
+                        alt="Logo Imagin'Elles"
                         className="h-32 w-auto logo-animation"
                     />
-
-                    <h1 className="ml-4 text-3xl font-bold text-purple-700 title-animation hidden sm:block">
-                        Imagin’Elles Bzh
-                    </h1>
                 </Link>
 
                 {/* Menu desktop */}
-                <div className="hidden md:flex flex-1 justify-center gap-8">
-                    <Link to="/" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200">
+                <div className="hidden lg:flex flex-1 justify-center gap-8">
+                    <Link to="/" className="text-lg text-gray-800 hover:text-purple-700 transition-colors duration-200">
                         Accueil
                     </Link>
 
-                    <Link to="/association" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200">
+                    <Link to="/association" className="text-lg text-gray-800 hover:text-purple-700 transition-colors duration-200">
                         L’asso
                     </Link>
 
-                    <Link to="/activites" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200" >
+                    <Link to="/activites" className="text-lg text-gray-800 hover:text-purple-700 transition-colors duration-200" >
                         Activités
                     </Link>
 
-                    <Link to="/adhesion" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200">
+                    <Link to="/adhesion" className="text-lg text-gray-800 hover:text-purple-700 transition-colors duration-200">
                         Adhérer
                     </Link>
 
-                    <Link to="/archives" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200">
+                    <Link to="/archives" className="text-lg text-gray-800 hover:text-purple-700 transition-colors duration-200">
                         Archives
                     </Link>
 
-                    <Link to="/faq" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200">
+                    <Link to="/faq" className="text-lg text-gray-800 hover:text-purple-700 transition-colors duration-200">
                         FAQ
                     </Link>
 
-                    <Link to="/contact" className="text-gray-800 dark:text-gray-100 hover:text-purple-700 transition-colors duration-200">
+                    <Link to="/contact" className="text-lg text-gray-800 hover:text-purple-700 transition-colors duration-200">
                         Contact
                     </Link>
                 </div>
 
                 {/* Actions mobile */}
-                <div className="flex items-center gap-6 ml-auto md:hidden">
+                <div className="flex items-center gap-6 ml-auto lg:hidden">
                     <button
-                        className="text-2xl"
+                        className="text-2xl text-gray-800"
                         onClick={() => setOpen(!open)}
                         aria-label="Ouvrir le menu"
                     >
@@ -67,14 +63,14 @@ export default function Navbar() {
                 </div>
 
                 {/* Dark mode desktop */}
-                <div className="hidden md:block flex-shrink-0">
+                <div className="hidden lg:block flex-shrink-0">
                     <DarkToggle />
                 </div>
             </div>
 
             {/* Menu mobile */}
             {open && (
-                <div className="md:hidden mt-4 border-t border-gray-200 dark:border-gray-700 pt-4">
+                <div className="lg:hidden mt-4 border-t border-gray-200 pt-4 bg-white text-gray-800">
                     <div className="flex flex-col items-center gap-6 text-center">
                         <Link className="text-lg font-medium" to="/" onClick={() => setOpen(false)}>Accueil</Link>
                         <Link className="text-lg font-medium" to="/association" onClick={() => setOpen(false)}>L’asso</Link>

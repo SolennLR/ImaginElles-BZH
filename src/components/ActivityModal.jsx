@@ -1,6 +1,11 @@
 export default function ActivityModal({ activity, onClose }) {
     if (!activity) return null;
 
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const isArchived = new Date(activity.date) < today;
+
     return (
         <div
             className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
@@ -67,7 +72,7 @@ export default function ActivityModal({ activity, onClose }) {
 
                 {/* Pied de modal */}
                 <div className="shrink-0 border-t border-gray-200 bg-white px-5 py-4">
-                    {activity.helloasso && (
+                    {!isArchived && activity.helloasso && (
                         <div className="flex justify-center">
                             <a
                                 href={activity.helloasso}

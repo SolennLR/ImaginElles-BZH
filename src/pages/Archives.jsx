@@ -23,14 +23,16 @@ export default function Archives() {
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 px-6 py-10">
 
-            {/* Titre */}
-            <h1 className="text-3xl font-bold text-purple-700 mb-2">
-                Archives des activités
-            </h1>
+            {/* HEADER */}
+            <section className="py-12 text-center">
+                <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-4">
+                    Archives des activités
+                </h1>
 
-            <p className="text-gray-600 dark:text-gray-300 mb-8">
-                Retrouvez ici les événements passés de l’association Imagin’Elles Bzh.
-            </p>
+                <p className="max-w-2xl mx-auto text-lg text-gray-700 dark:text-gray-300">
+                    Retrouvez ici les événements passés de l’association Imagin’Elles.
+                </p>
+            </section>
 
             {/* Grid */}
             {archivedActivities.length > 0 ? (

@@ -1,6 +1,6 @@
 const faqItems = [
     {
-        question: "Qui peut adhérer à l’association Imagin’Elles Bzh ?",
+        question: "Qui peut adhérer à l’association Imagin’Elles ?",
         answer:
             "L’association est ouverte à toutes les femmes souhaitant participer aux activités, partager des moments conviviaux et créer du lien."
     },

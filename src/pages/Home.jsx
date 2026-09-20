@@ -25,9 +25,9 @@ export default function Home() {
 
             {/* HERO */}
             <section
-                className="min-h-[40vh] md:min-h-[50vh] flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 text-center px-6 py-6">
+                className="min-h-[40vh] md:min-h-[50vh] flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-800 text-center px-6 py-6">
                 <h1 className="text-5xl md:text-6xl font-bold text-purple-700 mb-4">
-                    Imagin’Elles Bzh
+                    Imagin’Elles
                 </h1>
 
                 <p className="max-w-2xl text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6">
@@ -56,7 +56,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Imagin’Elles Bzh est née d’un collectif de femmes souhaitant créer des espaces de partage, d’échange et de solidarité.
+                    Imagin’Elles est née d’un collectif de femmes souhaitant créer des espaces de partage, d’échange et de solidarité.
                     <br /><br />
                     L’association propose des activités culturelles, sportives et conviviales afin de favoriser le lien social et rompre l’isolement.
                 </p>
@@ -66,16 +66,16 @@ export default function Home() {
             <ValuesSection />
 
             {/* ACTIVITIES */}
-            <section className="py-20 px-6 max-w-4xl mx-auto text-center">
+            <section className="py-20 px-6 max-w-7xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-5 text-purple-700">
                     Nos activités
                 </h2>
 
                 <p className="text-gray-600 dark:text-gray-300 mb-8">
-                    Retrouvez ici les événements à venir de l’association Imagin’Elles Bzh.
+                    Retrouvez ici les événements à venir de l’association Imagin’Elles.
                 </p>
 
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-3 gap-8">
                     {upcomingActivities.slice(0, 3).map((activity, i) => (
                         <ActivityCard
                             key={i}
@@ -104,7 +104,7 @@ export default function Home() {
             {/* CTA FINAL */}
             <section className="py-24 text-center bg-purple-700 text-white">
                 <h2 className="text-4xl font-bold mb-6">
-                    Rejoindre Imagin’Elles Bzh
+                    Rejoindre Imagin’Elles
                 </h2>
 
                 <p className="mb-8 text-lg max-w-2xl mx-auto">

@@ -29,7 +29,7 @@ export default function Activites() {
 
                 <p className="max-w-2xl mx-auto text-lg text-gray-700 dark:text-gray-300">
                     Retrouvez les activités et événements à venir de l’association
-                    Imagin’Elles Bzh.
+                    Imagin’Elles.
                 </p>
             </section>
 

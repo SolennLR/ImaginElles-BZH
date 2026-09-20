@@ -48,7 +48,7 @@ export default function Adhesion() {
     return (
         <main className="max-w-5xl mx-auto px-6 py-12">
             <h1 className="text-4xl font-bold text-center text-purple-700 mb-8">
-                Rejoindre Imagin’Elles Bzh
+                Rejoindre Imagin’Elles
             </h1>
 
             <div className="bg-gray-200 rounded-2xl shadow-lg p-8">
@@ -60,11 +60,17 @@ export default function Adhesion() {
                     L'association est ouverte aux femmes cisgenres et transgenres.
                 </p>
 
-                <p className="text-gray-700 mb-4">
-                    Pour rejoindre Imagin’Elles Bzh, il est nécessaire d'adhérer aux statuts de l'association,
+                <p className="text-gray-700 mb-2">
+                    Pour rejoindre Imagin’Elles, il est nécessaire d'adhérer aux statuts de l'association,
                     de participer à une rencontre d'accueil et de s'acquitter de la cotisation annuelle,
                     dont le montant est fixé lors de l'assemblée générale.
                 </p>
+
+                <a href="statuts-imaginelles.pdf" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center gap-2 mb-4 text-purple-700 hover:text-purple-900 font-medium transition-colors">
+                    📄
+                    Consulter les statuts de l’association
+                </a>
 
                 <p className="text-gray-700 mb-4">
                     Vous souhaitez en savoir plus avant de nous rejoindre ?
