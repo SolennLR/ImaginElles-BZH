@@ -25,8 +25,8 @@ export default function Home() {
 
             {/* HERO */}
             <section
-                className="min-h-[40vh] md:min-h-[50vh] flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-800 text-center px-6 py-6">
-                <h1 className="text-5xl md:text-6xl font-bold text-purple-700 mb-4">
+                className="py-20 px-6 flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-800 text-center px-6">
+                <h1 className="text-3xl md:text-4xl font-bold text-purple-700 mb-4">
                     Imagin’Elles
                 </h1>
 
