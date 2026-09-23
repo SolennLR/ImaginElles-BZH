@@ -54,7 +54,7 @@ export default function Adhesion() {
                 description="Envie de rejoindre Imagin’Elles ? Découvrez comment adhérer à cette association pour les femmes dans le Pays de Lorient et participer à ses activités et rencontres."
             />
 
-            <h1 className="text-4xl font-bold text-center text-purple-700 mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold text-center text-purple-700 mb-8">
                 Rejoindre Imagin’Elles
             </h1>
 

@@ -38,7 +38,7 @@ export default function ValuesSection() {
                     {values.map((value) => (
                         <div
                             key={value.title}
-                            className="bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-lg text-center hover:scale-105 transition"
+                            className="bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-lg text-center transition"
                         >
                             <div className="text-5xl mb-4">{value.icon}</div>
                             <h3 className="text-xl font-bold mb-3">

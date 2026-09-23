@@ -9,7 +9,7 @@ export default function MentionsLegales() {
                 description="Consultez les mentions légales du site de l’association Imagin’Elles."
             />
 
-            <h1 className="text-4xl font-bold text-purple-700 mb-10">
+            <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-10">
                 Mentions légales
             </h1>
 

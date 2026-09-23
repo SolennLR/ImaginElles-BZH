@@ -32,7 +32,7 @@ export default function Home() {
             {/* HERO */}
             <section
                 className="py-10 px-6 flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-800 text-center">
-                <h1 className="text-3xl md:text-4xl font-bold text-purple-700 mb-4">
+                <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-4">
                     Imagin’Elles
                 </h1>
 

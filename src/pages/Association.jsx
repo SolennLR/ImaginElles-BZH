@@ -36,7 +36,7 @@ export default function Association() {
             </section>
 
             <section className="py-20 px-6 max-w-5xl mx-auto">
-                <h2 className="text-3xl font-bold text-purple-700 mb-6 text-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-purple-700 mb-6 text-center">
                     Notre histoire
                 </h2>
 
@@ -51,7 +51,7 @@ export default function Association() {
 
             <section className="py-20 bg-gray-50 dark:bg-gray-800 px-6">
                 <div className="max-w-5xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold text-purple-700 mb-8">
+                    <h2 className="text-3xl md:text-4xl font-bold text-purple-700 mb-8">
                         Notre mission
                     </h2>
 
@@ -80,7 +80,7 @@ export default function Association() {
             <Timeline/>
 
             <section className="py-24 text-center bg-purple-700 text-white">
-                <h2 className="text-4xl font-bold mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
                     Rejoignez l’aventure
                 </h2>
 

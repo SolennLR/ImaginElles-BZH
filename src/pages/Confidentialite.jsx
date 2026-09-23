@@ -9,7 +9,7 @@ export default function Confidentialite() {
                 description="Consultez la politique de confidentialité et les informations relatives à la protection des données personnelles du site Imagin’Elles."
             />
 
-            <h1 className="text-4xl font-bold text-purple-700 mb-10">
+            <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-10">
                 Politique de confidentialité
             </h1>
 

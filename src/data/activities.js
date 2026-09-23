@@ -299,7 +299,7 @@ export const activities = [
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-sportive-du-16-10-2026",
 
         details:
-            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive pour un 1er rdv de l'association. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
+            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
             "\n" +
             "Vous serez accompagnez de Nathalie votre organisatrice et son compagnon Olso 🐶\n" +
             "\n" +
@@ -323,7 +323,7 @@ export const activities = [
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-sportive-du-30-10-2026",
 
         details:
-            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive pour un 1er rdv de l'association. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
+            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
             "\n" +
             "Vous serez accompagnez de Nathalie votre organisatrice et son compagnon Olso 🐶\n" +
             "\n" +
@@ -347,7 +347,7 @@ export const activities = [
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-sportive-du-13-11-2026",
 
         details:
-            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive pour un 1er rdv de l'association. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
+            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
             "\n" +
             "Vous serez accompagnez de Nathalie votre organisatrice et son compagnon Olso 🐶\n" +
             "\n" +
@@ -371,7 +371,7 @@ export const activities = [
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-sportive-du-22-11-2026",
 
         details:
-            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive pour un 1er rdv de l'association. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
+            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
             "\n" +
             "Vous serez accompagnez de Nathalie votre organisatrice et son compagnon Olso 🐶\n" +
             "\n" +

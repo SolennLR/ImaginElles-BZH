@@ -42,7 +42,7 @@ export default function FAQ() {
                 description="Retrouvez les réponses aux questions fréquentes sur Imagin’Elles, ses activités, son fonctionnement et son adhésion dans le Pays de Lorient."
             />
 
-            <h1 className="text-3xl font-bold text-purple-700 mb-8">
+            <h1 className="text-3xl md:text-4xl font-bold text-purple-700 mb-8">
                 Foire aux questions
             </h1>
 
