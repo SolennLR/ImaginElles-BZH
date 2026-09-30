@@ -24,7 +24,7 @@ const faqItems = [
     {
         question: "Puis-je annuler mon inscription à une activité ?",
         answer:
-            "Selon les activités proposées, une participation découverte peut être possible. N’hésitez pas à nous contacter pour en discuter."
+            "Oui. Si vous avez un empêchement, allez sur l'activité concernée et contactez-nous en indiquant votre nom & prénom."
     },
     {
         question: "Que se passe-t-il si une activité est annulée ?",
