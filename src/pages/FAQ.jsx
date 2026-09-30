@@ -22,6 +22,16 @@ const faqItems = [
             "Selon les activités proposées, une participation découverte peut être possible. N’hésitez pas à nous contacter pour en discuter."
     },
     {
+        question: "Puis-je annuler mon inscription à une activité ?",
+        answer:
+            "Selon les activités proposées, une participation découverte peut être possible. N’hésitez pas à nous contacter pour en discuter."
+    },
+    {
+        question: "Que se passe-t-il si une activité est annulée ?",
+        answer:
+            "Si Imagin’Elles devait annuler une activité, les personnes inscrites seraient informées directement. Les modalités de remboursement leur seraient alors communiquées."
+    },
+    {
         question: "Où se déroulent les activités ?",
         answer:
             "Les activités sont organisées principalement dans le Morbihan et peuvent varier selon les événements."

@@ -73,15 +73,30 @@ export default function ActivityModal({ activity, onClose }) {
                 {/* Pied de modal */}
                 <div className="shrink-0 border-t border-gray-200 bg-white px-5 py-4">
                     {!isArchived && activity.helloasso && (
-                        <div className="flex justify-center">
+                        <div className="text-center">
                             <a
                                 href={activity.helloasso}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="block w-full rounded-full bg-[#7B2CBF] px-6 py-3 text-center font-semibold text-white shadow-md transition hover:bg-white hover:text-[#7B2CBF] hover:ring-2 hover:ring-[#7B2CBF] "
                             >
-                                Inscription
+                                Je m'inscris
                             </a>
+
+                            <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
+                                Besoin d'annuler votre inscription ? {" "}
+                                <a
+                                    href={`mailto:imaginelles-bzh@ikmail.com?subject=${encodeURIComponent(
+                                        `Demande d'annulation – ${activity.title} du ${activity.when}`
+                                    )}&body=${encodeURIComponent(
+                                        `Bonjour,\n\nJe souhaite demander l'annulation de mon inscription à l'activité « ${activity.title} » du « ${activity.when} ».\n\nNom et prénom : \n\nMerci de bien vouloir me confirmer la prise en compte de ma demande.\n\nCordialement`
+                                    )}`}
+                                    className="text-purple-600 dark:text-purple-400 hover:underline font-medium"
+                                >
+                                    Contactez-nous
+                                </a>
+                                .
+                            </p>
                         </div>
                     )}
                 </div>
