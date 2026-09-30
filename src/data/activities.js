@@ -291,7 +291,7 @@ export const activities = [
         color: "#008026",
         image: modelageImg,
 
-        referente : "Véronique",
+        referente : "Véro",
         who: "Réservé aux adhérentes",
         when: "Jeudi 24 septembre 2026 - 14h00 à 18h00",
         where: "Maisons des associations - Lorient",
@@ -453,13 +453,13 @@ export const activities = [
 
         referente : "Nathalie",
         who: "Maximum 15 adhérentes",
-        when: "Vendredi 2 octobre 2026 - 17h30 à 18h30",
+        when: "Vendredi 2 octobre 2026 - 17h00 à 18h00",
         where: "Base nautique du ter - Lorient",
         price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-sportive",
 
         details:
-            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive pour un 1er rdv de l'association. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
+            "Rdv à la base nautique du Ter à 17h00 précise pour une marche sportive pour un 1er rdv de l'association. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
             "\n" +
             "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
             "\n" +
@@ -524,7 +524,7 @@ export const activities = [
         color: "#24408E",
         image: cafeImg,
 
-        referente : "Juliette, Monique et Véronique",
+        referente : "Juliette, Monique et Véro",
         who: "Ouvert à toutes les adhérentes et non adhérentes",
         when: "Samedi 24 octobre 2026",
         where: "A définir",
