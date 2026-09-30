@@ -42,7 +42,7 @@ export default async function handler(req, res) {
                         name: `${prenom} ${nom}`,
                     },
 
-                    subject: "Nouvelle demande d'adhésion",
+                    subject: "Message venant du site internet",
 
                     htmlContent: `
                         <h2>Nouvelle demande d'adhésion</h2>
