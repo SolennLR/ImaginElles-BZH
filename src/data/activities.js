@@ -422,30 +422,6 @@ export const activities = [
     },
     {
         title: 'Marche sportive',
-        date: "2026-11-22",
-        description: 'Marche sportive',
-        color: '#E40303',
-        image: marcheSportiveImg,
-
-        referente : "Nathalie",
-        who: "Maximum 15 adhérentes",
-        when: "Dimanche 22 novembre 2026 - 17h30 à 18h30",
-        where: "Base nautique du ter - Lorient",
-        price: "Gratuit",
-        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-sportive-du-22-11-2026",
-
-        details:
-            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
-            "\n" +
-            "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
-            "\n" +
-            "🐶 Les chiens sont les bienvenus mais sous la responsabilité de leur maîtresse.\n" +
-            "\n" +
-            "❌ Annulation en cas d'intempéries."
-
-    },
-    {
-        title: 'Marche sportive',
         date: "2026-10-2",
         description: "1er rdv de l'asso à la base nautique du Ter",
         color: '#E40303',
