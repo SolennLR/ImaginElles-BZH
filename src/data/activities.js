@@ -303,29 +303,6 @@ export const activities = [
     },
     {
         title: 'Atelier créatif',
-        date: "2026-10-17",
-        description: 'Atelier monotype / impression sur papier',
-        color: "#008026",
-        image: monotypeImg,
-
-        referente : "Corinne",
-        who: "Maximum 10 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
-        when: "Samedi 17 octobre 2026 - 14h00 à 18h00",
-        where: "Maisons des associations - Lorient",
-        price: "30 €",
-        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-monotype-du-17-10-2026",
-
-        details:
-            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 123 à 14h00 pour réaliser des dessins en impression à l'encre de gravure. Durée : environ 4h00.\n" +
-            "\n" +
-            "C'est un temps de création que vous propose Corinne. L'atelier s'adresse à toutes les personnes débutantes ou non.\n" +
-            "\n" +
-            "Reproductions d'après des oeuvres (paysage, personnages...) ou des objets (coquillages, feuille...) ou avec notre propre imagination.\n" +
-            "\n" +
-            "Vous devez apporter un carnet à dessin, crayon gris et gomme. Corinne fournit le papier d'impression, l'encre et les outils."
-    },
-    {
-        title: 'Atelier créatif',
         date: "2026-11-15",
         description: 'Atelier monotype / impression sur papier',
         color: "#008026",
