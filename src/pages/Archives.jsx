@@ -45,7 +45,7 @@ export default function Archives() {
                 <div className="grid md:grid-cols-3 gap-6">
                     {archivedActivities.map((activity) => (
                         <ActivityCard
-                            key={activity.title + activity.date}
+                            key={activity.id}
                             {...activity}
                             onClick={() => setSelectedActivity(activity)}
                         />

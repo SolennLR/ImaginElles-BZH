@@ -82,9 +82,9 @@ export default function Home() {
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-8">
-                    {upcomingActivities.slice(0, 3).map((activity, i) => (
+                    {upcomingActivities.slice(0, 3).map((activity) => (
                         <ActivityCard
-                            key={i}
+                            key={activity.id}
                             {...activity}
                             onClick={() => setSelectedActivity(activity)}
                         />

@@ -44,9 +44,9 @@ export default function Activites() {
 
                 {upcomingActivities.length > 0 ? (
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {upcomingActivities.map((activity, i) => (
+                        {upcomingActivities.map((activity) => (
                             <ActivityCard
-                                key={i}
+                                key={activity.id}
                                 {...activity}
                                 onClick={() => setSelectedActivity(activity)}
                             />

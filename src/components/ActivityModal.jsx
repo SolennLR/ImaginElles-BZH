@@ -1,10 +1,20 @@
+import { useState } from "react";
+
 export default function ActivityModal({ activity, onClose }) {
+    // Photo actuellement agrandie
+    const [selectedImage, setSelectedImage] = useState(null);
+
     if (!activity) return null;
 
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
     const isArchived = new Date(activity.date) < today;
+
+    // Photos à afficher selon que l'activité est à venir ou archivée
+    const photos = isArchived
+        ? (activity.archiveImages || [])
+        : (activity.presentationImages || []);
 
     return (
         <div
@@ -36,37 +46,71 @@ export default function ActivityModal({ activity, onClose }) {
 
                 {/* Contenu défilant */}
                 <div className="flex-1 overflow-y-auto px-5 py-5 sm:px-8">
-                    <div className="space-y-5 text-gray-700">
+                    <div className="space-y-6 text-gray-700">
 
-                        <p>
-                            <strong>Votre référente : </strong>
-                            {activity.referente}
-                        </p>
+                        {/* PHOTOS */}
+                        {photos.length > 0 && (
+                            <section>
+                                <h3
+                                    className="mb-3 text-lg font-bold"
+                                    style={{ color: activity.color }}
+                                >
+                                    📷 {isArchived
+                                    ? "Photos de l'activité"
+                                    : "Présentation"}
+                                </h3>
 
-                        <p>
-                            <strong>👥 Qui ?</strong><br/>
-                            {activity.who}
-                        </p>
+                                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                                    {photos.map((photo, index) => (
+                                        <button
+                                            key={index}
+                                            type="button"
+                                            onClick={() => setSelectedImage(photo)}
+                                            className="group overflow-hidden rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                        >
+                                            <img
+                                                src={photo}
+                                                alt={`${activity.title} - photo ${index + 1}`}
+                                                className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105"
+                                            />
+                                        </button>
+                                    ))}
+                                </div>
+                            </section>
+                        )}
 
-                        <p>
-                            <strong>📅 Quand ?</strong><br/>
-                            {activity.when}
-                        </p>
+                        {/* INFORMATIONS */}
+                        <div className="space-y-5">
+                            <p>
+                                <strong>Votre référente : </strong>
+                                {activity.referente}
+                            </p>
 
-                        <p>
-                            <strong>💶 Tarif : </strong>
-                            {activity.price}
-                        </p>
+                            <p>
+                                <strong>👥 Qui ?</strong><br/>
+                                {activity.who}
+                            </p>
 
-                        <p>
-                            <strong>📍 Où ?</strong><br/>
-                            {activity.where}
-                        </p>
+                            <p>
+                                <strong>📅 Quand ?</strong><br/>
+                                {activity.when}
+                            </p>
 
-                        <p className="leading-relaxed whitespace-pre-line">
-                            <strong>📝 Description détaillée : </strong><br/>
-                            {activity.details}
-                        </p>
+                            <p>
+                                <strong>💶 Tarif : </strong>
+                                {activity.price}
+                            </p>
+
+                            <p>
+                                <strong>📍 Où ?</strong><br/>
+                                {activity.where}
+                            </p>
+
+                            <p className="leading-relaxed whitespace-pre-line">
+                                <strong>📝 Description détaillée : </strong><br/>
+                                {activity.details}
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -100,6 +144,30 @@ export default function ActivityModal({ activity, onClose }) {
                         </div>
                     )}
                 </div>
+
+                {/* IMAGE AGRANDIE */}
+                {selectedImage && (
+                    <div
+                        className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 p-4"
+                        onClick={() => setSelectedImage(null)}
+                    >
+                        <button
+                            type="button"
+                            onClick={() => setSelectedImage(null)}
+                            aria-label="Fermer la photo"
+                            className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-2xl text-gray-700 shadow-lg transition hover:bg-white"
+                        >
+                            ×
+                        </button>
+
+                        <img
+                            src={selectedImage}
+                            alt={activity.title}
+                            className="max-h-[90vh] max-w-[95vw] rounded-xl object-contain shadow-2xl"
+                        />
+                    </div>
+                )}
+
             </div>
         </div>
     );

@@ -10,12 +10,19 @@ import sculptureImg from "../assets/sculpture.jpg";
 
 export const activities = [
     {
+        id: "tapisserie-2026-10-29",
         title: 'Atelier créatif',
         date: "2026-10-29",
         description: 'Activité tapisserie',
         color: "#008026",
         image: tapisserieImg,
-
+        presentationImages: [
+            tapisserieImg,
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Elise",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Jeudi 29 octobre 2026 - 9h30 à 17h30",
@@ -35,12 +42,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "tapisserie-2026-11-21",
         title: 'Atelier créatif',
         date: "2026-11-21",
         description: 'Activité tapisserie',
         color: "#008026",
         image: tapisserieImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Elise",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 21 novembre 2026 - 9h30 à 17h30",
@@ -60,12 +73,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "tapisserie-2026-11-24",
         title: 'Atelier créatif',
         date: "2026-11-24",
         description: 'Activité tapisserie',
         color: "#008026",
         image: tapisserieImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Elise",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Mardi 24 novembre 2026 - 9h30 à 17h30",
@@ -85,12 +104,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "tapisserie-2026-12-12",
         title: 'Atelier créatif',
         date: "2026-12-12",
         description: 'Activité tapisserie',
         color: "#008026",
         image: tapisserieImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Elise",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 12 décembre 2026 - 9h30 à 17h30",
@@ -110,12 +135,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "tapisserie-2026-12-14",
         title: 'Atelier créatif',
         date: "2026-12-14",
         description: 'Activité tapisserie',
         color: "#008026",
         image: tapisserieImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Elise",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Lundi 14 décembre 2026 - 9h30 à 17h30",
@@ -135,12 +166,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "tapisserie-2027-01-23",
         title: 'Atelier créatif',
         date: "2027-01-23",
         description: 'Activité tapisserie',
         color: "#008026",
         image: tapisserieImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Elise",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 23 janvier 2027 - 9h30 à 17h30",
@@ -160,12 +197,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "tapisserie-2027-01-25",
         title: 'Atelier créatif',
         date: "2027-01-25",
         description: 'Activité tapisserie',
         color: "#008026",
         image: tapisserieImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Elise",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Lundi 25 janvier 2027 - 9h30 à 17h30",
@@ -185,12 +228,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "tapisserie-2027-02-11",
         title: 'Atelier créatif',
         date: "2027-02-11",
         description: 'Activité tapisserie',
         color: "#008026",
         image: tapisserieImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Elise",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Jeudi 11 février 2027 - 9h30 à 17h30",
@@ -210,12 +259,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "tapisserie-2027-02-27",
         title: 'Atelier créatif',
         date: "2027-02-27",
         description: 'Activité tapisserie',
         color: "#008026",
         image: tapisserieImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Elise",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 27 février 2027 - 9h30 à 17h30",
@@ -235,12 +290,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "tapisserie-2027-03-06",
         title: 'Atelier créatif',
         date: "2027-03-06",
         description: 'Activité tapisserie',
         color: "#008026",
         image: tapisserieImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Elise",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 6 mars 2027 - 9h30 à 17h30",
@@ -260,12 +321,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "tapisserie-2027-03-12",
         title: 'Atelier créatif',
         date: "2027-03-12",
         description: 'Activité tapisserie',
         color: "#008026",
         image: tapisserieImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Elise",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Vendredi 12 mars 2027 - 9h30 à 17h30",
@@ -285,12 +352,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "libre-2026-09-24",
         title: 'Atelier créatif',
         date: "2026-09-24",
         description: 'Activité manuelle',
         color: "#008026",
         image: modelageImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Véro",
         who: "Réservé aux adhérentes",
         when: "Jeudi 24 septembre 2026 - 14h00 à 18h00",
@@ -302,12 +375,18 @@ export const activities = [
             "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 233 à partir de 14h00 pour un atelier modelage ou une activité manuelle libre. Durée : environ 4h00.\n"
     },
     {
+        id: "monotype-2026-11-15",
         title: 'Atelier créatif',
         date: "2026-11-15",
         description: 'Atelier monotype / impression sur papier',
         color: "#008026",
         image: monotypeImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Corinne",
         who: "Maximum 10 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Dimanche 15 novembre 2026 - 14h00 à 18h00",
@@ -325,12 +404,18 @@ export const activities = [
             "Vous devez apporter un carnet à dessin, crayon gris et gomme. Corinne fournit le papier d'impression, l'encre et les outils."
     },
     {
+        id: "sculpture-2027-01-16",
         title: 'Atelier créatif',
         date: "2027-01-16",
         description: 'Atelier modelage / sculpture',
         color: "#008026",
         image: sculptureImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Corinne",
         who: "Maximum 10 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 16 & Dimanche 17 janvier 2027 - 10h00 à 17h00",
@@ -350,12 +435,18 @@ export const activities = [
             "Vous devez aussi prévoir un pique-nique pour le midi."
     },
     {
+        id: "marche-2026-10-16",
         title: 'Marche sportive',
         date: "2026-10-16",
         description: 'Marche sportive',
         color: '#E40303',
         image: marcheSportiveImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Nathalie",
         who: "Maximum 15 adhérentes",
         when: "Vendredi 16 octobre 2026 - 17h30 à 18h30",
@@ -364,7 +455,7 @@ export const activities = [
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-sportive-du-16-10-2026",
 
         details:
-            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
+            "Rdv à la base nautique du Ter à Lorient - rue du ter - à 17h30 précise pour une marche sportive. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
             "\n" +
             "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
             "\n" +
@@ -374,12 +465,18 @@ export const activities = [
 
     },
     {
+        id: "marche-2026-11-13",
         title: 'Marche sportive',
         date: "2026-11-13",
         description: 'Marche sportive',
         color: '#E40303',
         image: marcheSportiveImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Nathalie",
         who: "Maximum 15 adhérentes",
         when: "Vendredi 13 novembre 2026 - 17h30 à 18h30",
@@ -388,7 +485,7 @@ export const activities = [
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-sportive-du-13-11-2026",
 
         details:
-            "Rdv à la base nautique du Ter à 17h30 précise pour une marche sportive. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
+            "Rdv à la base nautique du Ter à Lorient - rue du ter - à 17h30 précise pour une marche sportive. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
             "\n" +
             "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
             "\n" +
@@ -398,12 +495,18 @@ export const activities = [
 
     },
     {
+        id: "marche-2026-10-02",
         title: 'Marche sportive',
         date: "2026-10-2",
         description: "1er rdv de l'asso à la base nautique du Ter",
         color: '#E40303',
         image: marcheSportiveImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Nathalie",
         who: "Maximum 15 adhérentes",
         when: "Vendredi 2 octobre 2026 - 17h00 à 18h00",
@@ -412,7 +515,7 @@ export const activities = [
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-sportive",
 
         details:
-            "Rdv à la base nautique du Ter à 17h00 précise pour une marche sportive pour un 1er rdv de l'association. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
+            "Rdv à la base nautique du Ter à Lorient - rue du ter - à 17h00 précise pour une marche sportive pour un 1er rdv de l'association. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
             "\n" +
             "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
             "\n" +
@@ -422,12 +525,18 @@ export const activities = [
 
     },
     {
+        id: "aquarelle-2026-11-13",
         title: 'Atelier créatif',
         date: "2026-11-13",
         description: 'Atelier Aquarelle peinture en salle.',
         color: "#008026",
         image: peintureImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Lise",
         who: "Maximum 10 adhérentes",
         when: "Vendredi 13 novembre 2026 - 14h00 à 17h00",
@@ -441,12 +550,18 @@ export const activities = [
             "Pour le matériel : prévoir quelques feuilles type Canson et un kit peinture aquarelle de chez Action font l'affaire."
     },
     {
+        id: "rando-2027-04-25",
         title: 'Randonnée',
         date: "2027-04-25",
         description: 'Ria Garden Womens',
         color: '#FF8C00',
         image: randonneeImg1,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Juliette",
         who: "Ouvert à toutes les adhérentes",
         when: "Dimanche 25 avril 2027 - 10h00",
@@ -471,12 +586,18 @@ export const activities = [
             "❌ Annulation en cas d'intempéries."
     },
     {
+        id: "conviviale-2026-10-24",
         title: 'Café discussion',
         date: "2026-10-24",
         description: "Présentation officielle de l'association",
         color: "#24408E",
         image: cafeImg,
-
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
         referente : "Juliette, Monique et Véro",
         who: "Ouvert à toutes les adhérentes et non adhérentes",
         when: "Samedi 24 octobre 2026",
@@ -487,5 +608,6 @@ export const activities = [
         details:
             "Présentation officielle de l'association."
     },
+
 
 ]
