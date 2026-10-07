@@ -195,5 +195,5 @@ export default function Adhesion() {
             </div>
         </main>
     )
-        ;
+    ;
 }

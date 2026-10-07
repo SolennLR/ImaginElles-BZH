@@ -7,6 +7,12 @@ import modelageImg from "../assets/modelage.jpg";
 import monotypeImg from "../assets/monotype.jpg";
 import tapisserieImg from "../assets/tapisserie.jpg";
 import sculptureImg from "../assets/sculpture.jpg";
+import lorientaiseImg from "../assets/lorientaise.jpg";
+import lorientaise1 from "../assets/27535.jpg";
+import lorientaise2 from "../assets/27527.jpg";
+import marcheSportive1 from "../assets/27472.jpg";
+
+
 
 export const activities = [
     {
@@ -442,6 +448,7 @@ export const activities = [
         color: '#E40303',
         image: marcheSportiveImg,
         presentationImages: [
+            marcheSportive1,
             // autre photo éventuellement
         ],
         archiveImages: [
@@ -607,6 +614,32 @@ export const activities = [
 
         details:
             "Présentation officielle de l'association."
+    },
+    {
+        id: "lorientaise-2026-10-04",
+        title: 'La Lorientaise',
+        date: "2026-10-4",
+        description: "Participation à la Lorientaise",
+        color: "#FD6C9E",
+        image: lorientaiseImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            lorientaiseImg,
+            lorientaise1,
+            lorientaise2,
+            // photos ajoutées après l'activité
+        ],
+        referente : "Nathalie",
+        who: "Ouvert à toutes les adhérentes et non adhérentes",
+        when: "Dimacnhe 4 octobre 2026",
+        where: "Centre ville de Lorient",
+        price: "Gratuit",
+        helloasso: "https://www.helloasso.com/associations/...",
+
+        details:
+            "L'association Imagin'Elles est présente à la Lorientaise 🩷🩷🩷. Certaines ont réalisé la course et d'autres la marche. Bravo les filles 👏"
     },
 
 
