@@ -11,6 +11,8 @@ export default function ActivityModal({ activity, onClose }) {
 
     const isArchived = new Date(activity.date) < today;
 
+    const hasHelloAssoLink = typeof activity.helloasso === "string" && /^https?:\/\/\S+$/i.test(activity.helloasso.trim());
+
     // Photos à afficher selon que l'activité est à venir ou archivée
     const photos = isArchived
         ? (activity.archiveImages || [])
@@ -116,7 +118,7 @@ export default function ActivityModal({ activity, onClose }) {
 
                 {/* Pied de modal */}
                 <div className="shrink-0 border-t border-gray-200 bg-white px-5 py-4">
-                    {!isArchived && activity.helloasso && (
+                    {!isArchived && hasHelloAssoLink && (
                         <div className="text-center">
                             <a
                                 href={activity.helloasso}
