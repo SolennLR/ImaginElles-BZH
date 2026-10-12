@@ -1,6 +1,6 @@
 
 import randonneeImg1 from "../assets/randonnee1.jpg";
-import cafeImg from "../assets/cafe.jpg";
+import convivialeImg from "../assets/conviviale.jpg";
 import marcheSportiveImg from "../assets/marche_sportive.jpg";
 import peintureImg from "../assets/peinture.jpg";
 import modelageImg from "../assets/modelage.jpg";
@@ -11,7 +11,7 @@ import lorientaiseImg from "../assets/lorientaise.jpg";
 import lorientaise1 from "../assets/27535.jpg";
 import lorientaise2 from "../assets/27527.jpg";
 import marcheSportive1 from "../assets/27472.jpg";
-
+import ellesDansentImg from "../assets/ellesDansent.jpg";
 
 
 export const activities = [
@@ -29,7 +29,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise",
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Jeudi 29 octobre 2026 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
@@ -60,7 +60,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise",
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 21 novembre 2026 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
@@ -91,7 +91,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise",
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Mardi 24 novembre 2026 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
@@ -122,7 +122,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise",
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 12 décembre 2026 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
@@ -153,7 +153,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise",
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Lundi 14 décembre 2026 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
@@ -184,7 +184,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise",
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 23 janvier 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
@@ -215,7 +215,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise",
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Lundi 25 janvier 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
@@ -246,7 +246,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise",
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Jeudi 11 février 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
@@ -277,7 +277,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise",
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 27 février 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
@@ -308,7 +308,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise",
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 6 mars 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
@@ -339,7 +339,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise",
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
         who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Vendredi 12 mars 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
@@ -370,7 +370,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Véro",
+        referente : "Véro - Tél : 06 74 84 90 92",
         who: "Réservé aux adhérentes",
         when: "Jeudi 24 septembre 2026 - 14h00 à 18h00",
         where: "Maisons des associations - Lorient",
@@ -393,7 +393,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Corinne",
+        referente : "Corinne / Véro - Tél : 06 74 84 90 92",
         who: "Maximum 10 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Dimanche 15 novembre 2026 - 14h00 à 18h00",
         where: "A définir",
@@ -422,7 +422,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Corinne",
+        referente : "Corinne / Véro - Tél : 06 74 84 90 92",
         who: "Maximum 10 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
         when: "Samedi 16 & Dimanche 17 janvier 2027 - 10h00 à 17h00",
         where: "A définir",
@@ -454,7 +454,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Nathalie",
+        referente : "Nathalie - Tél : 06 50 23 77 97",
         who: "Maximum 15 adhérentes",
         when: "Vendredi 16 octobre 2026 - 17h30 à 18h30",
         where: "Base nautique du ter - Lorient",
@@ -484,7 +484,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Nathalie",
+        referente : "Nathalie - Tél : 06 50 23 77 97",
         who: "Maximum 15 adhérentes",
         when: "Vendredi 13 novembre 2026 - 17h30 à 18h30",
         where: "Base nautique du ter - Lorient",
@@ -514,7 +514,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Nathalie",
+        referente : "Nathalie - Tél : 06 50 23 77 97",
         who: "Maximum 15 adhérentes",
         when: "Vendredi 2 octobre 2026 - 17h00 à 18h00",
         where: "Base nautique du ter - Lorient",
@@ -544,7 +544,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Lise",
+        referente : "Lise - Tél : 06 68 00 34 77",
         who: "Maximum 10 adhérentes",
         when: "Vendredi 13 novembre 2026 - 14h00 à 17h00",
         where: "Maison de l'association - Lorient",
@@ -569,7 +569,7 @@ export const activities = [
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Juliette",
+        referente : "Juliette - Tél : 06 09 27 55 56",
         who: "Ouvert à toutes les adhérentes",
         when: "Dimanche 25 avril 2027 - 10h00",
         where: "Ria d'Etel côté Nostang",
@@ -593,13 +593,51 @@ export const activities = [
             "❌ Annulation en cas d'intempéries."
     },
     {
-        id: "conviviale-2026-10-24",
-        title: 'Café discussion',
-        date: "2026-10-24",
-        description: "Présentation officielle de l'association",
+        id: "conviviale-2026-10-30",
+        title: 'Soirée',
+        date: "2026-10-30",
+        description: "Elles dansent",
         color: "#24408E",
-        image: cafeImg,
+        image: ellesDansentImg,
         presentationImages: [
+            ellesDansentImg,
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Juliette - Tél : 06 09 27 55 56",
+        who: "Ouvert à toutes les adhérentes et non adhérentes",
+        when: "Vendredi 30 octobre 2026 de 19h à 02h",
+        where: "Le Jameson - 48 Rue Jules Simon - Lorient",
+        price: "5 € seulement, incluant ta conso (avec ou sans alcool) et ton ticket de tombola",
+        helloasso: "https://www.helloasso.com/associations/parents-an-oriant/evenements/elles-dansent?fbclid=IwVERDUAU5uWtleHRuA2FlbQIxMABwZG9mBXNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHv4CHsROxpsN9zfvONgJgr_wNnfD-4Lyy6ocPjtg6_Eoc9BhYqJjtJ4vQOQj_aem_5dLnONO5DBjKieK1USoURw",
+
+        details:
+            " Elles dansent - Édition #4\n" +
+            "\n" +
+            "Une soirée réservée aux filles, aux femmes, aux meufs. \n" +
+            "\n" +
+            "Celle que t'es, celle que t'as envie d'être le temps d'une nuit, sans jugement, sans prise de tête. \n" +
+            "\n" +
+            "Dress code : witch, please 💅🖤\n" +
+            "\n" +
+            "Au programme : La Lucha pour nous régaler, Gyny aux platines, Anne-Claire Flécher pour immortaliser la soirée, J&M rêve de prestige pour la déco et toi, au centre. \n" +
+            "\n" +
+            "Ce soir-là, tu existes pour toi.\n" +
+            "Et c'est tout ce qui compte.\n" +
+            "\n" +
+            "La billetterie est ouverte : n’attend pas pour nous rejoindre !"
+    },
+    {
+        id: "conviviale-2026-10-24",
+        title: 'Soirée conviviale',
+        date: "2026-10-24",
+        description: "Soirée conviviale",
+        color: "#24408E",
+        image: convivialeImg,
+        presentationImages: [
+            convivialeImg,
             // autre photo éventuellement
         ],
         archiveImages: [
@@ -607,13 +645,22 @@ export const activities = [
         ],
         referente : "Juliette, Monique et Véro",
         who: "Ouvert à toutes les adhérentes et non adhérentes",
-        when: "Samedi 24 octobre 2026",
-        where: "A définir",
+        when: "Samedi 24 octobre 2026 à partir de 19h",
+        where: "Barzh bar - 9 Rue Victor Masse - Lorient",
         price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/...",
 
         details:
-            "Présentation officielle de l'association."
+            "Imagin'Elles vous invite à passer un début de soirée entre femmes au Barzh Bar à Lorient.\n" +
+            "Une salle à l'étage nous est réservée de 19h à 20h30.\n" +
+            "Rencontres, échanges et surtout le plaisir de se retrouver dans une ambiance chaleureuse et bienveillante.\n" +
+            "L'occasion de faire connaissance, de créer du lien et de passer un agréable moment ensemble. Tout simplement.\n" +
+            "\n" +
+            "La soirée se prolongera ensuite avec un DJ set, tout public.\n" +
+            "\n" +
+            "Au plaisir de se retrouver bientôt.\n" +
+            "\n" +
+            "L'équipe Imagin'Elles."
     },
     {
         id: "lorientaise-2026-10-04",
