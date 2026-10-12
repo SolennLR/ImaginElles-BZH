@@ -631,9 +631,9 @@ export const activities = [
     },
     {
         id: "conviviale-2026-10-24",
-        title: 'Soirée conviviale',
+        title: "Soirée",
         date: "2026-10-24",
-        description: "Soirée conviviale",
+        description: "La conviviale de l'asso",
         color: "#24408E",
         image: convivialeImg,
         presentationImages: [
