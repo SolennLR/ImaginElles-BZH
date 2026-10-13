@@ -648,7 +648,7 @@ export const activities = [
         when: "Samedi 24 octobre 2026 à partir de 19h",
         where: "Barzh bar - 9 Rue Victor Masse - Lorient",
         price: "Gratuit",
-        helloasso: "",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/soiree-conviviale-du-24-10-2026-1",
 
         details:
             "Imagin'Elles vous invite à passer un début de soirée entre femmes au Barzh Bar à Lorient.\n" +
