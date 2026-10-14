@@ -32,6 +32,10 @@ export default function Navbar() {
                         Activités
                     </Link>
 
+                    <Link to="/actu" className="text-lg text-gray-800 hover:text-purple-700 transition-colors duration-200">
+                        Actu
+                    </Link>
+
                     <Link to="/adhesion" className="text-lg text-gray-800 hover:text-purple-700 transition-colors duration-200">
                         Adhérer
                     </Link>
@@ -75,6 +79,7 @@ export default function Navbar() {
                         <Link className="text-lg font-medium" to="/" onClick={() => setOpen(false)}>Accueil</Link>
                         <Link className="text-lg font-medium" to="/association" onClick={() => setOpen(false)}>L’asso</Link>
                         <Link className="text-lg font-medium" to="/activites" onClick={() => setOpen(false)} > Activités </Link>
+                        <Link className="text-lg font-medium" to="/actu" onClick={() => setOpen(false)}> Actu </Link>
                         <Link className="text-lg font-medium" to="/adhesion" onClick={() => setOpen(false)}>Adhérer</Link>
                         <Link className="text-lg font-medium" to="/archives" onClick={() => setOpen(false)}>Archives</Link>
                         <Link className="text-lg font-medium" to="/faq" onClick={() => setOpen(false)}>FAQ</Link>
