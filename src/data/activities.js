@@ -12,9 +12,40 @@ import lorientaise1 from "../assets/27535.jpg";
 import lorientaise2 from "../assets/27527.jpg";
 import marcheSportive1 from "../assets/27472.jpg";
 import ellesDansentImg from "../assets/ellesDansent.jpg";
+import jeuImg from "../assets/jeu.png";
 
 
 export const activities = [
+    {
+        id: "jeux-2026-11-21",
+        title: 'Activité jeux',
+        date: "2026-11-21",
+        description: 'Jeux de société, de cartes de dés...',
+        color: "#24408E",
+        image: jeuImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Sylvie / Nathalie - Tél : 06 50 23 77 97",
+        who: "Ouvert à toutes les adhérentes.",
+        when: "Samedi 21 novembre 2026 - 14h30 à 18h30",
+        where: "Le Bigbang bar - 110 rue de Bénodet 29000 Quimper",
+        price: "Gratuit. 1 consommation minimum à commander au bar qui nous accueille",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/activite-jeux-du-21-11-2026",
+
+        details:
+        "Rdv à 14h30 au BigBangBar à Quimper.pour un après-midi ludique dans un endroit dédié à l'activité Jeu.\n" +
+        "L'idée de cet après-midi est de se réunir, et passer un moment convivial en plein automne (c'est quand même beaucoup mieux que de regarder les feuilles tomber !!)\n" +
+        "Cet endroit bénéficie d'une grande salle lumineuse à l'étage où il est possible de commander différentes boissons et de se restaurer. Il met aussi à disposition de nombreux jeux de société.\n" +
+        "Une personne du BigBangBar peut nous guider dans nos choix, être force de propositions et d'inspirations. Elle pourra bien sûr nous aider et nous expliquer les règles si le besoin se présente.\n" +
+        "Chaque participante peut bien sûr emmener un jeu qu'elle affectionne et le proposer au groupe. C'est même recommandé ! \n" +
+        "Selon le nombre d'inscrites, il sera possible aussi de jouer à plusieurs jeux (jeu de société, jeu de carte, jeu de dés, etc), organiser plusieurs tables, selon les préférences de chacune. \n" +
+        "\n" +
+        "Possible selon les inspirations de prolonger par un apero, et/ou un resto aux alentours.\n"
+    },
     {
         id: "tapisserie-2026-10-29",
         title: 'Atelier créatif',
@@ -23,7 +54,6 @@ export const activities = [
         color: "#008026",
         image: tapisserieImg,
         presentationImages: [
-            tapisserieImg,
             // autre photo éventuellement
         ],
         archiveImages: [

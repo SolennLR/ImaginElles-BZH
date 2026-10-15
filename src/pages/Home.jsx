@@ -37,19 +37,23 @@ export default function Home() {
                 </h1>
 
                 <p className="max-w-2xl text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6">
-                    Une association pour les femmes dans le Pays de Lorient, autour du partage, des rencontres et de la sororité.
+                    Une association pour les femmes dans le Pays de Lorient, autour du partage, des rencontres et de la
+                    sororité.
                 </p>
 
                 <div className="flex gap-3 flex-col sm:flex-row">
-                    <Link to="/association" className="bg-purple-700 text-white px-7 py-3 rounded-full text-lg border border-purple-700 hover:bg-transparent hover:text-purple-700 transition">
+                    <Link to="/association"
+                          className="bg-purple-700 text-white px-7 py-3 rounded-full text-lg border border-purple-700 hover:bg-transparent hover:text-purple-700 transition">
                         Découvrir l’association
                     </Link>
 
-                    <Link to="/activites" className="border border-purple-700 text-purple-700 px-7 py-3 rounded-full text-lg hover:bg-purple-700 hover:text-white transition" >
+                    <Link to="/activites"
+                          className="border border-purple-700 text-purple-700 px-7 py-3 rounded-full text-lg hover:bg-purple-700 hover:text-white transition">
                         Nos activités
                     </Link>
 
-                    <Link to="/adhesion" className="bg-purple-700 text-white px-7 py-3 rounded-full text-lg border border-purple-700 hover:bg-transparent hover:text-purple-700 transition">
+                    <Link to="/adhesion"
+                          className="bg-purple-700 text-white px-7 py-3 rounded-full text-lg border border-purple-700 hover:bg-transparent hover:text-purple-700 transition">
                         Adhérer
                     </Link>
                 </div>
@@ -62,14 +66,16 @@ export default function Home() {
                 </h2>
 
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Imagin’Elles est née d’un collectif de femmes souhaitant créer des espaces de partage, d’échange et de solidarité dans le Pays de Lorient.
-                    <br /><br />
-                    L’association propose des activités culturelles, sportives et conviviales afin de favoriser le lien social et rompre l’isolement.
+                    Imagin’Elles est née d’un collectif de femmes souhaitant créer des espaces de partage, d’échange et
+                    de solidarité dans le Pays de Lorient.
+                    <br/><br/>
+                    L’association propose des activités culturelles, sportives et conviviales afin de favoriser le lien
+                    social et rompre l’isolement.
                 </p>
             </section>
 
             {/* VALEURS */}
-            <ValuesSection />
+            <ValuesSection/>
 
             {/* ACTIVITIES */}
             <section className="py-10 px-6 max-w-7xl mx-auto text-center">
@@ -80,7 +86,9 @@ export default function Home() {
                 <p className="text-gray-600 dark:text-gray-300 mb-8">
                     Découvrez les activités, sorties et rencontres proposées par Imagin’Elles dans le Pays de Lorient.
                 </p>
+            </section>
 
+            <section className="pb-16 max-w-6xl mx-auto">
                 <div className="grid md:grid-cols-3 gap-8">
                     {upcomingActivities.slice(0, 3).map((activity) => (
                         <ActivityCard
@@ -114,10 +122,12 @@ export default function Home() {
                 </h2>
 
                 <p className="mb-8 text-lg max-w-2xl mx-auto">
-                    Venez partager des moments conviviaux, rencontrer d'autres femmes et construire ensemble des projets solidaires.
+                    Venez partager des moments conviviaux, rencontrer d'autres femmes et construire ensemble des projets
+                    solidaires.
                 </p>
 
-                <Link to="/adhesion" className="bg-white text-purple-700 px-8 py-4 rounded-full font-bold hover:opacity-90 transition">
+                <Link to="/adhesion"
+                      className="bg-white text-purple-700 px-8 py-4 rounded-full font-bold hover:opacity-90 transition">
                     J'adhère
                 </Link>
             </section>

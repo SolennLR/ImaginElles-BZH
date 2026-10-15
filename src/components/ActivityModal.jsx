@@ -99,7 +99,7 @@ export default function ActivityModal({ activity, onClose }) {
                             </p>
 
                             <p>
-                                <strong>💶 Tarif : </strong>
+                                <strong>💶 Tarif : </strong><br/>
                                 {activity.price}
                             </p>
 

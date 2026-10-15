@@ -41,26 +41,28 @@ export default function Archives() {
             </section>
 
             {/* Grid */}
-            {archivedActivities.length > 0 ? (
-                <div className="grid md:grid-cols-3 gap-6">
-                    {archivedActivities.map((activity) => (
-                        <ActivityCard
-                            key={activity.id}
-                            {...activity}
-                            onClick={() => setSelectedActivity(activity)}
-                        />
-                    ))}
-                </div>
-            ) : (
-                <div className="text-gray-500 dark:text-gray-400">
-                    Aucune archive pour le moment.
-                </div>
-            )}
-            {/* Modal */}
-            <ActivityModal
-                activity={selectedActivity}
-                onClose={() => setSelectedActivity(null)}
-            />
+            <section className="pb-16 max-w-6xl mx-auto">
+                {archivedActivities.length > 0 ? (
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {archivedActivities.map((activity) => (
+                            <ActivityCard
+                                key={activity.id}
+                                {...activity}
+                                onClick={() => setSelectedActivity(activity)}
+                            />
+                        ))}
+                    </div>
+                ) : (
+                    <div className="text-gray-500 dark:text-gray-400">
+                        Aucune archive pour le moment.
+                    </div>
+                )}
+                {/* Modal */}
+                <ActivityModal
+                    activity={selectedActivity}
+                    onClose={() => setSelectedActivity(null)}
+                />
+            </section>
         </div>
-    );
+);
 }
