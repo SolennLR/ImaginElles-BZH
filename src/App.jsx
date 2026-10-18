@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 
+import SupabaseTest from "./lib/SupabaseTest";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
@@ -21,6 +22,8 @@ export default function App() {
           <ScrollToTop />
           <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen transition-colors">
               <Navbar/>
+
+              {import.meta.env.DEV && <SupabaseTest />}
 
               <main className="flex-grow">
                   <Routes>
