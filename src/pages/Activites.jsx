@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { useMemo, useState } from "react";
 import ActivityCard from "../components/ActivityCard";
 import ActivityModal from "../components/ActivityModal";
@@ -21,6 +22,11 @@ export default function Activites() {
     return (
         <div className="px-6">
 
+            <SEO
+                title="Activités et sorties pour les femmes – Imagin’Elles"
+                description="Découvrez les activités, sorties et rencontres proposées par Imagin’Elles aux femmes dans le Pays de Lorient et ses environs."
+            />
+
             {/* HEADER */}
             <section className="py-12 text-center">
                 <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-4">
@@ -29,7 +35,7 @@ export default function Activites() {
 
                 <p className="max-w-2xl mx-auto text-lg text-gray-700 dark:text-gray-300">
                     Retrouvez les activités et événements à venir de l’association
-                    Imagin’Elles Bzh.
+                    Imagin’Elles.
                 </p>
             </section>
 
@@ -38,9 +44,9 @@ export default function Activites() {
 
                 {upcomingActivities.length > 0 ? (
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {upcomingActivities.map((activity, i) => (
+                        {upcomingActivities.map((activity) => (
                             <ActivityCard
-                                key={i}
+                                key={activity.id}
                                 {...activity}
                                 onClick={() => setSelectedActivity(activity)}
                             />

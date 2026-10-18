@@ -1,8 +1,15 @@
+import SEO from "../components/SEO";
+
 export default function MentionsLegales() {
     return (
         <main className="max-w-5xl mx-auto px-6 py-20 text-gray-700 dark:text-gray-300">
 
-            <h1 className="text-4xl font-bold text-purple-700 mb-10">
+            <SEO
+                title="Mentions légales – Imagin’Elles"
+                description="Consultez les mentions légales du site de l’association Imagin’Elles."
+            />
+
+            <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-10">
                 Mentions légales
             </h1>
 
@@ -11,7 +18,7 @@ export default function MentionsLegales() {
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Éditeur du site</h2>
                     <p>
-                        Le site Imagin’Elles Bzh est édité par l’association Imagin’Elles Bzh,
+                        Le site Imagin’Elles est édité par l’association Imagin’Elles,
                         association loi 1901.
                     </p>
                 </div>
@@ -19,7 +26,7 @@ export default function MentionsLegales() {
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Responsable de publication</h2>
                     <p>
-                        La responsable de publication est Solenn LE ROUZIC, membre de la collègiale de l'association Imagin’Elles Bzh.
+                        La responsable de publication est Solenn LE ROUZIC, membre de la collègiale de l'association Imagin’Elles.
                     </p>
                 </div>
 

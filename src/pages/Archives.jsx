@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { useMemo, useState } from "react";
 import ActivityCard from "../components/ActivityCard";
 import ActivityModal from "../components/ActivityModal";
@@ -23,36 +24,45 @@ export default function Archives() {
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 px-6 py-10">
 
-            {/* Titre */}
-            <h1 className="text-3xl font-bold text-purple-700 mb-2">
-                Archives des activités
-            </h1>
+            <SEO
+                title="Archives des activités – Imagin’Elles"
+                description="Retrouvez les activités, sorties et rencontres passées organisées par Imagin’Elles pour les femmes dans le Pays de Lorient."
+            />
 
-            <p className="text-gray-600 dark:text-gray-300 mb-8">
-                Retrouvez ici les événements passés de l’association Imagin’Elles Bzh.
-            </p>
+            {/* HEADER */}
+            <section className="py-12 text-center">
+                <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-4">
+                    Archives des activités
+                </h1>
+
+                <p className="max-w-2xl mx-auto text-lg text-gray-700 dark:text-gray-300">
+                    Retrouvez ici les événements passés de l’association Imagin’Elles.
+                </p>
+            </section>
 
             {/* Grid */}
-            {archivedActivities.length > 0 ? (
-                <div className="grid md:grid-cols-3 gap-6">
-                    {archivedActivities.map((activity) => (
-                        <ActivityCard
-                            key={activity.title + activity.date}
-                            {...activity}
-                            onClick={() => setSelectedActivity(activity)}
-                        />
-                    ))}
-                </div>
-            ) : (
-                <div className="text-gray-500 dark:text-gray-400">
-                    Aucune archive pour le moment.
-                </div>
-            )}
-            {/* Modal */}
-            <ActivityModal
-                activity={selectedActivity}
-                onClose={() => setSelectedActivity(null)}
-            />
+            <section className="pb-16 max-w-6xl mx-auto">
+                {archivedActivities.length > 0 ? (
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {archivedActivities.map((activity) => (
+                            <ActivityCard
+                                key={activity.id}
+                                {...activity}
+                                onClick={() => setSelectedActivity(activity)}
+                            />
+                        ))}
+                    </div>
+                ) : (
+                    <div className="text-gray-500 dark:text-gray-400">
+                        Aucune archive pour le moment.
+                    </div>
+                )}
+                {/* Modal */}
+                <ActivityModal
+                    activity={selectedActivity}
+                    onClose={() => setSelectedActivity(null)}
+                />
+            </section>
         </div>
-    );
+);
 }

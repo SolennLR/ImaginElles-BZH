@@ -37,7 +37,7 @@ export default function Footer() {
                         <div className="flex gap-5 text-2xl">
 
                             <a
-                                href="https://instagram.com"
+                                href="https://instagram.com/imaginelles.56?stkn=bno5aWJ4bnV1YXVt"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-pink-500 transition"
@@ -47,7 +47,7 @@ export default function Footer() {
                             </a>
 
                             <a
-                                href="https://facebook.com"
+                                href="https://facebook.com/share/1EnXpo8Q11/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-blue-600 transition"
@@ -90,7 +90,7 @@ export default function Footer() {
 
                 {/* BAS DE FOOTER */}
             <div className="border-t border-gray-300 dark:border-gray-700 text-center py-6 text-sm">
-                © {new Date().getFullYear()} Imagin’Elles Bzh - Tous droits réservés
+                © {new Date().getFullYear()} Imagin’Elles - Tous droits réservés
             </div>
 
         </footer>

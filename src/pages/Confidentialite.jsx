@@ -1,8 +1,15 @@
+import SEO from "../components/SEO";
+
 export default function Confidentialite() {
     return (
         <main className="max-w-5xl mx-auto px-6 py-20 text-gray-700 dark:text-gray-300">
 
-            <h1 className="text-4xl font-bold text-purple-700 mb-10">
+            <SEO
+                title="Politique de confidentialité – Imagin’Elles"
+                description="Consultez la politique de confidentialité et les informations relatives à la protection des données personnelles du site Imagin’Elles."
+            />
+
+            <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-10">
                 Politique de confidentialité
             </h1>
 
@@ -11,7 +18,7 @@ export default function Confidentialite() {
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Collecte des données</h2>
                     <p>
-                        Le site Imagin’Elles Bzh peut collecter des données personnelles
+                        Le site Imagin’Elles peut collecter des données personnelles
                         via son formulaire de contact (nom, email, message).
                     </p>
                 </div>
@@ -59,7 +66,7 @@ export default function Confidentialite() {
                 <div>
                     <h2 className="text-2xl font-semibold mb-2">Responsable du traitement</h2>
                     <p>
-                        Le responsable du traitement des données est l’association Imagin’Elles Bzh.
+                        Le responsable du traitement des données est l’association Imagin’Elles.
                     </p>
                 </div>
 

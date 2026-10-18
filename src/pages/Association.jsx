@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { Link } from "react-router-dom";
 import ValuesSection from "../components/ValuesSection";
 import Timeline from "../components/Timeline";
@@ -6,6 +7,12 @@ import groupeImg from "../assets/groupe.jpg";
 export default function Association() {
     return (
         <main>
+
+            <SEO
+                title="L’association Imagin’Elles – Pays de Lorient"
+                description="Découvrez Imagin’Elles, une association pour les femmes dans le Pays de Lorient, fondée autour de la bienveillance, de la sororité, de l’inclusion et de la convivialité."
+            />
+
             <section className="py-12 md:py-20 text-center bg-gray-50 dark:bg-gray-900">
                 <div className="max-w-5xl mx-auto px-6">
                     <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-6">
@@ -13,7 +20,7 @@ export default function Association() {
                     </h1>
 
                     <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-700 dark:text-gray-300 mb-10">
-                        Imagin’Elles Bzh est née d’un collectif de femmes souhaitant créer des espaces de
+                        Imagin’Elles est née d’un collectif de femmes souhaitant créer des espaces de
                         partage, d’échange et de sororité en Bretagne.
                     </p>
 
@@ -21,7 +28,7 @@ export default function Association() {
                     <div className="max-w-5xl mx-auto">
                         <img
                             src={groupeImg}
-                            alt="L'équipe ImaginElles Bzh"
+                            alt="Les femmes de l’association Imagin’Elles"
                             className="w-full aspect-video object-cover rounded-2xl shadow-lg"
                         />
                     </div>
@@ -29,12 +36,12 @@ export default function Association() {
             </section>
 
             <section className="py-20 px-6 max-w-5xl mx-auto">
-                <h2 className="text-3xl font-bold text-purple-700 mb-6 text-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-purple-700 mb-6 text-center">
                     Notre histoire
                 </h2>
 
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-center">
-                    À l’origine, Imagin’Elles Bzh est un groupe d'amies lesbiennes qui souhaitaient sortir de l’isolement et créer
+                    À l’origine, Imagin’Elles est un groupe d'amies lesbiennes qui souhaitaient sortir de l’isolement et créer
                     des moments simples de rencontre.
                     <br/><br/>
                     Très vite, ces rencontres sont devenues des sorties, des ateliers, puis une véritable dynamique
@@ -44,7 +51,7 @@ export default function Association() {
 
             <section className="py-20 bg-gray-50 dark:bg-gray-800 px-6">
                 <div className="max-w-5xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold text-purple-700 mb-8">
+                    <h2 className="text-3xl md:text-4xl font-bold text-purple-700 mb-8">
                         Notre mission
                     </h2>
 
@@ -73,12 +80,12 @@ export default function Association() {
             <Timeline/>
 
             <section className="py-24 text-center bg-purple-700 text-white">
-                <h2 className="text-4xl font-bold mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
                     Rejoignez l’aventure
                 </h2>
 
                 <p className="mb-8 text-lg">
-                    Venez découvrir Imagin’Elles Bzh et participer à nos prochaines rencontres.
+                    Venez découvrir Imagin’Elles et participer à nos prochaines rencontres.
                 </p>
 
                 <Link

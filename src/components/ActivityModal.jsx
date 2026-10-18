@@ -1,5 +1,22 @@
+import { useState } from "react";
+
 export default function ActivityModal({ activity, onClose }) {
+    // Photo actuellement agrandie
+    const [selectedImage, setSelectedImage] = useState(null);
+
     if (!activity) return null;
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const isArchived = new Date(activity.date) < today;
+
+    const hasHelloAssoLink = typeof activity.helloasso === "string" && /^https?:\/\/\S+$/i.test(activity.helloasso.trim());
+
+    // Photos à afficher selon que l'activité est à venir ou archivée
+    const photos = isArchived
+        ? (activity.archiveImages || [])
+        : (activity.presentationImages || []);
 
     return (
         <div
@@ -31,55 +48,128 @@ export default function ActivityModal({ activity, onClose }) {
 
                 {/* Contenu défilant */}
                 <div className="flex-1 overflow-y-auto px-5 py-5 sm:px-8">
-                    <div className="space-y-5 text-gray-700">
+                    <div className="space-y-6 text-gray-700">
 
-                        <p>
-                            <strong>Votre référente : </strong>
-                            {activity.referente}
-                        </p>
+                        {/* PHOTOS */}
+                        {photos.length > 0 && (
+                            <section>
+                                <h3
+                                    className="mb-3 text-lg font-bold"
+                                    style={{ color: activity.color }}
+                                >
+                                    📷 {isArchived
+                                    ? "Photos de l'activité"
+                                    : "Présentation"}
+                                </h3>
 
-                        <p>
-                            <strong>👥 Qui ?</strong><br/>
-                            {activity.who}
-                        </p>
+                                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                                    {photos.map((photo, index) => (
+                                        <button
+                                            key={index}
+                                            type="button"
+                                            onClick={() => setSelectedImage(photo)}
+                                            className="group overflow-hidden rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                        >
+                                            <img
+                                                src={photo}
+                                                alt={`${activity.title} - photo ${index + 1}`}
+                                                className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105"
+                                            />
+                                        </button>
+                                    ))}
+                                </div>
+                            </section>
+                        )}
 
-                        <p>
-                            <strong>📅 Quand ?</strong><br/>
-                            {activity.when}
-                        </p>
+                        {/* INFORMATIONS */}
+                        <div className="space-y-5">
+                            <p>
+                                <strong>Votre référente : </strong>
+                                {activity.referente}
+                            </p>
 
-                        <p>
-                            <strong>💶 Tarif : </strong>
-                            {activity.price}
-                        </p>
+                            <p>
+                                <strong>👥 Qui ?</strong><br/>
+                                {activity.who}
+                            </p>
 
-                        <p>
-                            <strong>📍 Où ?</strong><br/>
-                            {activity.where}
-                        </p>
+                            <p>
+                                <strong>📅 Quand ?</strong><br/>
+                                {activity.when}
+                            </p>
 
-                        <p className="leading-relaxed whitespace-pre-line">
-                            <strong>📝 Description détaillée : </strong><br/>
-                            {activity.details}
-                        </p>
+                            <p>
+                                <strong>💶 Tarif : </strong><br/>
+                                {activity.price}
+                            </p>
+
+                            <p>
+                                <strong>📍 Où ?</strong><br/>
+                                {activity.where}
+                            </p>
+
+                            <p className="leading-relaxed whitespace-pre-line">
+                                <strong>📝 Description détaillée : </strong><br/>
+                                {activity.details}
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 {/* Pied de modal */}
                 <div className="shrink-0 border-t border-gray-200 bg-white px-5 py-4">
-                    {activity.helloasso && (
-                        <div className="flex justify-center">
+                    {!isArchived && hasHelloAssoLink && (
+                        <div className="text-center">
                             <a
                                 href={activity.helloasso}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="block w-full rounded-full bg-[#7B2CBF] px-6 py-3 text-center font-semibold text-white shadow-md transition hover:bg-white hover:text-[#7B2CBF] hover:ring-2 hover:ring-[#7B2CBF] "
                             >
-                                Inscription
+                                Je m'inscris
                             </a>
+
+                            <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
+                                Besoin d'annuler votre inscription ? {" "}
+                                <a
+                                    href={`mailto:imaginelles-bzh@ikmail.com?subject=${encodeURIComponent(
+                                        `Demande d'annulation – ${activity.title} du ${activity.when}`
+                                    )}&body=${encodeURIComponent(
+                                        `Bonjour,\n\nJe souhaite demander l'annulation de mon inscription à l'activité « ${activity.title} » du « ${activity.when} ».\n\nNom et prénom : \n\nMerci de bien vouloir me confirmer la prise en compte de ma demande.\n\nCordialement`
+                                    )}`}
+                                    className="text-purple-600 dark:text-purple-400 hover:underline font-medium"
+                                >
+                                    Contactez-nous
+                                </a>
+                                .
+                            </p>
                         </div>
                     )}
                 </div>
+
+                {/* IMAGE AGRANDIE */}
+                {selectedImage && (
+                    <div
+                        className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 p-4"
+                        onClick={() => setSelectedImage(null)}
+                    >
+                        <button
+                            type="button"
+                            onClick={() => setSelectedImage(null)}
+                            aria-label="Fermer la photo"
+                            className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-2xl text-gray-700 shadow-lg transition hover:bg-white"
+                        >
+                            ×
+                        </button>
+
+                        <img
+                            src={selectedImage}
+                            alt={activity.title}
+                            className="max-h-[90vh] max-w-[95vw] rounded-xl object-contain shadow-2xl"
+                        />
+                    </div>
+                )}
+
             </div>
         </div>
     );

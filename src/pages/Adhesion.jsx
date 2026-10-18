@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import {useState} from "react";
 
 export default function Adhesion() {
@@ -47,8 +48,14 @@ export default function Adhesion() {
 
     return (
         <main className="max-w-5xl mx-auto px-6 py-12">
-            <h1 className="text-4xl font-bold text-center text-purple-700 mb-8">
-                Rejoindre Imagin’Elles Bzh
+
+            <SEO
+                title="Adhérer à Imagin’Elles – Association pour les femmes"
+                description="Envie de rejoindre Imagin’Elles ? Découvrez comment adhérer à cette association pour les femmes dans le Pays de Lorient et participer à ses activités et rencontres."
+            />
+
+            <h1 className="text-4xl md:text-5xl font-bold text-center text-purple-700 mb-8">
+                Rejoindre Imagin’Elles
             </h1>
 
             <div className="bg-gray-200 rounded-2xl shadow-lg p-8">
@@ -60,11 +67,17 @@ export default function Adhesion() {
                     L'association est ouverte aux femmes cisgenres et transgenres.
                 </p>
 
-                <p className="text-gray-700 mb-4">
-                    Pour rejoindre Imagin’Elles Bzh, il est nécessaire d'adhérer aux statuts de l'association,
+                <p className="text-gray-700 mb-2">
+                    Pour rejoindre Imagin’Elles, il est nécessaire d'adhérer aux statuts de l'association,
                     de participer à une rencontre d'accueil et de s'acquitter de la cotisation annuelle,
                     dont le montant est fixé lors de l'assemblée générale.
                 </p>
+
+                <a href="statuts-imaginelles.pdf" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center gap-2 mb-4 text-purple-700 hover:text-purple-900 font-medium transition-colors">
+                    📄
+                    Consulter les statuts de l’association
+                </a>
 
                 <p className="text-gray-700 mb-4">
                     Vous souhaitez en savoir plus avant de nous rejoindre ?
@@ -170,7 +183,7 @@ export default function Adhesion() {
 
                         {/* Bouton HelloAsso */}
                         <a
-                            href="https://www.helloasso.com/associations/imagin-elles/adhesions/adhesion-2026-2027"
+                            href="https://www.helloasso.com/associations/imagin-elles/adhesions/adhesion-imaginelles-bzh-2026-2027-1"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-2 bg-purple-700 hover:bg-purple-800 text-white px-8 py-3 rounded-full transition w-full md:w-auto"
@@ -182,5 +195,5 @@ export default function Adhesion() {
             </div>
         </main>
     )
-        ;
+    ;
 }

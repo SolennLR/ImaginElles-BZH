@@ -6,6 +6,7 @@ import Footer from "./components/Footer"
 
 import Home from "./pages/Home";
 import Activites from "./pages/Activites";
+import Actu from "./pages/Actualites";
 import Adhesion from "./pages/Adhesion";
 import Archives from "./pages/Archives";
 import Association from "./pages/Association";
@@ -26,6 +27,7 @@ export default function App() {
                       <Route path="/" element={<Home/>}/>
                       <Route path="/association" element={<Association/>}/>
                       <Route path="/activites" element={<Activites/>}/>
+                      <Route path="/actu" element={<Actu />} />
                       <Route path="/adhesion" element={<Adhesion/>}/>
                       <Route path="/archives" element={<Archives/>}/>
                       <Route path="/mentions-legales" element={<MentionsLegales/>}/>

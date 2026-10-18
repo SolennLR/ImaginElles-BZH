@@ -1,6 +1,8 @@
+import SEO from "../components/SEO";
+
 const faqItems = [
     {
-        question: "Qui peut adhérer à l’association Imagin’Elles Bzh ?",
+        question: "Qui peut adhérer à l’association Imagin’Elles ?",
         answer:
             "L’association est ouverte à toutes les femmes souhaitant participer aux activités, partager des moments conviviaux et créer du lien."
     },
@@ -20,6 +22,16 @@ const faqItems = [
             "Selon les activités proposées, une participation découverte peut être possible. N’hésitez pas à nous contacter pour en discuter."
     },
     {
+        question: "Puis-je annuler mon inscription à une activité ?",
+        answer:
+            "Oui. Si vous avez un empêchement, allez sur l'activité concernée et contactez-nous en indiquant votre nom & prénom."
+    },
+    {
+        question: "Que se passe-t-il si une activité est annulée ?",
+        answer:
+            "Si Imagin’Elles devait annuler une activité, les personnes inscrites seraient informées directement. Les modalités de remboursement leur seraient alors communiquées."
+    },
+    {
         question: "Où se déroulent les activités ?",
         answer:
             "Les activités sont organisées principalement dans le Morbihan et peuvent varier selon les événements."
@@ -35,7 +47,12 @@ export default function FAQ() {
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 px-6 py-10">
 
-            <h1 className="text-3xl font-bold text-purple-700 mb-8">
+            <SEO
+                title="FAQ – Imagin’Elles"
+                description="Retrouvez les réponses aux questions fréquentes sur Imagin’Elles, ses activités, son fonctionnement et son adhésion dans le Pays de Lorient."
+            />
+
+            <h1 className="text-3xl md:text-4xl font-bold text-purple-700 mb-8">
                 Foire aux questions
             </h1>
 
