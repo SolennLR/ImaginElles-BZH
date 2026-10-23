@@ -73,11 +73,21 @@ export default function Adhesion() {
                     dont le montant est fixé lors de l'assemblée générale.
                 </p>
 
-                <a href="statuts-imaginelles.pdf" target="_blank" rel="noopener noreferrer"
-                   className="inline-flex items-center gap-2 mb-4 text-purple-700 hover:text-purple-900 font-medium transition-colors">
-                    📄
-                    Consulter les statuts de l’association
-                </a>
+                <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-4">
+                    <a href="/statuts-imaginelles.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="inline-flex items-center gap-2 text-purple-700 hover:text-purple-900 font-medium transition-colors">
+                        📄 Consulter les statuts de l’association
+                    </a>
+
+                    <a href="/RI-imaginelles.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="inline-flex items-center gap-2 text-purple-700 hover:text-purple-900 font-medium transition-colors">
+                        📄 Consulter le règlement intérieur de l'association
+                    </a>
+                </div>
 
                 <p className="text-gray-700 mb-4">
                     Vous souhaitez en savoir plus avant de nous rejoindre ?
@@ -195,5 +205,5 @@ export default function Adhesion() {
             </div>
         </main>
     )
-    ;
+        ;
 }

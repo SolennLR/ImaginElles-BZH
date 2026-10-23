@@ -13,9 +13,41 @@ import lorientaise2 from "../assets/27527.jpg";
 import marcheSportive1 from "../assets/27472.jpg";
 import ellesDansentImg from "../assets/ellesDansent.jpg";
 import jeuImg from "../assets/jeu.png";
+import spectacleImg from "../assets/IMG-20261021-WA0000.jpg";
 
 
 export const activities = [
+    {
+        id: "tapisserie-2026-11-21",
+        title: 'Atelier créatif',
+        date: "2026-11-21",
+        description: 'Activité tapisserie',
+        color: "#008026",
+        image: tapisserieImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Elise / Véro - Tél : 06 74 84 90 92",
+        who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
+        when: "Samedi 21 novembre 2026 - 9h30 à 17h30",
+        where: "Maisons des associations - Lorient",
+        price: "50 €",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-tapisserie-du-21-11-2026",
+
+        details:
+            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 107 à 9h30 pour un atelier tapisserie. Durée : 8h00.\n" +
+            "\n" +
+            "L'atelier s'adresse à toutes les personnes débutantes ou non. La réfection des sièges est réalisée en graniture mousse. Pour une 1ère expérience, Elise vous conseille de privilégier un petit projet : chaise, petite assise, tabouret...\n" +
+            "\n" +
+            "Préparer son siège en amont : Le dégarnissage, qui consiste à retirer le tissu et les anciennes matières de garniture, est une étape qui peut être assez longue. La réaliser en amont permet de gagner du temps le jour de l'atelier et de se consacrer à la réfection du siège.\n" +
+            "\n" +
+            "Pendant l'atelier, Elise prête le matériel nécessaire aux différents travaux. Les fournitures nécessaires à la réfection de votre siège sont à votre charge et les quantités nécessaires à votre projet sont définies ensemble en début d'atelier. Le tissu et la finition sont également à votre charge. Il n'y a aucune obligation d'acheter les fournitures auprès de l'atelier : vous êtes libre de choisir votre tissu et vos fournisseurs.\n" +
+            "\n" +
+            "Vous devez aussi prévoir un pique-nique pour le midi."
+    },
     {
         id: "jeux-2026-11-21",
         title: 'Activité jeux',
@@ -47,6 +79,33 @@ export const activities = [
         "Possible selon les inspirations de prolonger par un apero, et/ou un resto aux alentours.\n"
     },
     {
+        id: "impro-2026-11-21",
+        title: "Activité spectacle",
+        date: "2026-11-21",
+        description: "Théâtre d'impro",
+        color: "#24408E",
+        image: spectacleImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Sylvie",
+        who: "Ouvert à toutes, adhérentes et non adhérentes.",
+        when: "Samedi 21 novembre 2026 - 20h30 à 22h30",
+        where: "Terrain Blanc - Boulevard de Bretagne 29000 Quimper",
+        price: "9€ plein, 7€ réduit, gratuit -12 ans",
+        helloasso: "https://www.billetweb.fr/match-dimprovisation-quimper-vs-nantes?fbclid=IwVERDUAVF5E9leHRuA2FlbQIxMABwZG9mBXNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHrLaL4yY-hvU3y4MKZYdrn9LXev7PZOJxFaRPZeNxgZMyPgLPw9xQGJtSJOV_aem_6QXqeBsolirJW312fUiTmw",
+
+        details:
+            " Le premier des 2 matchs de la saison se jouera face à NANTES ! Devant un public de 260 personnes et la salle surchauffée (des bonnes ondes) du Terrain Blanc !\n" +
+            " \n" +
+            "On sort la patinoire, les maillots, l'arbitre aiguise les thèmes, donne du sifflet et joue sur les règles !\n" +
+            " \n" +
+            "En musique, et sous l'animation du maître de cérémonie chaque impro sera suivie par le vote du public !\n"
+    },
+    {
         id: "tapisserie-2026-10-29",
         title: 'Atelier créatif',
         date: "2026-10-29",
@@ -68,37 +127,6 @@ export const activities = [
 
         details:
             "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 11 à 9h30 pour un atelier tapisserie. Durée : 8h00.\n" +
-            "\n" +
-            "L'atelier s'adresse à toutes les personnes débutantes ou non. La réfection des sièges est réalisée en graniture mousse. Pour une 1ère expérience, Elise vous conseille de privilégier un petit projet : chaise, petite assise, tabouret...\n" +
-            "\n" +
-            "Préparer son siège en amont : Le dégarnissage, qui consiste à retirer le tissu et les anciennes matières de garniture, est une étape qui peut être assez longue. La réaliser en amont permet de gagner du temps le jour de l'atelier et de se consacrer à la réfection du siège.\n" +
-            "\n" +
-            "Pendant l'atelier, Elise prête le matériel nécessaire aux différents travaux. Les fournitures nécessaires à la réfection de votre siège sont à votre charge et les quantités nécessaires à votre projet sont définies ensemble en début d'atelier. Le tissu et la finition sont également à votre charge. Il n'y a aucune obligation d'acheter les fournitures auprès de l'atelier : vous êtes libre de choisir votre tissu et vos fournisseurs.\n" +
-            "\n" +
-            "Vous devez aussi prévoir un pique-nique pour le midi."
-    },
-    {
-        id: "tapisserie-2026-11-21",
-        title: 'Atelier créatif',
-        date: "2026-11-21",
-        description: 'Activité tapisserie',
-        color: "#008026",
-        image: tapisserieImg,
-        presentationImages: [
-            // autre photo éventuellement
-        ],
-        archiveImages: [
-            // photos ajoutées après l'activité
-        ],
-        referente : "Elise / Véro - Tél : 06 74 84 90 92",
-        who: "5 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
-        when: "Samedi 21 novembre 2026 - 9h30 à 17h30",
-        where: "Maisons des associations - Lorient",
-        price: "50 €",
-        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-tapisserie-du-21-11-2026",
-
-        details:
-            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 107 à 9h30 pour un atelier tapisserie. Durée : 8h00.\n" +
             "\n" +
             "L'atelier s'adresse à toutes les personnes débutantes ou non. La réfection des sièges est réalisée en graniture mousse. Pour une 1ère expérience, Elise vous conseille de privilégier un petit projet : chaise, petite assise, tabouret...\n" +
             "\n" +
