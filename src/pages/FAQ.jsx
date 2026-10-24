@@ -24,7 +24,13 @@ const faqItems = [
     {
         question: "Puis-je annuler mon inscription à une activité ?",
         answer:
-            "Oui. Si vous avez un empêchement, allez sur l'activité concernée et contactez-nous en indiquant votre nom & prénom."
+            "Oui. Si vous avez un empêchement, allez sur l'activité concernée et contactez-nous en indiquant votre nom & prénom.\n" +
+            "\n" +
+            "Pour les activités payantes, une demande d'annulation effectuée au moins 15 jours calendaires avant l'activité donne droit à un remboursement intégral.\n" +
+            "Pour une demande effectuée moins de 15 jours avant l'activité, le remboursement n'est pas automatique. Nous pouvons toutefois examiner certaines situations particulières.\n" +
+            "\n" +
+            "Si Imagin’Elles annule une activité, les personnes inscrites sont informées et leur inscription est intégralement remboursée.\n" +
+            "Les conditions particulières applicables à certaines activités sont précisées dans leur billetterie HelloAsso.\n"
     },
     {
         question: "Que se passe-t-il si une activité est annulée ?",
