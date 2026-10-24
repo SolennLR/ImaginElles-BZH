@@ -23,7 +23,10 @@ export default function App() {
           <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen transition-colors">
               <Navbar/>
 
-              {import.meta.env.DEV && <SupabaseTest />}
+              {(import.meta.env.DEV ||
+                  import.meta.env.VITE_SHOW_SUPABASE_TEST === "true") && (
+                  <SupabaseTest />
+              )}
 
               <main className="flex-grow">
                   <Routes>
