@@ -562,7 +562,7 @@ export const activities = [
     {
         id: "marche-2026-10-02",
         title: 'Marche sportive',
-        date: "2026-10-2",
+        date: "2026-10-02",
         description: "1er rdv de l'asso à la base nautique du Ter",
         color: '#E40303',
         image: marcheSportiveImg,
@@ -723,7 +723,7 @@ export const activities = [
     {
         id: "lorientaise-2026-10-04",
         title: 'La Lorientaise',
-        date: "2026-10-4",
+        date: "2026-10-04",
         description: "Participation à la Lorientaise",
         color: "#FD6C9E",
         image: lorientaiseImg,

@@ -30,7 +30,33 @@ function getTodayIso() {
 }
 
 function normalizeDate(date) {
-    return date ? String(date).slice(0, 10) : "";
+    if (!date) return "";
+
+    const value = String(date).trim();
+    const match = value.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+
+    if (!match) return "";
+
+    const year = Number(match[1]);
+    const month = Number(match[2]);
+    const day = Number(match[3]);
+
+    const parsedDate = new Date(Date.UTC(year, month - 1, day));
+
+    // Vérifie que la date existe réellement.
+    if (
+        parsedDate.getUTCFullYear() !== year ||
+        parsedDate.getUTCMonth() !== month - 1 ||
+        parsedDate.getUTCDate() !== day
+    ) {
+        return "";
+    }
+
+    return [
+        String(year).padStart(4, "0"),
+        String(month).padStart(2, "0"),
+        String(day).padStart(2, "0"),
+    ].join("-");
 }
 
 function getImageUrl(storagePath) {

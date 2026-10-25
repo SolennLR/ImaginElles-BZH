@@ -1,27 +1,56 @@
+
 import SEO from "../components/SEO";
-import { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import ActivityCard from "../components/ActivityCard";
 import ActivityModal from "../components/ActivityModal";
-import { activities } from "../data/activities";
+import { getUpcomingActivities } from "../services/activitesService";
 
 export default function Activites() {
     const [selectedActivity, setSelectedActivity] = useState(null);
+    const [upcomingActivities, setUpcomingActivities] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-    // 📅 Date du jour normalisée
-    const today = useMemo(() => {
-        const d = new Date();
-        d.setHours(0, 0, 0, 0);
-        return d;
+    // Chargement des activités depuis la source configurée
+    // dans .env.local : local ou supabase.
+    useEffect(() => {
+        let cancelled = false;
+
+        async function loadActivities() {
+            try {
+                setLoading(true);
+                setError(null);
+
+                const data = await getUpcomingActivities();
+
+                if (!cancelled) {
+                    setUpcomingActivities(data);
+                }
+            } catch (err) {
+                console.error(
+                    "Erreur de chargement des activités :",
+                    err
+                );
+
+                if (!cancelled) {
+                    setError("Impossible de charger les activités.");
+                }
+            } finally {
+                if (!cancelled) {
+                    setLoading(false);
+                }
+            }
+        }
+
+        loadActivities();
+
+        return () => {
+            cancelled = true;
+        };
     }, []);
-
-    // Activités à venir, triées par date
-    const upcomingActivities = activities
-        .filter((activity) => new Date(activity.date) >= today)
-        .sort((a, b) => new Date(a.date) - new Date(b.date));
 
     return (
         <div className="px-6">
-
             <SEO
                 title="Activités et sorties pour les femmes – Imagin’Elles"
                 description="Découvrez les activités, sorties et rencontres proposées par Imagin’Elles aux femmes dans le Pays de Lorient et ses environs."
@@ -41,8 +70,18 @@ export default function Activites() {
 
             {/* ACTIVITIES */}
             <section className="pb-16 max-w-6xl mx-auto">
-
-                {upcomingActivities.length > 0 ? (
+                {loading ? (
+                    <p className="text-center text-gray-600 dark:text-gray-300">
+                        Chargement des activités...
+                    </p>
+                ) : error ? (
+                    <p
+                        role="alert"
+                        className="text-center text-red-600 dark:text-red-400"
+                    >
+                        {error}
+                    </p>
+                ) : upcomingActivities.length > 0 ? (
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {upcomingActivities.map((activity) => (
                             <ActivityCard
@@ -62,7 +101,6 @@ export default function Activites() {
                     activity={selectedActivity}
                     onClose={() => setSelectedActivity(null)}
                 />
-
             </section>
         </div>
     );

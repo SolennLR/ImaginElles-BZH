@@ -1,29 +1,55 @@
 import SEO from "../components/SEO";
-import { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import ActivityCard from "../components/ActivityCard";
 import ActivityModal from "../components/ActivityModal";
-
-import { activities } from "../data/activities";
+import { getArchivedActivities } from "../services/activitesService";
 
 export default function Archives() {
-
     const [selectedActivity, setSelectedActivity] = useState(null);
+    const [archivedActivities, setArchivedActivities] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-    // 📅 date du jour normalisée
-    const today = useMemo(() => {
-        const d = new Date();
-        d.setHours(0, 0, 0, 0);
-        return d;
+    // Chargement des archives depuis la source configurée
+    // dans .env.local : local ou supabase.
+    useEffect(() => {
+        let cancelled = false;
+
+        async function loadArchives() {
+            try {
+                setLoading(true);
+                setError(null);
+
+                const data = await getArchivedActivities();
+
+                if (!cancelled) {
+                    setArchivedActivities(data);
+                }
+            } catch (err) {
+                console.error(
+                    "Erreur de chargement des archives :",
+                    err
+                );
+
+                if (!cancelled) {
+                    setError("Impossible de charger les archives.");
+                }
+            } finally {
+                if (!cancelled) {
+                    setLoading(false);
+                }
+            }
+        }
+
+        loadArchives();
+
+        return () => {
+            cancelled = true;
+        };
     }, []);
-
-    // 📦 filtrage des activités passées
-    const archivedActivities = activities
-        .filter((activity) => new Date(activity.date) < today)
-        .sort((a, b) => new Date(b.date) - new Date(a.date)); // du plus récent au plus ancien
 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 px-6 py-10">
-
             <SEO
                 title="Archives des activités – Imagin’Elles"
                 description="Retrouvez les activités, sorties et rencontres passées organisées par Imagin’Elles pour les femmes dans le Pays de Lorient."
@@ -42,8 +68,19 @@ export default function Archives() {
 
             {/* Grid */}
             <section className="pb-16 max-w-6xl mx-auto">
-                {archivedActivities.length > 0 ? (
-                    <div className="grid md:grid-cols-3 gap-6">
+                {loading ? (
+                    <p className="text-center text-gray-600 dark:text-gray-300">
+                        Chargement des archives...
+                    </p>
+                ) : error ? (
+                    <p
+                        role="alert"
+                        className="text-center text-red-600 dark:text-red-400"
+                    >
+                        {error}
+                    </p>
+                ) : archivedActivities.length > 0 ? (
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {archivedActivities.map((activity) => (
                             <ActivityCard
                                 key={activity.id}
@@ -53,10 +90,11 @@ export default function Archives() {
                         ))}
                     </div>
                 ) : (
-                    <div className="text-gray-500 dark:text-gray-400">
+                    <div className="text-center text-gray-500 dark:text-gray-400">
                         Aucune archive pour le moment.
                     </div>
                 )}
+
                 {/* Modal */}
                 <ActivityModal
                     activity={selectedActivity}
@@ -64,5 +102,5 @@ export default function Archives() {
                 />
             </section>
         </div>
-);
+    );
 }
