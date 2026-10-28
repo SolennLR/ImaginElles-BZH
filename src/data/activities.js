@@ -14,6 +14,9 @@ import marcheSportive1 from "../assets/27472.jpg";
 import ellesDansentImg from "../assets/ellesDansent.jpg";
 import jeuImg from "../assets/jeu.png";
 import spectacleImg from "../assets/IMG-20261021-WA0000.jpg";
+import theatreImg from "../assets/IMG-20261026-WA0002.jpg";
+import theatre2Img from "../assets/IMG-20261026-WA0003.jpg";
+import mamanVaDanserImg from "../assets/IMG-20261027-WA0000.jpg";
 
 
 export const activities = [
@@ -651,7 +654,97 @@ export const activities = [
             "❌ Annulation en cas d'intempéries."
     },
     {
-        id: "conviviale-2026-10-30",
+        id: "spectacle-2026-11-24",
+        title: 'Activité spectacle',
+        date: "2026-11-24",
+        description: "Théâtre : CHEVALERESSES",
+        color: "#24408E",
+        image: theatreImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Juliette - Tél : 06 09 27 55 56",
+        who: "Ouvert à toutes les adhérentes et non adhérentes (dès 14 ans)",
+        when: "Mardi 24 novembre 2026 - 20h (durée 1h15)",
+        where: "Théâtre Le Strapontin - Association Ciné-spectacles - 14 rue du Docteur Rialland - Lorient",
+        price: "18€ (plein) 15€ (réduit) 10€ (-25 ans) - Ce spectacle affiche complet, rapprochez vous de la référente qui est en relation avec le théâtre pour obtenir des places.",
+        helloasso: "",
+
+        details:
+            " « Il y a le grand-frère.\n" +
+            "Et la petite soeur.\n" +
+            "C’est une histoire de famille.\n" +
+            "Particulière et terriblement banale.\n" +
+            "C’est l’histoire d’un inceste.\n" +
+            "Une histoire de lignée et de tout ce qui recommence.\n" +
+            "Une histoire de société aussi et de tout ce qui recommence.\n" +
+            "C’est l’histoire de ce dont on est capable.\n" +
+            "Se relever.\n" +
+            "Être libre ».\n" +
+            "\n" +
+            "Chevaleresses est une autofiction et le récit d’une transformation. Nolwenn Le Doth se sert de son vécu et le transcende. Elle s’imagine chevaleresse, une héroïne en quête de reconstruction et de libération de la parole. Un spectacle lumineux et politique.\n" +
+            "\n" +
+            "Ce texte, lauréat des Encouragements de l’Aide à la création ARTCENA, est un coup de poing salvateur, une œuvre lumineuse, poétique et politique au service d’une libération de la parole toujours à conquérir\n"
+    },
+    {
+        id: "spectacle-2026-11-26",
+        title: 'Activité spectacle',
+        date: "2026-11-26",
+        description: "Théâtre : EDITH ET MOI",
+        color: "#24408E",
+        image: theatre2Img,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Juliette - Tél : 06 09 27 55 56",
+        who: "Ouvert à toutes les adhérentes et non adhérentes (dès 15 ans)",
+        when: "Jeudi 26 novembre 2026 - 20h30 (durée 1h00)",
+        where: "Océanis - salle Keragan - Bd François Mitterrand - Ploemeur",
+        price: "23,50€ (plein) 16€ (réduit)",
+        helloasso: "https://billetterieoceanis.mapado.com/event/724448-edith-et-moi-yael-rasooly",
+
+        details:
+            "Un spectacle rare, porté par une artiste au sommet de son art.\n" +
+            "\n" +
+            "Une chanteuse perd mystérieusement sa voix et se retrouve incapable de monter sur scène. Pour l’aider à affronter un passé douloureux, une Édith Piaf aussi fougueuse qu’inattendue surgit à ses côtés. Entre théâtre visuel, marionnette et performance musicale, ce duo attachant explore les blessures, les doutes et la force de la résilience. Figure majeure du théâtre israélien contemporain, Yael Rasooly livre un spectacle émouvant, drôle et profondément humain.\n"
+    },
+    {
+        id: "soiree-2026-11-13",
+        title: 'Soirée',
+        date: "2026-11-13",
+        description: "Maman va danser",
+        color: "#24408E",
+        image: mamanVaDanserImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Juliette - Tél : 06 09 27 55 56",
+        who: "Ouvert à toutes les adhérentes et non adhérentes (dès 18 ans)",
+        when: "Vendredi 13 novembre 2026 de 19h à 23h",
+        where: "Le V&B -  - Lorient",
+        price: "Réservation : 5€, Ticket de tombola : 2€ (intégralité des bénéfices pour La Ligue Contre le Cancer du Sein) (soirée gratuite, remboursement possible à l’entrée ou pendant la soirée)",
+        helloasso: "https://www.helloasso.com/associations/maman-va-danser-lorient/evenements/8e-edition-mvd-lorient?fbclid=IwdGRjcAVNhVBjbGNrBU2FS2V4dG4DYWVtAzEwMABwZG9mBXNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHsH7v6TUO9WXkQcbEEv6nFyRY4T5kewYzFiWF0l06WF4UIOAy6TGtpHu9m4B_aem_I5FAqLwdKqH2beCobCpp9w",
+
+        details:
+            "Une soirée 100% femmes (mamans ou non), pour se retrouver, danser, lâcher prise et partager un moment hors du quotidien.\n" +
+            "\n" +
+            "Une soirée placée sous le signe du partage, de la fête et d’une jolie cause 🩷.\n" +
+            "\n" +
+            "🎀Une tombola spéciale Octobre Rose (en retard) sera organisée au profit de la Ligue contre le cancer 56 pour soutenir la lutte contre cette maladie.\n" +
+            "\n" +
+            "L'association Maman va danser propose des soirées festives et bienveillantes 100 % réservées aux femmes (mamans ou non, à partir de 18 ans) pour se retrouver, danser et décompresser en dehors du cadre familial."
+    },
+    {
+        id: "soiree-2026-10-30",
         title: 'Soirée',
         date: "2026-10-30",
         description: "Elles dansent",
