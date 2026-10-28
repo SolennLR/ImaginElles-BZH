@@ -13,6 +13,8 @@ export default function ActivityModal({ activity, onClose }) {
 
     const hasHelloAssoLink = typeof activity.helloasso === "string" && /^https?:\/\/\S+$/i.test(activity.helloasso.trim());
 
+    const isImaginEllesTicketing = hasHelloAssoLink && activity.helloasso.toLowerCase().includes("/imagin-elles/");
+
     // Photos à afficher selon que l'activité est à venir ou archivée
     const photos = isArchived
         ? (activity.archiveImages || [])
@@ -85,7 +87,9 @@ export default function ActivityModal({ activity, onClose }) {
                         <div className="space-y-5">
                             <p>
                                 <strong>Votre référente : </strong>
-                                {activity.referente}
+                                {isArchived
+                                    ? activity.referente?.split(" - Tél :")[0]
+                                    : activity.referente}
                             </p>
 
                             <p>
@@ -129,20 +133,29 @@ export default function ActivityModal({ activity, onClose }) {
                                 Je m'inscris
                             </a>
 
-                            <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
-                                Besoin d'annuler votre inscription ? {" "}
-                                <a
-                                    href={`mailto:imaginelles-bzh@ikmail.com?subject=${encodeURIComponent(
-                                        `Demande d'annulation – ${activity.title} du ${activity.when}`
-                                    )}&body=${encodeURIComponent(
-                                        `Bonjour,\n\nJe souhaite demander l'annulation de mon inscription à l'activité « ${activity.title} » du « ${activity.when} ».\n\nNom et prénom : \n\nMerci de bien vouloir me confirmer la prise en compte de ma demande.\n\nCordialement`
-                                    )}`}
-                                    className="text-purple-600 dark:text-purple-400 hover:underline font-medium"
-                                >
-                                    Contactez-nous
-                                </a>
-                                .
-                            </p>
+                            {isImaginEllesTicketing ? (
+                                <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
+                                    Besoin d'annuler votre inscription ? {" "}
+                                    <a
+                                        href={`mailto:imaginelles-bzh@ikmail.com?subject=${encodeURIComponent(
+                                            `Demande d'annulation – ${activity.title} du ${activity.when}`
+                                        )}&body=${encodeURIComponent(
+                                            `Bonjour,\n\nJe souhaite demander l'annulation de mon inscription à l'activité « ${activity.title} » du « ${activity.when} ».\n\nNom et prénom : \n\nMerci de bien vouloir me confirmer la prise en compte de ma demande.\n\nCordialement`
+                                        )}`}
+                                        className="text-purple-600 dark:text-purple-400 hover:underline font-medium"
+                                    >
+                                        Contactez-nous
+                                    </a>
+                                </p>
+                            ) : (
+                                <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
+                                    Besoin d'annuler votre inscription ? La billetterie est gérée par un
+                                    organisateur externe. Imagin’Elles ne peut pas effectuer directement
+                                    l'annulation ni garantir le remboursement de votre billet.
+                                    Pour toute demande, veuillez contacter directement l'organisateur
+                                    à partir des informations disponibles sur sa billetterie.
+                                </p>
+                            )}
                         </div>
                     )}
                 </div>
