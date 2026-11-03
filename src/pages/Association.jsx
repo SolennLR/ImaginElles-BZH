@@ -41,7 +41,7 @@ export default function Association() {
                 </h2>
 
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-center">
-                    À l’origine, Imagin’Elles est un groupe d'amies lesbiennes qui souhaitaient sortir de l’isolement et créer
+                    À l’origine, Imagin’Elles est un groupe d'amies qui souhaitaient faire des rencontres et créer
                     des moments simples de rencontre.
                     <br/><br/>
                     Très vite, ces rencontres sont devenues des sorties, des ateliers, puis une véritable dynamique
