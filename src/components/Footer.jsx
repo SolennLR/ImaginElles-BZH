@@ -18,7 +18,7 @@ export default function Footer() {
                     </h3>
 
                     <div className="space-y-2">
-                        <p>📍 Pays de Lorient, Bretagne, France</p>
+                        <p>📍 Morbihan & Finistère, Bretagne, France</p>
                         <p className="flex items-center gap-2">
                             <FaEnvelope className="text-pink-500"/>
                             <a href="mailto:imaginelles-bzh@ikmail.com?subject=Contact%20ImaginElles%20Bzh"
