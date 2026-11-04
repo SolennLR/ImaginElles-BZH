@@ -17,7 +17,8 @@ import spectacleImg from "../assets/IMG-20261021-WA0000.jpg";
 import theatreImg from "../assets/IMG-20261026-WA0002.jpg";
 import theatre2Img from "../assets/IMG-20261026-WA0003.jpg";
 import mamanVaDanserImg from "../assets/IMG-20261027-WA0000.jpg";
-
+import brunchImg from "../assets/brunch.jpg";
+import logoImg from "../assets/logo.png";
 
 export const activities = [
     {
@@ -50,6 +51,35 @@ export const activities = [
             "Pendant l'atelier, Elise prête le matériel nécessaire aux différents travaux. Les fournitures nécessaires à la réfection de votre siège sont à votre charge et les quantités nécessaires à votre projet sont définies ensemble en début d'atelier. Le tissu et la finition sont également à votre charge. Il n'y a aucune obligation d'acheter les fournitures auprès de l'atelier : vous êtes libre de choisir votre tissu et vos fournisseurs.\n" +
             "\n" +
             "Vous devez aussi prévoir un pique-nique pour le midi."
+    },
+    {
+        id: "brunch-2026-11-22",
+        title: 'Brunch',
+        date: "2026-11-22",
+        description: "Galettes à volonté 😋",
+        color: "#FF8C00",
+        image: brunchImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Véro - Tél : 06 74 84 90 92",
+        who: "Maximum 30 adhérentes - ❌ S'il n'y a pas 10 inscrites, le brunch sera annulé.",
+        when: "Dimanche 22 novembre 2026 - 11h30 à 15h30",
+        where: "La villa Armor Lux - Le Bas Pouldu 56520 Guidel",
+        price: "19.90 €",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/brunch-du-22-11-2026",
+
+        details:
+            "Le dimanche prend un délicieux goût de Bretagne ! 💙\n" +
+            "\n" +
+            "Découvrez leur Breizh Brunch : un moment gourmand et convivial à partager entre amies, autour de leurs galettes à volonté. 😋\n" +
+            "\n" +
+            "Au menu : du salé, du sucré, des boissons chaudes de quoi allier le plaisir dʼun brunch dominical au bord de mer ! 💙\n" +
+            "\n" +
+            "Alors, qui vient bruncher avec nous dimanche ? 🤩"
     },
     {
         id: "jeux-2026-11-21",
@@ -683,6 +713,36 @@ export const activities = [
             "Et c'est tout ce qui compte.\n" +
             "\n" +
             "La billetterie est ouverte : n’attend pas pour nous rejoindre !"
+    },
+    {
+        id: "conviviale-2026-12-04",
+        title: "Soirée",
+        date: "2026-12-04",
+        description: "La conviviale de l'asso",
+        color: "#24408E",
+        image: logoImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Juliette - Tél : 06 09 27 55 56",
+        who: "Ouvert à toutes les adhérentes et non adhérentes",
+        when: "Vendredi 4 décembre 2026 19h à 1h",
+        where: "Sur le bassin lorientais",
+        price: "Gratuit",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/soiree-conviviale-du-4-12-2026",
+
+        details:
+            "Imagin'Elles vous invite à passer la soirée entre femmes.\n" +
+            "\n" +
+            "Rencontres, échanges et surtout le plaisir de se retrouver dans une ambiance chaleureuse et bienveillante.\n" +
+            "L'occasion de faire connaissance, de créer du lien et de passer un agréable moment ensemble. Tout simplement.\n" +
+            "\n" +
+            "Au plaisir de se retrouver bientôt.\n" +
+            "\n" +
+            "L'équipe Imagin'Elles."
     },
     {
         id: "conviviale-2026-10-24",
