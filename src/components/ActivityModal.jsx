@@ -102,7 +102,7 @@ export default function ActivityModal({ activity, onClose }) {
                                 {activity.when}
                             </p>
 
-                            <p>
+                            <p className="leading-relaxed whitespace-pre-line">
                                 <strong>💶 Tarif : </strong><br/>
                                 {activity.price}
                             </p>

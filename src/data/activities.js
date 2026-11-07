@@ -19,8 +19,40 @@ import theatre2Img from "../assets/IMG-20261026-WA0003.jpg";
 import mamanVaDanserImg from "../assets/IMG-20261027-WA0000.jpg";
 import brunchImg from "../assets/brunch.jpg";
 import logoImg from "../assets/logo.png";
+import randoImg1 from "../assets/rando.jpg";
+
+
 
 export const activities = [
+    {
+        id: "rando-2026-11-15",
+        title: 'Randonnée',
+        date: "2026-11-15",
+        description: 'Circuit du Lain au Verger',
+        color: '#FF8C00',
+        image: randoImg1,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Charlotte",
+        who: "Ouvert à toutes les adhérentes",
+        when: "Dimanche 15 novembre 2026 - 9h00",
+        where: "Gestel",
+        price: "Gratuit",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/randonnee-du-15-11-2026",
+
+        details:
+            "🤸Départ 9h : au 3 Allée du lain 56530 gestel.\n" +
+            "\n" +
+            "🚶‍♀️Marche facile et tranquille de 7 km - Durée : environ 2h. \n" +
+            "\n" +
+            "Du Domaine du Lain à l’Étang du Verger, le long du Scave et du Ruisseau du Moulin de Kerrousseau, parcourez les bois et les allées ombragées. Découvrez le patrimoine naturel et historique de ces espaces protégés. Au retour, flânez dans le parc du domaine et admirez ses espèces arborées, ses arbres remarquables plus que centenaires.\n" +
+            "\n" +
+            "❌ Annulation en cas d'intempéries."
+    },
     {
         id: "tapisserie-2026-11-21",
         title: 'Atelier créatif',
@@ -569,7 +601,7 @@ export const activities = [
         when: "Dimanche 25 avril 2027 - 10h00",
         where: "Ria d'Etel côté Nostang",
         price: "Gratuit",
-        helloasso: "https://www.helloasso.com/associations/...",
+        helloasso: "",
 
         details:
             "🤸Départ 10h : au bout de la rue de la côte à Nostang.\n" +
