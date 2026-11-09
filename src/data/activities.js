@@ -22,8 +22,65 @@ import randoImg1 from "../assets/rando.jpg";
 import plageImg from "../assets/IMG-20261105-WA0006.jpg"
 import nettoyageImg from "../assets/IMG-20261109-WA0012.jpg"
 import beloteImg from "../assets/pexels-belote.jpg"
+import reveillonImg from "../assets/reveillon.jpg";
+import reveillonImg1 from "../assets/1764329665_692988c1d60b1.jpg";
+import reveillonImg2 from "../assets/1764329666_692988c2712c4.jpg";
+import reveillonImg3 from "../assets/1764329661_692988bde3917.jpg";
 
 export const activities = [
+    {
+        id: "reveillon-2026-12-31",
+        title: 'Soirée',
+        date: "2026-12-31",
+        description: "Réveillon de la Saint-Syvestre",
+        color: "#24408E",
+        image: reveillonImg,
+        presentationImages: [
+            reveillonImg1,
+            reveillonImg2,
+            reveillonImg3
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Juliette, Monique et Véro",
+        who: "Maximum 80 adhérentes ou non-adhérentes - ❌ S'il n'y a pas 30 inscrites, la soirée sera annulée.",
+        when: "Jeudi 31 décembre 2026",
+        where: "Salle de réception La Vache Folle - 230 Lieu-dit Leigntudeg, 29270 Saint-Hernin",
+        price: "-\tSoirée + 1 lit en maison : 75 € / pers\n" +
+            "-\tSoirée + 1 lit en dortoir : 65 € / pers\n" +
+            "-\tSoirée + 1 emplacement cc/van : 60 € / pers\n" +
+            "-\tSoirée : 55€ / pers\n" +
+            "-\tSupplément de 10 € pour les non-adhérentes à partir du 29 novembre 2026.",
+
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/reveillon-de-la-saint-sylvestre-du-31-12-2026-2",
+
+        details:
+            "🥂🎉 Imagin'Elles vous convie à une jolie fête placée sous le signe de la bienveillance et de la sororité. 🎉🥂\n" +
+            "\n" +
+            "Nous commencerons par un cocktail de bienvenue (alcoolisé ou non) accompagné de quelques amuses-bouche.\n" +
+            "Le repas sera composé d'une entrée, d'un plat et d'un dessert. Plus de précision très prochainement ! \n" +
+            "Boissons comprises : 1 verre de vin blanc + 1 verre de vin rouge + softs.\n" +
+            "\n" +
+            "La salle de réception et les logements sont privatisés pour l’événement à La Vache Folle de Saint-Hernin, Finistère à proximité de Carhaix.\n" +
+            "\n" +
+            "Les logements disponibles sont : \n" +
+            "-\t 8 lits en dortoir en arrière-salle,\n" +
+            "-\t 10 lits en maison (à 50 mètres de la salle),\n" +
+            "-\t emplacements libres pour camping-car et van.\n" +
+            "Pour celles qui prennent un hébergement, le petit déjeuner du 1 janvier 2027 est inclus.\n" +
+            "\n" +
+            "Pour les menus enfant et végétarien : se rapprocher de l'équipe associative.\n" +
+            "Pour les grande soif : ramenez vos breuvages ! \n" +
+            "\n" +
+            "Les inscriptions sont ouvertes : \n" +
+            "-\t pour les adhérentes à partir du 7 novembre 2026,\n" +
+            "-\t pour les non-adhérentes à partir du 29 novembre 2026.\n" +
+            "Clôture des inscriptions le dimance 13 décembre 2026.\n" +
+            "\n" +
+            "Alors, qui vient débuter la nouvelle année avec nous ? 🤩"
+    },
     {
         id: "marche-2026-11-27",
         title: 'Marche rapide',
