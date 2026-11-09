@@ -1,4 +1,3 @@
-
 import randonneeImg1 from "../assets/randonnee1.jpg";
 import convivialeImg from "../assets/conviviale.jpg";
 import marcheSportiveImg from "../assets/marche_sportive.jpg";
@@ -20,10 +19,73 @@ import mamanVaDanserImg from "../assets/IMG-20261027-WA0000.jpg";
 import brunchImg from "../assets/brunch.jpg";
 import logoImg from "../assets/logo.png";
 import randoImg1 from "../assets/rando.jpg";
-
-
+import plageImg from "../assets/IMG-20261105-WA0006.jpg"
+import nettoyageImg from "../assets/IMG-20261109-WA0012.jpg"
+import beloteImg from "../assets/pexels-belote.jpg"
 
 export const activities = [
+    {
+        id: "marche-2026-11-27",
+        title: 'Marche rapide',
+        date: "2026-11-27",
+        description: 'Marche rapide',
+        color: '#E40303',
+        image: marcheSportiveImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Nathalie - Tél : 06 50 23 77 97",
+        who: "Maximum 15 adhérentes",
+        when: "Vendredi 27 novembre 2026 - 17h à 18h",
+        where: "Base nautique du ter - Lorient",
+        price: "Gratuit",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-rapide-du-27-11-2026",
+
+        details:
+            "Rdv à la base nautique du Ter à Lorient - rue du ter - à 17h précise pour une marche rapide. Prévoir chaussures, tenue adaptées à l'activité, gourde d'eau et éventuellement une lampe frontale. Durée : environ 1h00.\n" +
+            "\n" +
+            "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
+            "\n" +
+            "🐶 Les chiens sont les bienvenus mais sous la responsabilité de leur maîtresse.\n" +
+            "\n" +
+            "❌ Annulation en cas d'intempéries."
+
+    },
+    {
+        id: "rando-2026-12-05",
+        title: 'Balade nature et écoresponsable',
+        date: "2026-12-5",
+        description: 'Nettoyage de plage',
+        color: '#FF8C00',
+        image: nettoyageImg,
+        presentationImages: [
+            plageImg,
+            nettoyageImg,
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Nathalie - Tél : 06 50 23 77 97",
+        who: "Ouvert à toutes les adhérentes et non-adhérentes",
+        when: "Samedi 5 décembre 2026 - 10h30",
+        where: "Base nautique de Kerguélen - Larmor-Plage",
+        price: "Gratuit",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/nettoyage-de-plage-du-5-12-2026",
+
+        details:
+            "Rdv à la base nautique de Kerguélen à Larmor-Plage - Parc Océanique Kerguélen - à 10h30 pour une balade nature et écoresponsable. 🌿\n" +
+            "\n" +
+            "Au bout de la plage, il y a une grande caisse pour mettre les déchets trouvés. Afin de faciliter la collecte des déchets, vous pouvez prévoir un contenant (panier, sac poubelle...)\n" +
+            "Chacune peut apporter une collation ou de quoi pique-niquer afin de partager un moment conviviale à la fin de l'activité.\n" +
+            "\n" +
+            "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
+            "\n" +
+            "❌ Annulé si météo trop mauvaise."
+    },
     {
         id: "rando-2026-11-15",
         title: 'Randonnée',
@@ -112,6 +174,34 @@ export const activities = [
             "Au menu : du salé, du sucré, des boissons chaudes de quoi allier le plaisir dʼun brunch dominical au bord de mer ! 💙\n" +
             "\n" +
             "Alors, qui vient bruncher avec nous dimanche ? 🤩"
+    },
+    {
+        id: "jeux-2026-11-27",
+        title: 'Activité jeux',
+        date: "2026-11-27",
+        description: 'Soirée belote',
+        color: "#24408E",
+        image: beloteImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Juliette - Tél : 06 09 27 55 56",
+        who: "Ouvert à toutes les adhérentes et non adhérentes. Tous niveaux ❌ S'il n'y a pas au moins 4 inscrites, la belote sera annulée.",
+        when: "Vendredi 27 novembre 2026 - 19h à 22h",
+        where: "Chez Juju - St Ernan - Nostang",
+        price: "Gratuit",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/activite-jeux-du-27-11-2026",
+
+        details:
+            "Une ou plusieurs parties de belote dans un esprit de compétition amicale. \n" +
+            "\n" +
+            "Que vous soyez une As de la belote ou que vous souhaitiez simplement apprendre et vous amuser, venez partager un moment convivial autour des cartes. \n" +
+            "Pas besoin d'être une championne pour participer : l'essentiel est de passer une bonne soirée ! \n" +
+            "\n" +
+            "Chacune ramène ses boissons et son grignotage. \n"
     },
     {
         id: "jeux-2026-11-21",
@@ -485,36 +575,6 @@ export const activities = [
 
         details:
             "Rdv à la base nautique du Ter à Lorient - rue du ter - à 17h30 précise pour une marche sportive. Prévoir chaussures et tenue adaptées à l'activité. Durée : environ 1h00.\n" +
-            "\n" +
-            "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
-            "\n" +
-            "🐶 Les chiens sont les bienvenus mais sous la responsabilité de leur maîtresse.\n" +
-            "\n" +
-            "❌ Annulation en cas d'intempéries."
-
-    },
-    {
-        id: "marche-2026-11-27",
-        title: 'Marche rapide',
-        date: "2026-11-27",
-        description: 'Marche rapide',
-        color: '#E40303',
-        image: marcheSportiveImg,
-        presentationImages: [
-            // autre photo éventuellement
-        ],
-        archiveImages: [
-            // photos ajoutées après l'activité
-        ],
-        referente : "Nathalie - Tél : 06 50 23 77 97",
-        who: "Maximum 15 adhérentes",
-        when: "Vendredi 27 novembre 2026 - 17h à 18h",
-        where: "Base nautique du ter - Lorient",
-        price: "Gratuit",
-        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-rapide-du-27-11-2026",
-
-        details:
-            "Rdv à la base nautique du Ter à Lorient - rue du ter - à 17h précise pour une marche rapide. Prévoir chaussures, tenue adaptées à l'activité, gourde d'eau et éventuellement une lampe frontale. Durée : environ 1h00.\n" +
             "\n" +
             "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
             "\n" +
