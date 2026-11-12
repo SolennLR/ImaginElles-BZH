@@ -3,7 +3,6 @@ import convivialeImg from "../assets/conviviale.jpg";
 import marcheSportiveImg from "../assets/marche_sportive.jpg";
 import peintureImg from "../assets/peinture.jpg";
 import modelageImg from "../assets/modelage.jpg";
-import monotypeImg from "../assets/monotype.jpg";
 import tapisserieImg from "../assets/tapisserie.jpg";
 import sculptureImg from "../assets/sculpture.jpg";
 import lorientaiseImg from "../assets/lorientaise.jpg";
@@ -22,7 +21,7 @@ import randoImg1 from "../assets/rando.jpg";
 import plageImg from "../assets/IMG-20261105-WA0006.jpg"
 import nettoyageImg from "../assets/IMG-20261109-WA0012.jpg"
 import beloteImg from "../assets/pexels-belote.jpg"
-import reveillonImg from "../assets/reveillon.jpg";
+import reveillonImg from "../assets/2.jpg";
 import reveillonImg1 from "../assets/1764329665_692988c1d60b1.jpg";
 import reveillonImg2 from "../assets/1764329666_692988c2712c4.jpg";
 import reveillonImg3 from "../assets/1764329661_692988bde3917.jpg";
@@ -45,11 +44,11 @@ export const activities = [
             // photos ajoutées après l'activité
         ],
         referente : "Juliette, Monique et Véro",
-        who: "Maximum 80 adhérentes ou non-adhérentes - ❌ S'il n'y a pas 30 inscrites, la soirée sera annulée.",
-        when: "Jeudi 31 décembre 2026",
+        who: "Maximum 50 adhérentes ou non-adhérentes - ❌ S'il n'y a pas 30 inscrites, la soirée sera annulée.",
+        when: "Jeudi 31 décembre 2026 à partir de 15h jusqu'au 1er janvier 2027 à 15h",
         where: "Salle de réception La Vache Folle - 230 Lieu-dit Leigntudeg, 29270 Saint-Hernin",
-        price: "-\tSoirée + 1 lit en maison : 75 € / pers\n" +
-            "-\tSoirée + 1 lit en dortoir : 65 € / pers\n" +
+        price: "-\tSoirée + 1 couchage en maison : 75 € / pers\n" +
+            "-\tSoirée + 1 couchage en dortoir : 65 € / pers\n" +
             "-\tSoirée + 1 emplacement cc/van : 60 € / pers\n" +
             "-\tSoirée : 55€ / pers\n" +
             "-\tSupplément de 10 € pour les non-adhérentes à partir du 29 novembre 2026.",
@@ -57,29 +56,46 @@ export const activities = [
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/reveillon-de-la-saint-sylvestre-du-31-12-2026-2",
 
         details:
-            "🥂🎉 Imagin'Elles vous convie à une jolie fête placée sous le signe de la bienveillance et de la sororité. 🎉🥂\n" +
+            "🥂🎉✨ IMAGIN'ELLES VOUS INVITE À CÉLÉBRER LE PASSAGE À LA NOUVELLE ANNÉE ! ✨🎉🥂\n" +
             "\n" +
-            "Nous commencerons par un cocktail de bienvenue (alcoolisé ou non) accompagné de quelques amuses-bouche.\n" +
-            "Le repas sera composé d'une entrée, d'un plat et d'un dessert. Plus de précision très prochainement ! \n" +
-            "Boissons comprises : 1 verre de vin blanc + 1 verre de vin rouge + softs.\n" +
+            "🌟 Thème de la soirée : CHIC & PAILLETTES ! 🌟\n" +
+            "Sortez vos plus belles tenues, faites briller vos paillettes et préparez-vous à vivre une soirée placée sous le signe de la fête, de la bienveillance et de la sororité ! 💃🥳\n" +
             "\n" +
-            "La salle de réception et les logements sont privatisés pour l’événement à La Vache Folle de Saint-Hernin, Finistère à proximité de Carhaix.\n" +
+            "🍸 AU PROGRAMME DE LA SOIRÉE\n" +
             "\n" +
-            "Les logements disponibles sont : \n" +
-            "-\t 8 lits en dortoir en arrière-salle,\n" +
-            "-\t 10 lits en maison (à 50 mètres de la salle),\n" +
-            "-\t emplacements libres pour camping-car et van.\n" +
-            "Pour celles qui prennent un hébergement, le petit déjeuner du 1 janvier 2027 est inclus.\n" +
+            "A partir de 19h, nous commencerons les festivités par un cocktail de bienvenue (alcoolisé ou non), accompagné de quelques amuse-bouches.\n" +
+            "🍽️ Le repas sera composé d'une entrée, d'un plat et d'un dessert. Vous recevrez prochainement un mail avec les propositions de menus, à nous retourner avant le 14 décembre 2026 à 18h.\n" +
+            "🍷 Boissons comprises : 1 verre de vin blanc + 1 verre de vin rouge + softs.\n" +
+            "🥂 Si vous le souhaitez, vous pouvez également apporter vos boissons préférées !\n" +
+            "🎶 A l'issue du repas, place à la danse ! Une soirée dansante vous attend pour faire la fête et célébrer ensemble l'arrivée de 2027 jusqu'au bout de la nuit ! \n" +
             "\n" +
-            "Pour les menus enfant et végétarien : se rapprocher de l'équipe associative.\n" +
-            "Pour les grande soif : ramenez vos breuvages ! \n" +
+            "📍 LIEU & ARRIVÉE\n" +
             "\n" +
-            "Les inscriptions sont ouvertes : \n" +
-            "-\t pour les adhérentes à partir du 7 novembre 2026,\n" +
-            "-\t pour les non-adhérentes à partir du 29 novembre 2026.\n" +
-            "Clôture des inscriptions le dimance 13 décembre 2026.\n" +
+            "La salle de réception et les hébergements sont privatisés pour l’événement à La Vache Folle de Saint-Hernin (Finistère), à proximité de Carhaix.\n" +
+            "🕒 Pour vous installer tranquillement et vous préparer, vous pourrez arriver à partir de 15h le jeudi 31 décembre 2026.\n" +
+            "🛏️ Pour celles qui choisissent une option hébergement, pensez à apporter votre duvet, votre oreiller et votre serviette de toilette.\n" +
             "\n" +
-            "Alors, qui vient débuter la nouvelle année avec nous ? 🤩"
+            "🏡 LES POSSIBILITÉS D'HÉBERGEMENT\n" +
+            "\n" +
+            "Plusieurs possibilités sont proposées : \n" +
+            "-\t 🛌 8 lits en dortoir, en arrière-salle,\n" +
+            "-\t 🏠 10 lits dans une maison situé à 50 mètres de la salle,\n" +
+            "-\t 🚐 des emplacements libres pour camping-car et van.\n" +
+            "☕Pour celles qui prennent un hébergement, le petit-déjeuner du 1 janvier 2027 est inclus.\n" +
+            "\n" +
+            "🥗 MENUS SPÉCIFIQUES\n" +
+            "\n" +
+            "Pour les menus enfants et végétariens, merci de vous rapprocher de l'équipe associative.\n" +
+            "\n" +
+            "📝 INSCRIPTIONS\n" +
+            "\n" +
+            "📅 Ouverture des inscriptions : le vendredi 13 novembre 2026 à 18h00 \n" +
+            "⏳ Clôture des inscriptions : le dimanche 13 décembre 2026 à 18h00.\n" +
+            "\n" +
+            "✨ Alors, qui vient faire briller cette dernière soirée de 2026 et débuter 2027 avec nous ?\n" +
+            "✨ Alors, qui vient faire briller cette dernière soirée de 2026 et débuter 2027 avec nous ?\n" +
+            "\n" +
+            "🥂💃 CHIC, PAILLETTES & BONNE HUMEUR : QUE LA FÊTE COMMENCE !🤩"
     },
     {
         id: "marche-2026-11-27",
@@ -158,13 +174,13 @@ export const activities = [
         ],
         referente : "Charlotte",
         who: "Ouvert à toutes les adhérentes",
-        when: "Dimanche 15 novembre 2026 - 9h00",
+        when: "Dimanche 15 novembre 2026 - 10h30",
         where: "Gestel",
         price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/randonnee-du-15-11-2026",
 
         details:
-            "🤸Départ 9h : au 3 Allée du lain 56530 gestel.\n" +
+            "🤸Départ 10h30 : au 3 Allée du lain 56530 gestel.\n" +
             "\n" +
             "🚶‍♀️Marche facile et tranquille de 7 km - Durée : environ 2h. \n" +
             "\n" +
@@ -350,9 +366,9 @@ export const activities = [
     },
     {
         id: "libre-2026-11-24",
-        title: 'Atelier créatif',
+        title: 'Activité libre',
         date: "2026-11-24",
-        description: "Activité manuelle libre / Echange de compétences",
+        description: "Accueil, activité libre et échange de compétences",
         color: "#008026",
         image: modelageImg,
         presentationImages: [
@@ -378,128 +394,120 @@ export const activities = [
             "Possibilité de déjeuner sur place si vous avez prévu votre repas."
     },
     {
-        id: "tapisserie-2026-12-14",
-        title: 'Atelier créatif',
+        id: "libre-2026-12-14",
+        title: 'Activité libre',
         date: "2026-12-14",
-        description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        description: "Accueil, activité libre et échange de compétences",
         color: "#008026",
-        image: tapisserieImg,
+        image: modelageImg,
         presentationImages: [
             // autre photo éventuellement
         ],
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise / Véro - Tél : 06 74 84 90 92",
-        who: "Maximum 5 adhérentes - ❌ S'il n'y a pas 3 inscrites, l'atelier sera annulé.",
+        referente : "Véro - Tél : 06 74 84 90 92",
+        who: "Maximum 10 adhérentes.",
         when: "Lundi 14 décembre 2026 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
-        price: "50 €",
+        price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-tapisserie-du-14-12-2026",
 
         details:
-            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 123 à 9h30 pour un atelier tapisserie. Durée : 8h00.\n" +
+            "PARTAGE DE COMPETENCES, DE LOISIRS, DE PASSION... \n" +
             "\n" +
-            "L'atelier s'adresse à toutes les personnes débutantes ou non. La réfection des sièges est réalisée en graniture mousse. Pour une 1ère expérience, Elise vous conseille de privilégier un petit projet : chaise, petite assise, tabouret...\n" +
+            "Venez nous retrouver à la Maison des Associations de Lorient - 5 place Louis Bonneaud - en salle 123 à partir de 9h30 pour une journée, matinée ou après-midi d'atelier manuel libre... \n" +
             "\n" +
-            "Préparer son siège en amont : Le dégarnissage, qui consiste à retirer le tissu et les anciennes matières de garniture, est une étape qui peut être assez longue. La réaliser en amont permet de gagner du temps le jour de l'atelier et de se consacrer à la réfection du siège.\n" +
+            "Couture, modelage, dessin... Apportez ce que vous voulez pour une journée de convivialité, de partage et d'échange. \n" +
             "\n" +
-            "Pendant l'atelier, Elise prête le matériel nécessaire aux différents travaux. Les fournitures nécessaires à la réfection de votre siège sont à votre charge et les quantités nécessaires à votre projet sont définies ensemble en début d'atelier. Le tissu et la finition sont également à votre charge. Il n'y a aucune obligation d'acheter les fournitures auprès de l'atelier : vous êtes libre de choisir votre tissu et vos fournisseurs.\n" +
-            "\n" +
-            "Vous devez aussi prévoir un pique-nique pour le midi."
+            "Possibilité de déjeuner sur place si vous avez prévu votre repas."
     },
     {
-        id: "tapisserie-2027-01-23",
-        title: 'Atelier créatif',
+        id: "libre-2027-01-23",
+        title: 'Activité libre',
         date: "2027-01-23",
-        description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        description: "Accueil, activité libre et échange de compétences",
         color: "#008026",
-        image: tapisserieImg,
+        image: modelageImg,
         presentationImages: [
             // autre photo éventuellement
         ],
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise / Véro - Tél : 06 74 84 90 92",
-        who: "Maximum 5 adhérentes - ❌ S'il n'y a pas 3 inscrites, l'atelier sera annulé.",
+        referente : "Véro - Tél : 06 74 84 90 92",
+        who: "Maximum 10 adhérentes.",
         when: "Samedi 23 janvier 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
-        price: "50 €",
+        price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-tapisserie-du-23-01-2027",
 
         details:
-            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 123 à 9h30 pour un atelier tapisserie. Durée : 8h00.\n" +
+            "PARTAGE DE COMPETENCES, DE LOISIRS, DE PASSION... \n" +
             "\n" +
-            "L'atelier s'adresse à toutes les personnes débutantes ou non. La réfection des sièges est réalisée en graniture mousse. Pour une 1ère expérience, Elise vous conseille de privilégier un petit projet : chaise, petite assise, tabouret...\n" +
+            "Venez nous retrouver à la Maison des Associations de Lorient - 5 place Louis Bonneaud - en salle 123 à partir de 9h30 pour une journée, matinée ou après-midi d'atelier manuel libre... \n" +
             "\n" +
-            "Préparer son siège en amont : Le dégarnissage, qui consiste à retirer le tissu et les anciennes matières de garniture, est une étape qui peut être assez longue. La réaliser en amont permet de gagner du temps le jour de l'atelier et de se consacrer à la réfection du siège.\n" +
+            "Couture, modelage, dessin... Apportez ce que vous voulez pour une journée de convivialité, de partage et d'échange. \n" +
             "\n" +
-            "Pendant l'atelier, Elise prête le matériel nécessaire aux différents travaux. Les fournitures nécessaires à la réfection de votre siège sont à votre charge et les quantités nécessaires à votre projet sont définies ensemble en début d'atelier. Le tissu et la finition sont également à votre charge. Il n'y a aucune obligation d'acheter les fournitures auprès de l'atelier : vous êtes libre de choisir votre tissu et vos fournisseurs.\n" +
-            "\n" +
-            "Vous devez aussi prévoir un pique-nique pour le midi."
+            "Possibilité de déjeuner sur place si vous avez prévu votre repas."
     },
     {
-        id: "tapisserie-2027-02-11",
-        title: 'Atelier créatif',
+        id: "libre-2027-02-11",
+        title: 'Activité libre',
         date: "2027-02-11",
-        description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        description: "Accueil, activité libre et échange de compétences",
         color: "#008026",
-        image: tapisserieImg,
+        image: modelageImg,
         presentationImages: [
             // autre photo éventuellement
         ],
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise / Véro - Tél : 06 74 84 90 92",
-        who: "Maximum 5 adhérentes - ❌ S'il n'y a pas 3 inscrites, l'atelier sera annulé.",
+        referente : "Véro - Tél : 06 74 84 90 92",
+        who: "Maximum 10 adhérentes.",
         when: "Jeudi 11 février 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
-        price: "50 €",
+        price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-tapisserie-du-11-02-2027",
 
         details:
-            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 123 à 9h30 pour un atelier tapisserie. Durée : 8h00.\n" +
+            "PARTAGE DE COMPETENCES, DE LOISIRS, DE PASSION... \n" +
             "\n" +
-            "L'atelier s'adresse à toutes les personnes débutantes ou non. La réfection des sièges est réalisée en graniture mousse. Pour une 1ère expérience, Elise vous conseille de privilégier un petit projet : chaise, petite assise, tabouret...\n" +
+            "Venez nous retrouver à la Maison des Associations de Lorient - 5 place Louis Bonneaud - en salle 123 à partir de 9h30 pour une journée, matinée ou après-midi d'atelier manuel libre... \n" +
             "\n" +
-            "Préparer son siège en amont : Le dégarnissage, qui consiste à retirer le tissu et les anciennes matières de garniture, est une étape qui peut être assez longue. La réaliser en amont permet de gagner du temps le jour de l'atelier et de se consacrer à la réfection du siège.\n" +
+            "Couture, modelage, dessin... Apportez ce que vous voulez pour une journée de convivialité, de partage et d'échange. \n" +
             "\n" +
-            "Pendant l'atelier, Elise prête le matériel nécessaire aux différents travaux. Les fournitures nécessaires à la réfection de votre siège sont à votre charge et les quantités nécessaires à votre projet sont définies ensemble en début d'atelier. Le tissu et la finition sont également à votre charge. Il n'y a aucune obligation d'acheter les fournitures auprès de l'atelier : vous êtes libre de choisir votre tissu et vos fournisseurs.\n" +
-            "\n" +
-            "Vous devez aussi prévoir un pique-nique pour le midi."
+            "Possibilité de déjeuner sur place si vous avez prévu votre repas."
     },
     {
-        id: "tapisserie-2027-03-12",
-        title: 'Atelier créatif',
+        id: "libre-2027-03-12",
+        title: 'Activité libre',
         date: "2027-03-12",
-        description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        description: "Accueil, activité libre et échange de compétences",
         color: "#008026",
-        image: tapisserieImg,
+        image: modelageImg,
         presentationImages: [
             // autre photo éventuellement
         ],
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise / Véro - Tél : 06 74 84 90 92",
-        who: "Maximum 5 adhérentes - ❌ S'il n'y a pas 3 inscrites, l'atelier sera annulé.",
+        referente : "Véro - Tél : 06 74 84 90 92",
+        who: "Maximum 10 adhérentes.",
         when: "Vendredi 12 mars 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
-        price: "50 €",
+        price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-tapisserie-du-12-03-2027",
 
         details:
-            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 123 à 9h30 pour un atelier tapisserie. Durée : 8h00.\n" +
+            "PARTAGE DE COMPETENCES, DE LOISIRS, DE PASSION... \n" +
             "\n" +
-            "L'atelier s'adresse à toutes les personnes débutantes ou non. La réfection des sièges est réalisée en graniture mousse. Pour une 1ère expérience, Elise vous conseille de privilégier un petit projet : chaise, petite assise, tabouret...\n" +
+            "Venez nous retrouver à la Maison des Associations de Lorient - 5 place Louis Bonneaud - en salle 123 à partir de 9h30 pour une journée, matinée ou après-midi d'atelier manuel libre... \n" +
             "\n" +
-            "Préparer son siège en amont : Le dégarnissage, qui consiste à retirer le tissu et les anciennes matières de garniture, est une étape qui peut être assez longue. La réaliser en amont permet de gagner du temps le jour de l'atelier et de se consacrer à la réfection du siège.\n" +
+            "Couture, modelage, dessin... Apportez ce que vous voulez pour une journée de convivialité, de partage et d'échange. \n" +
             "\n" +
-            "Pendant l'atelier, Elise prête le matériel nécessaire aux différents travaux. Les fournitures nécessaires à la réfection de votre siège sont à votre charge et les quantités nécessaires à votre projet sont définies ensemble en début d'atelier. Le tissu et la finition sont également à votre charge. Il n'y a aucune obligation d'acheter les fournitures auprès de l'atelier : vous êtes libre de choisir votre tissu et vos fournisseurs.\n" +
-            "\n" +
-            "Vous devez aussi prévoir un pique-nique pour le midi."
+            "Possibilité de déjeuner sur place si vous avez prévu votre repas."
     },
     {
         id: "libre-2026-09-24",
@@ -523,35 +531,6 @@ export const activities = [
 
         details:
             "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 233 à partir de 14h00 pour un atelier modelage ou une activité manuelle libre. Durée : environ 4h00.\n"
-    },
-    {
-        id: "monotype-2026-11-15",
-        title: 'Atelier créatif',
-        date: "2026-11-15",
-        description: 'Atelier monotype / impression sur papier',
-        color: "#008026",
-        image: monotypeImg,
-        presentationImages: [
-            // autre photo éventuellement
-        ],
-        archiveImages: [
-            // photos ajoutées après l'activité
-        ],
-        referente : "Corinne / Véro - Tél : 06 74 84 90 92",
-        who: "Maximum 10 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
-        when: "Dimanche 15 novembre 2026 - 14h00 à 18h00",
-        where: "Sur le bassin lorientais",
-        price: "30 €",
-        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-monotype-du-15-11-2026",
-
-        details:
-            "Rdv à 14h00 pour réaliser des dessins en impression à l'encre de gravure. Durée : environ 4h00.\n" +
-            "\n" +
-            "C'est un temps de création que vous propose Corinne. L'atelier s'adresse à toutes les personnes débutantes ou non.\n" +
-            "\n" +
-            "Reproductions d'après des oeuvres (paysage, personnages...) ou des objets (coquillages, feuille...) ou avec notre propre imagination.\n" +
-            "\n" +
-            "Vous devez apporter un carnet à dessin, crayon gris et gomme. Corinne fournit le papier d'impression, l'encre et les outils."
     },
     {
         id: "sculpture-2027-01-16",
@@ -879,12 +858,13 @@ export const activities = [
         referente : "Juliette - Tél : 06 09 27 55 56",
         who: "Ouvert à toutes les adhérentes et non adhérentes",
         when: "Vendredi 4 décembre 2026 19h à 1h",
-        where: "Sur le bassin lorientais",
+        where: "Au bar Le Jame'son - 48 rue Jules Simon, Lorient",
         price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/soiree-conviviale-du-4-12-2026",
 
         details:
-            "Imagin'Elles vous invite à passer la soirée entre femmes.\n" +
+            "Imagin'Elles vous invite à passer la soirée entre femmes au bar Le Jame'son à Lorient.\n" +
+            "Pour l'occasion, la salle du fond nous est réservée.\n" +
             "\n" +
             "Rencontres, échanges et surtout le plaisir de se retrouver dans une ambiance chaleureuse et bienveillante.\n" +
             "L'occasion de faire connaissance, de créer du lien et de passer un agréable moment ensemble. Tout simplement.\n" +
