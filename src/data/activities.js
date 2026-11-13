@@ -64,7 +64,7 @@ export const activities = [
             "🍸 AU PROGRAMME DE LA SOIRÉE\n" +
             "\n" +
             "A partir de 19h, nous commencerons les festivités par un cocktail de bienvenue (alcoolisé ou non), accompagné de quelques amuse-bouches.\n" +
-            "🍽️ Le repas sera composé d'une entrée, d'un plat et d'un dessert. Vous recevrez prochainement un mail avec les propositions de menus, à nous retourner avant le 14 décembre 2026 à 18h.\n" +
+            "🍽️ Le repas sera composé d'une entrée, d'un plat et d'un dessert. Vous recevrez prochainement un mail avec les propositions de menus. Merci de nous retourner votre choix au plus tard le lundi 14 décembre 2026 à 18h.\n" +
             "🍷 Boissons comprises : 1 verre de vin blanc + 1 verre de vin rouge + softs.\n" +
             "🥂 Si vous le souhaitez, vous pouvez également apporter vos boissons préférées !\n" +
             "🎶 A l'issue du repas, place à la danse ! Une soirée dansante vous attend pour faire la fête et célébrer ensemble l'arrivée de 2027 jusqu'au bout de la nuit ! \n" +
@@ -83,6 +83,8 @@ export const activities = [
             "-\t 🚐 des emplacements libres pour camping-car et van.\n" +
             "☕Pour celles qui prennent un hébergement, le petit-déjeuner du 1 janvier 2027 est inclus.\n" +
             "\n" +
+            "✨ Vous ne souhaitez pas dormir sur place ? Pas de souci ! Une formule sans hébergement est également proposée pour profiter pleinement du repas et de la soirée dansante. 💃🥂\n" +
+            "\n" +
             "🥗 MENUS SPÉCIFIQUES\n" +
             "\n" +
             "Pour les menus enfants et végétariens, merci de vous rapprocher de l'équipe associative.\n" +
@@ -90,9 +92,10 @@ export const activities = [
             "📝 INSCRIPTIONS\n" +
             "\n" +
             "📅 Ouverture des inscriptions : le vendredi 13 novembre 2026 à 18h00 \n" +
-            "⏳ Clôture des inscriptions : le dimanche 13 décembre 2026 à 18h00.\n" +
+            "⏳ Clôture des inscriptions : le dimanche 13 décembre 2026 à 18h00\n" +
             "\n" +
-            "✨ Alors, qui vient faire briller cette dernière soirée de 2026 et débuter 2027 avec nous ?\n" +
+            "🍽️ Clôture du choix de menus : le lundi 14 décembre 2026 à 18h00.\n" +
+            "\n" +
             "✨ Alors, qui vient faire briller cette dernière soirée de 2026 et débuter 2027 avec nous ?\n" +
             "\n" +
             "🥂💃 CHIC, PAILLETTES & BONNE HUMEUR : QUE LA FÊTE COMMENCE !🤩"
