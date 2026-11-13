@@ -2,6 +2,12 @@ import randonneeImg1 from "../assets/randonnee1.jpg";
 import convivialeImg from "../assets/conviviale.jpg";
 import marcheSportiveImg from "../assets/marche_sportive.jpg";
 import peintureImg from "../assets/peinture.jpg";
+import peinture1 from "../assets/a8bb4850-df80-11f1-934a-239129e33fd4.jpg";
+import peinture2 from "../assets/b85a7560-df80-11f1-934a-239129e33fd4.jpg";
+import peinture3 from "../assets/b0974e70-df80-11f1-934a-239129e33fd4.jpg";
+import peinture4 from "../assets/85096770-df80-11f1-934a-239129e33fd4.jpg";
+import peinture5 from "../assets/757b7870-df80-11f1-934a-239129e33fd4.jpg";
+import peinture6 from "../assets/c27dfa80-df80-11f1-934a-239129e33fd4.jpg";
 import modelageImg from "../assets/modelage.jpg";
 import tapisserieImg from "../assets/tapisserie.jpg";
 import sculptureImg from "../assets/sculpture.jpg";
@@ -10,6 +16,10 @@ import lorientaise1 from "../assets/27535.jpg";
 import lorientaise2 from "../assets/27527.jpg";
 import marcheSportive1 from "../assets/27472.jpg";
 import ellesDansentImg from "../assets/ellesDansent.jpg";
+import ellesDansent1 from "../assets/c1fc6e40-df5b-11f1-b6a4-35fee1aaad78.jpg";
+import ellesDansent2 from "../assets/c3010d00-df5b-11f1-b6a4-35fee1aaad78.jpg";
+import ellesDansent3 from "../assets/c4371c00-df5b-11f1-b6a4-35fee1aaad78.jpg";
+import ellesDansent4 from "../assets/FB_IMG_1794586849629.jpg";
 import jeuImg from "../assets/jeu.png";
 import spectacleImg from "../assets/IMG-20261021-WA0000.jpg";
 import theatreImg from "../assets/IMG-20261026-WA0002.jpg";
@@ -25,6 +35,8 @@ import reveillonImg from "../assets/2.jpg";
 import reveillonImg1 from "../assets/1764329665_692988c1d60b1.jpg";
 import reveillonImg2 from "../assets/1764329666_692988c2712c4.jpg";
 import reveillonImg3 from "../assets/1764329661_692988bde3917.jpg";
+import cinedebatImg from "../assets/cinedebat.png";
+import cinedebat2 from "../assets/image ciné débat Lanester.png";
 
 export const activities = [
     {
@@ -577,6 +589,12 @@ export const activities = [
             // autre photo éventuellement
         ],
         archiveImages: [
+            peinture4,
+            peinture5,
+            peinture1,
+            peinture3,
+            peinture2,
+            peinture6,
             // photos ajoutées après l'activité
         ],
         referente : "Lise - Tél : 06 68 00 34 77",
@@ -780,6 +798,34 @@ export const activities = [
             "Une chanteuse perd mystérieusement sa voix et se retrouve incapable de monter sur scène. Pour l’aider à affronter un passé douloureux, une Édith Piaf aussi fougueuse qu’inattendue surgit à ses côtés. Entre théâtre visuel, marionnette et performance musicale, ce duo attachant explore les blessures, les doutes et la force de la résilience. Figure majeure du théâtre israélien contemporain, Yael Rasooly livre un spectacle émouvant, drôle et profondément humain.\n"
     },
     {
+        id: "cine-2026-11-27",
+        title: 'Activité ciné / débat',
+        date: "2026-11-27",
+        description: "Film : Le monde à l'endroit",
+        color: "#24408E",
+        image: cinedebatImg,
+        presentationImages: [
+            cinedebat2,
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Linda",
+        who: "Ouvert à toutes les adhérentes et non adhérentes",
+        when: "Vendredi 27 novembre 2026 - 20h00",
+        where: "Méga CGR – rue Gustave Zede - ZA de Manebos – Lanester\n",
+        price: "Gratuit, sur réversation",
+        helloasso: "https://my.weezevent.com/cine-debat-le-monde-a-lendroit?_gl=1*ljx6s1*_gcl_au*MTIyNDI3MjAxNC4xNzkzNjM0MjIzLjEzNDQ5MzY0NTMuMTc5MzcxMjg2NC4xNzkzNzEyODY0LjExMjU3ODE0MDIuMTc5MzYzNDIyNS4xNzkzNzEyODY0*_ga*MjExMDU1NjQ0Ni4xNzUwNzY4Mzkx*_ga_39H9VBFX7G*czE3OTM3MTkyMzYkbzI1JGcxJHQxNzkzNzE5MjM4JGo1OCRsMCRoMTg5NTM2NjI4NQ..",
+
+        details:
+            "En présence de la réalisatrice Sylvie MEYER et d'une juriste du CIDFF du Morbihan.\n" +
+            "\n" +
+            "Ce film s’inspire du travail de Muriel Salmona, psychiatre de renom et spécialiste des violences sexuelles qui consacre sa vie à soigner celles et ceux que l’enfance a brisés. Incarnée à l’écran par Sandrine Bonnaire, Marianne Denicourt et Isild Le Besco, elle accompagne des patients qui affrontent leur passé et ouvrent, pas à pas, le chemin de la réparation.\n" +
+            "\n" +
+            "Une séance organisée par la Ville de Lanester dans le cadre de la Journée internationale de lutte contre les violences faites aux femmes.\n"
+    },
+    {
         id: "soiree-2026-11-13",
         title: 'Soirée',
         date: "2026-11-13",
@@ -820,6 +866,10 @@ export const activities = [
             // autre photo éventuellement
         ],
         archiveImages: [
+            ellesDansent4,
+            ellesDansent2,
+            ellesDansent3,
+            ellesDansent1,
             // photos ajoutées après l'activité
         ],
         referente : "Juliette - Tél : 06 09 27 55 56",
