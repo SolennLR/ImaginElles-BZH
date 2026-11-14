@@ -360,7 +360,9 @@ export const activities = [
         helloasso: "https://www.billetweb.fr/match-dimprovisation-quimper-vs-nantes?fbclid=IwVERDUAVF5E9leHRuA2FlbQIxMABwZG9mBXNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHrLaL4yY-hvU3y4MKZYdrn9LXev7PZOJxFaRPZeNxgZMyPgLPw9xQGJtSJOV_aem_6QXqeBsolirJW312fUiTmw",
 
         details:
-            " Le premier des 2 matchs de la saison se jouera face à NANTES ! Devant un public de 260 personnes et la salle surchauffée (des bonnes ondes) du Terrain Blanc !\n" +
+            "Sylvie vous donne rendez-vous à 19h50 devant la salle à la MPT de Penhars.\n" +
+            "\n" +
+            "Le premier des 2 matchs de la saison se jouera face à NANTES ! Devant un public de 260 personnes et la salle surchauffée (des bonnes ondes) du Terrain Blanc !\n" +
             " \n" +
             "On sort la patinoire, les maillots, l'arbitre aiguise les thèmes, donne du sifflet et joue sur les règles !\n" +
             " \n" +
