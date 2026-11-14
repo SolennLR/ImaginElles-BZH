@@ -1,10 +1,14 @@
-
 import randonneeImg1 from "../assets/randonnee1.jpg";
 import convivialeImg from "../assets/conviviale.jpg";
 import marcheSportiveImg from "../assets/marche_sportive.jpg";
 import peintureImg from "../assets/peinture.jpg";
+import peinture1 from "../assets/a8bb4850-df80-11f1-934a-239129e33fd4.jpg";
+import peinture2 from "../assets/b85a7560-df80-11f1-934a-239129e33fd4.jpg";
+import peinture3 from "../assets/b0974e70-df80-11f1-934a-239129e33fd4.jpg";
+import peinture4 from "../assets/85096770-df80-11f1-934a-239129e33fd4.jpg";
+import peinture5 from "../assets/757b7870-df80-11f1-934a-239129e33fd4.jpg";
+import peinture6 from "../assets/c27dfa80-df80-11f1-934a-239129e33fd4.jpg";
 import modelageImg from "../assets/modelage.jpg";
-import monotypeImg from "../assets/monotype.jpg";
 import tapisserieImg from "../assets/tapisserie.jpg";
 import sculptureImg from "../assets/sculpture.jpg";
 import lorientaiseImg from "../assets/lorientaise.jpg";
@@ -12,6 +16,10 @@ import lorientaise1 from "../assets/27535.jpg";
 import lorientaise2 from "../assets/27527.jpg";
 import marcheSportive1 from "../assets/27472.jpg";
 import ellesDansentImg from "../assets/ellesDansent.jpg";
+import ellesDansent1 from "../assets/c1fc6e40-df5b-11f1-b6a4-35fee1aaad78.jpg";
+import ellesDansent2 from "../assets/c3010d00-df5b-11f1-b6a4-35fee1aaad78.jpg";
+import ellesDansent3 from "../assets/c4371c00-df5b-11f1-b6a4-35fee1aaad78.jpg";
+import ellesDansent4 from "../assets/FB_IMG_1794586849629.jpg";
 import jeuImg from "../assets/jeu.png";
 import spectacleImg from "../assets/IMG-20261021-WA0000.jpg";
 import theatreImg from "../assets/IMG-20261026-WA0002.jpg";
@@ -19,13 +27,197 @@ import theatre2Img from "../assets/IMG-20261026-WA0003.jpg";
 import mamanVaDanserImg from "../assets/IMG-20261027-WA0000.jpg";
 import brunchImg from "../assets/brunch.jpg";
 import logoImg from "../assets/logo.png";
+import randoImg1 from "../assets/rando.jpg";
+import plageImg from "../assets/IMG-20261105-WA0006.jpg"
+import nettoyageImg from "../assets/IMG-20261109-WA0012.jpg"
+import beloteImg from "../assets/pexels-belote.jpg"
+import reveillonImg from "../assets/2.jpg";
+import reveillonImg1 from "../assets/1764329665_692988c1d60b1.jpg";
+import reveillonImg2 from "../assets/1764329666_692988c2712c4.jpg";
+import reveillonImg3 from "../assets/1764329661_692988bde3917.jpg";
+import cinedebatImg from "../assets/cinedebat.png";
+import cinedebat2 from "../assets/image ciné débat Lanester.png";
 
 export const activities = [
+    {
+        id: "reveillon-2026-12-31",
+        title: 'Soirée',
+        date: "2026-12-31",
+        description: "Réveillon de la Saint-Syvestre",
+        cancelled: false,
+        cancellationReason: "",
+        color: "#24408E",
+        image: reveillonImg,
+        presentationImages: [
+            reveillonImg1,
+            reveillonImg2,
+            reveillonImg3
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Juliette, Monique et Véro",
+        who: "Maximum 50 adhérentes ou non-adhérentes - ❌ S'il n'y a pas 30 inscrites, la soirée sera annulée.",
+        when: "Jeudi 31 décembre 2026 à partir de 15h jusqu'au 1er janvier 2027 à 15h",
+        where: "Salle de réception La Vache Folle - 230 Lieu-dit Leigntudeg, 29270 Saint-Hernin",
+        price: "-\tSoirée + 1 couchage en maison : 75 € / pers\n" +
+            "-\tSoirée + 1 couchage en dortoir : 65 € / pers\n" +
+            "-\tSoirée + 1 emplacement cc/van : 60 € / pers\n" +
+            "-\tSoirée : 55€ / pers\n" +
+            "-\tSupplément de 10 € pour les non-adhérentes à partir du 29 novembre 2026.",
+
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/reveillon-de-la-saint-sylvestre-du-31-12-2026-2",
+
+        details:
+            "🥂🎉✨ IMAGIN'ELLES VOUS INVITE À CÉLÉBRER LE PASSAGE À LA NOUVELLE ANNÉE ! ✨🎉🥂\n" +
+            "\n" +
+            "🌟 Thème de la soirée : CHIC & PAILLETTES ! 🌟\n" +
+            "Sortez vos plus belles tenues, faites briller vos paillettes et préparez-vous à vivre une soirée placée sous le signe de la fête, de la bienveillance et de la sororité ! 💃🥳\n" +
+            "\n" +
+            "🍸 AU PROGRAMME DE LA SOIRÉE\n" +
+            "\n" +
+            "A partir de 19h, nous commencerons les festivités par un cocktail de bienvenue (alcoolisé ou non), accompagné de quelques amuse-bouches.\n" +
+            "🍽️ Le repas sera composé d'une entrée, d'un plat et d'un dessert. Vous recevrez prochainement un mail avec les propositions de menus. Merci de nous retourner votre choix au plus tard le lundi 14 décembre 2026 à 18h.\n" +
+            "🍷 Boissons comprises : 1 verre de vin blanc + 1 verre de vin rouge + softs.\n" +
+            "🥂 Si vous le souhaitez, vous pouvez également apporter vos boissons préférées !\n" +
+            "🎶 A l'issue du repas, place à la danse ! Une soirée dansante vous attend pour faire la fête et célébrer ensemble l'arrivée de 2027 jusqu'au bout de la nuit ! \n" +
+            "\n" +
+            "📍 LIEU & ARRIVÉE\n" +
+            "\n" +
+            "La salle de réception et les hébergements sont privatisés pour l’événement à La Vache Folle de Saint-Hernin (Finistère), à proximité de Carhaix.\n" +
+            "🕒 Pour vous installer tranquillement et vous préparer, vous pourrez arriver à partir de 15h le jeudi 31 décembre 2026.\n" +
+            "🛏️ Pour celles qui choisissent une option hébergement, pensez à apporter votre duvet, votre oreiller et votre serviette de toilette.\n" +
+            "\n" +
+            "🏡 LES POSSIBILITÉS D'HÉBERGEMENT\n" +
+            "\n" +
+            "Plusieurs possibilités sont proposées : \n" +
+            "-\t 🛌 8 lits en dortoir, en arrière-salle,\n" +
+            "-\t 🏠 10 lits dans une maison situé à 50 mètres de la salle,\n" +
+            "-\t 🚐 des emplacements libres pour camping-car et van.\n" +
+            "☕Pour celles qui prennent un hébergement, le petit-déjeuner du 1 janvier 2027 est inclus.\n" +
+            "\n" +
+            "✨ Vous ne souhaitez pas dormir sur place ? Pas de souci ! Une formule sans hébergement est également proposée pour profiter pleinement du repas et de la soirée dansante. 💃🥂\n" +
+            "\n" +
+            "🥗 MENUS SPÉCIFIQUES\n" +
+            "\n" +
+            "Pour les menus enfants et végétariens, merci de vous rapprocher de l'équipe associative.\n" +
+            "\n" +
+            "📝 INSCRIPTIONS\n" +
+            "\n" +
+            "📅 Ouverture des inscriptions : le vendredi 13 novembre 2026 à 18h00 \n" +
+            "⏳ Clôture des inscriptions : le dimanche 13 décembre 2026 à 18h00\n" +
+            "\n" +
+            "🍽️ Clôture du choix de menus : le lundi 14 décembre 2026 à 18h00.\n" +
+            "\n" +
+            "✨ Alors, qui vient faire briller cette dernière soirée de 2026 et débuter 2027 avec nous ?\n" +
+            "\n" +
+            "🥂💃 CHIC, PAILLETTES & BONNE HUMEUR : QUE LA FÊTE COMMENCE !🤩"
+    },
+    {
+        id: "marche-2026-11-27",
+        title: 'Marche rapide',
+        date: "2026-11-27",
+        description: 'Marche rapide',
+        cancelled: false,
+        cancellationReason: "",
+        color: '#E40303',
+        image: marcheSportiveImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Nathalie - Tél : 06 50 23 77 97",
+        who: "Maximum 15 adhérentes",
+        when: "Vendredi 27 novembre 2026 - 17h à 18h",
+        where: "Base nautique du ter - Lorient",
+        price: "Gratuit",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-rapide-du-27-11-2026",
+
+        details:
+            "Rdv à la base nautique du Ter à Lorient - rue du ter - à 17h précise pour une marche rapide. Prévoir chaussures, tenue adaptées à l'activité, gourde d'eau et éventuellement une lampe frontale. Durée : environ 1h00.\n" +
+            "\n" +
+            "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
+            "\n" +
+            "🐶 Les chiens sont les bienvenus mais sous la responsabilité de leur maîtresse.\n" +
+            "\n" +
+            "❌ Annulation en cas d'intempéries."
+
+    },
+    {
+        id: "rando-2026-12-05",
+        title: 'Balade nature et écoresponsable',
+        date: "2026-12-5",
+        description: 'Nettoyage de plage',
+        cancelled: false,
+        cancellationReason: "",
+        color: '#FF8C00',
+        image: nettoyageImg,
+        presentationImages: [
+            plageImg,
+            nettoyageImg,
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Nathalie - Tél : 06 50 23 77 97",
+        who: "Ouvert à toutes les adhérentes et non-adhérentes",
+        when: "Samedi 5 décembre 2026 - 10h30",
+        where: "Base nautique de Kerguélen - Larmor-Plage",
+        price: "Gratuit",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/nettoyage-de-plage-du-5-12-2026",
+
+        details:
+            "Rdv à la base nautique de Kerguélen à Larmor-Plage - Parc Océanique Kerguélen - à 10h30 pour une balade nature et écoresponsable. 🌿\n" +
+            "\n" +
+            "Au bout de la plage, il y a une grande caisse pour mettre les déchets trouvés. Afin de faciliter la collecte des déchets, vous pouvez prévoir un contenant (panier, sac poubelle...)\n" +
+            "Chacune peut apporter une collation ou de quoi pique-niquer afin de partager un moment conviviale à la fin de l'activité.\n" +
+            "\n" +
+            "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
+            "\n" +
+            "❌ Annulé si météo trop mauvaise."
+    },
+    {
+        id: "rando-2026-11-15",
+        title: 'Randonnée',
+        date: "2026-11-15",
+        description: 'Circuit du Lain au Verger',
+        cancelled: true,
+        cancellationReason: "En raison des conditions météorologiques.",
+        color: '#FF8C00',
+        image: randoImg1,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Charlotte",
+        who: "Ouvert à toutes les adhérentes",
+        when: "Dimanche 15 novembre 2026 - 10h30",
+        where: "Gestel",
+        price: "Gratuit",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/randonnee-du-15-11-2026",
+
+        details:
+            "🤸Départ 10h30 : au 3 Allée du lain 56530 gestel.\n" +
+            "\n" +
+            "🚶‍♀️Marche facile et tranquille de 7 km - Durée : environ 2h. \n" +
+            "\n" +
+            "Du Domaine du Lain à l’Étang du Verger, le long du Scave et du Ruisseau du Moulin de Kerrousseau, parcourez les bois et les allées ombragées. Découvrez le patrimoine naturel et historique de ces espaces protégés. Au retour, flânez dans le parc du domaine et admirez ses espèces arborées, ses arbres remarquables plus que centenaires.\n" +
+            "\n" +
+            "❌ Annulation en cas d'intempéries."
+    },
     {
         id: "tapisserie-2026-11-21",
         title: 'Atelier créatif',
         date: "2026-11-21",
         description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: tapisserieImg,
         presentationImages: [
@@ -57,6 +249,8 @@ export const activities = [
         title: 'Brunch',
         date: "2026-11-22",
         description: "Galettes à volonté 😋",
+        cancelled: false,
+        cancellationReason: "",
         color: "#FF8C00",
         image: brunchImg,
         presentationImages: [
@@ -82,10 +276,42 @@ export const activities = [
             "Alors, qui vient bruncher avec nous dimanche ? 🤩"
     },
     {
+        id: "jeux-2026-11-27",
+        title: 'Activité jeux',
+        date: "2026-11-27",
+        description: 'Soirée belote',
+        cancelled: false,
+        cancellationReason: "",
+        color: "#24408E",
+        image: beloteImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Juliette - Tél : 06 09 27 55 56",
+        who: "Ouvert à toutes les adhérentes et non adhérentes. Tous niveaux ❌ S'il n'y a pas au moins 4 inscrites, la belote sera annulée.",
+        when: "Vendredi 27 novembre 2026 - 19h à 22h",
+        where: "Chez Juju - St Ernan - Nostang",
+        price: "Gratuit",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/activite-jeux-du-27-11-2026",
+
+        details:
+            "Une ou plusieurs parties de belote dans un esprit de compétition amicale. \n" +
+            "\n" +
+            "Que vous soyez une As de la belote ou que vous souhaitiez simplement apprendre et vous amuser, venez partager un moment convivial autour des cartes. \n" +
+            "Pas besoin d'être une championne pour participer : l'essentiel est de passer une bonne soirée ! \n" +
+            "\n" +
+            "Chacune ramène ses boissons et son grignotage. \n"
+    },
+    {
         id: "jeux-2026-11-21",
         title: 'Activité jeux',
         date: "2026-11-21",
         description: 'Jeux de société, de cartes de dés...',
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: jeuImg,
         presentationImages: [
@@ -116,6 +342,8 @@ export const activities = [
         title: "Activité spectacle",
         date: "2026-11-21",
         description: "Théâtre d'impro",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: spectacleImg,
         presentationImages: [
@@ -132,7 +360,9 @@ export const activities = [
         helloasso: "https://www.billetweb.fr/match-dimprovisation-quimper-vs-nantes?fbclid=IwVERDUAVF5E9leHRuA2FlbQIxMABwZG9mBXNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHrLaL4yY-hvU3y4MKZYdrn9LXev7PZOJxFaRPZeNxgZMyPgLPw9xQGJtSJOV_aem_6QXqeBsolirJW312fUiTmw",
 
         details:
-            " Le premier des 2 matchs de la saison se jouera face à NANTES ! Devant un public de 260 personnes et la salle surchauffée (des bonnes ondes) du Terrain Blanc !\n" +
+            "Sylvie vous donne rendez-vous à 19h50 devant la salle à la MPT de Penhars.\n" +
+            "\n" +
+            "Le premier des 2 matchs de la saison se jouera face à NANTES ! Devant un public de 260 personnes et la salle surchauffée (des bonnes ondes) du Terrain Blanc !\n" +
             " \n" +
             "On sort la patinoire, les maillots, l'arbitre aiguise les thèmes, donne du sifflet et joue sur les règles !\n" +
             " \n" +
@@ -143,6 +373,8 @@ export const activities = [
         title: 'Atelier créatif',
         date: "2026-10-29",
         description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: tapisserieImg,
         presentationImages: [
@@ -171,9 +403,11 @@ export const activities = [
     },
     {
         id: "libre-2026-11-24",
-        title: 'Atelier créatif',
+        title: 'Activité libre',
         date: "2026-11-24",
-        description: "Activité manuelle libre / Echange de compétences",
+        description: "Accueil, activité libre et échange de compétences",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: modelageImg,
         presentationImages: [
@@ -199,134 +433,136 @@ export const activities = [
             "Possibilité de déjeuner sur place si vous avez prévu votre repas."
     },
     {
-        id: "tapisserie-2026-12-14",
-        title: 'Atelier créatif',
+        id: "libre-2026-12-14",
+        title: 'Activité libre',
         date: "2026-12-14",
-        description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        description: "Accueil, activité libre et échange de compétences",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
-        image: tapisserieImg,
+        image: modelageImg,
         presentationImages: [
             // autre photo éventuellement
         ],
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise / Véro - Tél : 06 74 84 90 92",
-        who: "Maximum 5 adhérentes - ❌ S'il n'y a pas 3 inscrites, l'atelier sera annulé.",
+        referente : "Véro - Tél : 06 74 84 90 92",
+        who: "Maximum 10 adhérentes.",
         when: "Lundi 14 décembre 2026 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
-        price: "50 €",
+        price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-tapisserie-du-14-12-2026",
 
         details:
-            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 123 à 9h30 pour un atelier tapisserie. Durée : 8h00.\n" +
+            "PARTAGE DE COMPETENCES, DE LOISIRS, DE PASSION... \n" +
             "\n" +
-            "L'atelier s'adresse à toutes les personnes débutantes ou non. La réfection des sièges est réalisée en graniture mousse. Pour une 1ère expérience, Elise vous conseille de privilégier un petit projet : chaise, petite assise, tabouret...\n" +
+            "Venez nous retrouver à la Maison des Associations de Lorient - 5 place Louis Bonneaud - en salle 123 à partir de 9h30 pour une journée, matinée ou après-midi d'atelier manuel libre... \n" +
             "\n" +
-            "Préparer son siège en amont : Le dégarnissage, qui consiste à retirer le tissu et les anciennes matières de garniture, est une étape qui peut être assez longue. La réaliser en amont permet de gagner du temps le jour de l'atelier et de se consacrer à la réfection du siège.\n" +
+            "Couture, modelage, dessin... Apportez ce que vous voulez pour une journée de convivialité, de partage et d'échange. \n" +
             "\n" +
-            "Pendant l'atelier, Elise prête le matériel nécessaire aux différents travaux. Les fournitures nécessaires à la réfection de votre siège sont à votre charge et les quantités nécessaires à votre projet sont définies ensemble en début d'atelier. Le tissu et la finition sont également à votre charge. Il n'y a aucune obligation d'acheter les fournitures auprès de l'atelier : vous êtes libre de choisir votre tissu et vos fournisseurs.\n" +
-            "\n" +
-            "Vous devez aussi prévoir un pique-nique pour le midi."
+            "Possibilité de déjeuner sur place si vous avez prévu votre repas."
     },
     {
-        id: "tapisserie-2027-01-23",
-        title: 'Atelier créatif',
+        id: "libre-2027-01-23",
+        title: 'Activité libre',
         date: "2027-01-23",
-        description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        description: "Accueil, activité libre et échange de compétences",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
-        image: tapisserieImg,
+        image: modelageImg,
         presentationImages: [
             // autre photo éventuellement
         ],
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise / Véro - Tél : 06 74 84 90 92",
-        who: "Maximum 5 adhérentes - ❌ S'il n'y a pas 3 inscrites, l'atelier sera annulé.",
+        referente : "Véro - Tél : 06 74 84 90 92",
+        who: "Maximum 10 adhérentes.",
         when: "Samedi 23 janvier 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
-        price: "50 €",
+        price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-tapisserie-du-23-01-2027",
 
         details:
-            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 123 à 9h30 pour un atelier tapisserie. Durée : 8h00.\n" +
+            "PARTAGE DE COMPETENCES, DE LOISIRS, DE PASSION... \n" +
             "\n" +
-            "L'atelier s'adresse à toutes les personnes débutantes ou non. La réfection des sièges est réalisée en graniture mousse. Pour une 1ère expérience, Elise vous conseille de privilégier un petit projet : chaise, petite assise, tabouret...\n" +
+            "Venez nous retrouver à la Maison des Associations de Lorient - 5 place Louis Bonneaud - en salle 123 à partir de 9h30 pour une journée, matinée ou après-midi d'atelier manuel libre... \n" +
             "\n" +
-            "Préparer son siège en amont : Le dégarnissage, qui consiste à retirer le tissu et les anciennes matières de garniture, est une étape qui peut être assez longue. La réaliser en amont permet de gagner du temps le jour de l'atelier et de se consacrer à la réfection du siège.\n" +
+            "Couture, modelage, dessin... Apportez ce que vous voulez pour une journée de convivialité, de partage et d'échange. \n" +
             "\n" +
-            "Pendant l'atelier, Elise prête le matériel nécessaire aux différents travaux. Les fournitures nécessaires à la réfection de votre siège sont à votre charge et les quantités nécessaires à votre projet sont définies ensemble en début d'atelier. Le tissu et la finition sont également à votre charge. Il n'y a aucune obligation d'acheter les fournitures auprès de l'atelier : vous êtes libre de choisir votre tissu et vos fournisseurs.\n" +
-            "\n" +
-            "Vous devez aussi prévoir un pique-nique pour le midi."
+            "Possibilité de déjeuner sur place si vous avez prévu votre repas."
     },
     {
-        id: "tapisserie-2027-02-11",
-        title: 'Atelier créatif',
+        id: "libre-2027-02-11",
+        title: 'Activité libre',
         date: "2027-02-11",
-        description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        description: "Accueil, activité libre et échange de compétences",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
-        image: tapisserieImg,
+        image: modelageImg,
         presentationImages: [
             // autre photo éventuellement
         ],
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise / Véro - Tél : 06 74 84 90 92",
-        who: "Maximum 5 adhérentes - ❌ S'il n'y a pas 3 inscrites, l'atelier sera annulé.",
+        referente : "Véro - Tél : 06 74 84 90 92",
+        who: "Maximum 10 adhérentes.",
         when: "Jeudi 11 février 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
-        price: "50 €",
+        price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-tapisserie-du-11-02-2027",
 
         details:
-            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 123 à 9h30 pour un atelier tapisserie. Durée : 8h00.\n" +
+            "PARTAGE DE COMPETENCES, DE LOISIRS, DE PASSION... \n" +
             "\n" +
-            "L'atelier s'adresse à toutes les personnes débutantes ou non. La réfection des sièges est réalisée en graniture mousse. Pour une 1ère expérience, Elise vous conseille de privilégier un petit projet : chaise, petite assise, tabouret...\n" +
+            "Venez nous retrouver à la Maison des Associations de Lorient - 5 place Louis Bonneaud - en salle 123 à partir de 9h30 pour une journée, matinée ou après-midi d'atelier manuel libre... \n" +
             "\n" +
-            "Préparer son siège en amont : Le dégarnissage, qui consiste à retirer le tissu et les anciennes matières de garniture, est une étape qui peut être assez longue. La réaliser en amont permet de gagner du temps le jour de l'atelier et de se consacrer à la réfection du siège.\n" +
+            "Couture, modelage, dessin... Apportez ce que vous voulez pour une journée de convivialité, de partage et d'échange. \n" +
             "\n" +
-            "Pendant l'atelier, Elise prête le matériel nécessaire aux différents travaux. Les fournitures nécessaires à la réfection de votre siège sont à votre charge et les quantités nécessaires à votre projet sont définies ensemble en début d'atelier. Le tissu et la finition sont également à votre charge. Il n'y a aucune obligation d'acheter les fournitures auprès de l'atelier : vous êtes libre de choisir votre tissu et vos fournisseurs.\n" +
-            "\n" +
-            "Vous devez aussi prévoir un pique-nique pour le midi."
+            "Possibilité de déjeuner sur place si vous avez prévu votre repas."
     },
     {
-        id: "tapisserie-2027-03-12",
-        title: 'Atelier créatif',
+        id: "libre-2027-03-12",
+        title: 'Activité libre',
         date: "2027-03-12",
-        description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        description: "Accueil, activité libre et échange de compétences",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
-        image: tapisserieImg,
+        image: modelageImg,
         presentationImages: [
             // autre photo éventuellement
         ],
         archiveImages: [
             // photos ajoutées après l'activité
         ],
-        referente : "Elise / Véro - Tél : 06 74 84 90 92",
-        who: "Maximum 5 adhérentes - ❌ S'il n'y a pas 3 inscrites, l'atelier sera annulé.",
+        referente : "Véro - Tél : 06 74 84 90 92",
+        who: "Maximum 10 adhérentes.",
         when: "Vendredi 12 mars 2027 - 9h30 à 17h30",
         where: "Maisons des associations - Lorient",
-        price: "50 €",
+        price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-tapisserie-du-12-03-2027",
 
         details:
-            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 123 à 9h30 pour un atelier tapisserie. Durée : 8h00.\n" +
+            "PARTAGE DE COMPETENCES, DE LOISIRS, DE PASSION... \n" +
             "\n" +
-            "L'atelier s'adresse à toutes les personnes débutantes ou non. La réfection des sièges est réalisée en graniture mousse. Pour une 1ère expérience, Elise vous conseille de privilégier un petit projet : chaise, petite assise, tabouret...\n" +
+            "Venez nous retrouver à la Maison des Associations de Lorient - 5 place Louis Bonneaud - en salle 123 à partir de 9h30 pour une journée, matinée ou après-midi d'atelier manuel libre... \n" +
             "\n" +
-            "Préparer son siège en amont : Le dégarnissage, qui consiste à retirer le tissu et les anciennes matières de garniture, est une étape qui peut être assez longue. La réaliser en amont permet de gagner du temps le jour de l'atelier et de se consacrer à la réfection du siège.\n" +
+            "Couture, modelage, dessin... Apportez ce que vous voulez pour une journée de convivialité, de partage et d'échange. \n" +
             "\n" +
-            "Pendant l'atelier, Elise prête le matériel nécessaire aux différents travaux. Les fournitures nécessaires à la réfection de votre siège sont à votre charge et les quantités nécessaires à votre projet sont définies ensemble en début d'atelier. Le tissu et la finition sont également à votre charge. Il n'y a aucune obligation d'acheter les fournitures auprès de l'atelier : vous êtes libre de choisir votre tissu et vos fournisseurs.\n" +
-            "\n" +
-            "Vous devez aussi prévoir un pique-nique pour le midi."
+            "Possibilité de déjeuner sur place si vous avez prévu votre repas."
     },
     {
         id: "libre-2026-09-24",
         title: 'Atelier créatif',
         date: "2026-09-24",
         description: 'Activité manuelle',
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: modelageImg,
         presentationImages: [
@@ -346,39 +582,12 @@ export const activities = [
             "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 233 à partir de 14h00 pour un atelier modelage ou une activité manuelle libre. Durée : environ 4h00.\n"
     },
     {
-        id: "monotype-2026-11-15",
-        title: 'Atelier créatif',
-        date: "2026-11-15",
-        description: 'Atelier monotype / impression sur papier',
-        color: "#008026",
-        image: monotypeImg,
-        presentationImages: [
-            // autre photo éventuellement
-        ],
-        archiveImages: [
-            // photos ajoutées après l'activité
-        ],
-        referente : "Corinne / Véro - Tél : 06 74 84 90 92",
-        who: "Maximum 10 adhérentes - ❌ S'il n'y a pas 5 inscrites, l'atelier sera annulé.",
-        when: "Dimanche 15 novembre 2026 - 14h00 à 18h00",
-        where: "Sur le bassin lorientais",
-        price: "30 €",
-        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-monotype-du-15-11-2026",
-
-        details:
-            "Rdv à 14h00 pour réaliser des dessins en impression à l'encre de gravure. Durée : environ 4h00.\n" +
-            "\n" +
-            "C'est un temps de création que vous propose Corinne. L'atelier s'adresse à toutes les personnes débutantes ou non.\n" +
-            "\n" +
-            "Reproductions d'après des oeuvres (paysage, personnages...) ou des objets (coquillages, feuille...) ou avec notre propre imagination.\n" +
-            "\n" +
-            "Vous devez apporter un carnet à dessin, crayon gris et gomme. Corinne fournit le papier d'impression, l'encre et les outils."
-    },
-    {
         id: "sculpture-2027-01-16",
         title: 'Atelier créatif',
         date: "2027-01-16",
         description: 'Atelier modelage / sculpture',
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: sculptureImg,
         presentationImages: [
@@ -410,12 +619,20 @@ export const activities = [
         title: 'Atelier créatif',
         date: "2026-11-13",
         description: 'Atelier Aquarelle peinture en salle',
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: peintureImg,
         presentationImages: [
             // autre photo éventuellement
         ],
         archiveImages: [
+            peinture4,
+            peinture5,
+            peinture1,
+            peinture3,
+            peinture2,
+            peinture6,
             // photos ajoutées après l'activité
         ],
         referente : "Lise - Tél : 06 68 00 34 77",
@@ -435,6 +652,8 @@ export const activities = [
         title: 'Marche sportive',
         date: "2026-10-16",
         description: 'Marche sportive',
+        cancelled: false,
+        cancellationReason: "",
         color: '#E40303',
         image: marcheSportiveImg,
         presentationImages: [
@@ -462,40 +681,12 @@ export const activities = [
 
     },
     {
-        id: "marche-2026-11-27",
-        title: 'Marche rapide',
-        date: "2026-11-27",
-        description: 'Marche rapide',
-        color: '#E40303',
-        image: marcheSportiveImg,
-        presentationImages: [
-            // autre photo éventuellement
-        ],
-        archiveImages: [
-            // photos ajoutées après l'activité
-        ],
-        referente : "Nathalie - Tél : 06 50 23 77 97",
-        who: "Maximum 15 adhérentes",
-        when: "Vendredi 27 novembre 2026 - 17h à 18h",
-        where: "Base nautique du ter - Lorient",
-        price: "Gratuit",
-        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/marche-rapide-du-27-11-2026",
-
-        details:
-            "Rdv à la base nautique du Ter à Lorient - rue du ter - à 17h précise pour une marche rapide. Prévoir chaussures, tenue adaptées à l'activité, gourde d'eau et éventuellement une lampe frontale. Durée : environ 1h00.\n" +
-            "\n" +
-            "Vous serez accompagnées de Nathalie votre organisatrice et son compagnon Oslo 🐶\n" +
-            "\n" +
-            "🐶 Les chiens sont les bienvenus mais sous la responsabilité de leur maîtresse.\n" +
-            "\n" +
-            "❌ Annulation en cas d'intempéries."
-
-    },
-    {
         id: "marche-2026-11-13",
         title: 'Marche rapide',
         date: "2026-11-13",
         description: 'Marche rapide',
+        cancelled: false,
+        cancellationReason: "",
         color: '#E40303',
         image: marcheSportiveImg,
         presentationImages: [
@@ -526,6 +717,8 @@ export const activities = [
         title: 'Marche sportive',
         date: "2026-10-02",
         description: "1er rdv de l'asso à la base nautique du Ter",
+        cancelled: false,
+        cancellationReason: "",
         color: '#E40303',
         image: marcheSportiveImg,
         presentationImages: [
@@ -556,6 +749,8 @@ export const activities = [
         title: 'Randonnée',
         date: "2027-04-25",
         description: 'Ria Garden Womens',
+        cancelled: false,
+        cancellationReason: "",
         color: '#FF8C00',
         image: randonneeImg1,
         presentationImages: [
@@ -569,7 +764,7 @@ export const activities = [
         when: "Dimanche 25 avril 2027 - 10h00",
         where: "Ria d'Etel côté Nostang",
         price: "Gratuit",
-        helloasso: "https://www.helloasso.com/associations/...",
+        helloasso: "",
 
         details:
             "🤸Départ 10h : au bout de la rue de la côte à Nostang.\n" +
@@ -592,6 +787,8 @@ export const activities = [
         title: 'Activité spectacle',
         date: "2026-11-24",
         description: "Théâtre : CHEVALERESSES",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: theatreImg,
         presentationImages: [
@@ -628,6 +825,8 @@ export const activities = [
         title: 'Activité spectacle',
         date: "2026-11-26",
         description: "Théâtre : EDITH ET MOI",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: theatre2Img,
         presentationImages: [
@@ -649,10 +848,42 @@ export const activities = [
             "Une chanteuse perd mystérieusement sa voix et se retrouve incapable de monter sur scène. Pour l’aider à affronter un passé douloureux, une Édith Piaf aussi fougueuse qu’inattendue surgit à ses côtés. Entre théâtre visuel, marionnette et performance musicale, ce duo attachant explore les blessures, les doutes et la force de la résilience. Figure majeure du théâtre israélien contemporain, Yael Rasooly livre un spectacle émouvant, drôle et profondément humain.\n"
     },
     {
+        id: "cine-2026-11-27",
+        title: 'Activité ciné / débat',
+        date: "2026-11-27",
+        description: "Film : Le monde à l'endroit",
+        cancelled: false,
+        cancellationReason: "",
+        color: "#24408E",
+        image: cinedebatImg,
+        presentationImages: [
+            cinedebat2,
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Linda",
+        who: "Ouvert à toutes les adhérentes et non adhérentes",
+        when: "Vendredi 27 novembre 2026 - 20h00",
+        where: "Méga CGR – rue Gustave Zede - ZA de Manebos – Lanester\n",
+        price: "Gratuit, sur réversation",
+        helloasso: "https://my.weezevent.com/cine-debat-le-monde-a-lendroit?_gl=1*ljx6s1*_gcl_au*MTIyNDI3MjAxNC4xNzkzNjM0MjIzLjEzNDQ5MzY0NTMuMTc5MzcxMjg2NC4xNzkzNzEyODY0LjExMjU3ODE0MDIuMTc5MzYzNDIyNS4xNzkzNzEyODY0*_ga*MjExMDU1NjQ0Ni4xNzUwNzY4Mzkx*_ga_39H9VBFX7G*czE3OTM3MTkyMzYkbzI1JGcxJHQxNzkzNzE5MjM4JGo1OCRsMCRoMTg5NTM2NjI4NQ..",
+
+        details:
+            "En présence de la réalisatrice Sylvie MEYER et d'une juriste du CIDFF du Morbihan.\n" +
+            "\n" +
+            "Ce film s’inspire du travail de Muriel Salmona, psychiatre de renom et spécialiste des violences sexuelles qui consacre sa vie à soigner celles et ceux que l’enfance a brisés. Incarnée à l’écran par Sandrine Bonnaire, Marianne Denicourt et Isild Le Besco, elle accompagne des patients qui affrontent leur passé et ouvrent, pas à pas, le chemin de la réparation.\n" +
+            "\n" +
+            "Une séance organisée par la Ville de Lanester dans le cadre de la Journée internationale de lutte contre les violences faites aux femmes.\n"
+    },
+    {
         id: "soiree-2026-11-13",
         title: 'Soirée',
         date: "2026-11-13",
         description: "Maman va danser",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: mamanVaDanserImg,
         presentationImages: [
@@ -682,6 +913,8 @@ export const activities = [
         title: 'Soirée',
         date: "2026-10-30",
         description: "Elles dansent",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: ellesDansentImg,
         presentationImages: [
@@ -689,6 +922,10 @@ export const activities = [
             // autre photo éventuellement
         ],
         archiveImages: [
+            ellesDansent4,
+            ellesDansent2,
+            ellesDansent3,
+            ellesDansent1,
             // photos ajoutées après l'activité
         ],
         referente : "Juliette - Tél : 06 09 27 55 56",
@@ -719,6 +956,8 @@ export const activities = [
         title: "Soirée",
         date: "2026-12-04",
         description: "La conviviale de l'asso",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: logoImg,
         presentationImages: [
@@ -730,12 +969,13 @@ export const activities = [
         referente : "Juliette - Tél : 06 09 27 55 56",
         who: "Ouvert à toutes les adhérentes et non adhérentes",
         when: "Vendredi 4 décembre 2026 19h à 1h",
-        where: "Sur le bassin lorientais",
+        where: "Au bar Le Jame'son - 48 rue Jules Simon, Lorient",
         price: "Gratuit",
         helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/soiree-conviviale-du-4-12-2026",
 
         details:
-            "Imagin'Elles vous invite à passer la soirée entre femmes.\n" +
+            "Imagin'Elles vous invite à passer la soirée entre femmes au bar Le Jame'son à Lorient.\n" +
+            "Pour l'occasion, la salle du fond nous est réservée.\n" +
             "\n" +
             "Rencontres, échanges et surtout le plaisir de se retrouver dans une ambiance chaleureuse et bienveillante.\n" +
             "L'occasion de faire connaissance, de créer du lien et de passer un agréable moment ensemble. Tout simplement.\n" +
@@ -749,6 +989,8 @@ export const activities = [
         title: "Soirée",
         date: "2026-10-24",
         description: "La conviviale de l'asso",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: convivialeImg,
         presentationImages: [
@@ -782,6 +1024,8 @@ export const activities = [
         title: 'La Lorientaise',
         date: "2026-10-04",
         description: "Participation à la Lorientaise",
+        cancelled: false,
+        cancellationReason: "",
         color: "#FD6C9E",
         image: lorientaiseImg,
         presentationImages: [

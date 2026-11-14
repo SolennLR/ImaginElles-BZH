@@ -11,6 +11,8 @@ export default function ActivityModal({ activity, onClose }) {
 
     const isArchived = new Date(activity.date) < today;
 
+    const isCancelled = activity.cancelled === true;
+
     const hasHelloAssoLink = typeof activity.helloasso === "string" && /^https?:\/\/\S+$/i.test(activity.helloasso.trim());
 
     const isImaginEllesTicketing = hasHelloAssoLink && activity.helloasso.toLowerCase().includes("/imagin-elles/");
@@ -51,6 +53,18 @@ export default function ActivityModal({ activity, onClose }) {
                 {/* Contenu défilant */}
                 <div className="flex-1 overflow-y-auto px-5 py-5 sm:px-8">
                     <div className="space-y-6 text-gray-700">
+
+                        {/* SI ANNULATION */}
+                        {isCancelled && (
+                            <div className="rounded-xl border-2 border-red-500 bg-red-50 p-4 text-center">
+                                <p className="text-xl font-bold text-red-700">
+                                    ⚠️ ACTIVITÉ ANNULÉE
+                                </p>
+                                <p className="mt-2 text-red-700">
+                                    {activity.cancellationReason}
+                                </p>
+                            </div>
+                        )}
 
                         {/* PHOTOS */}
                         {photos.length > 0 && (
@@ -102,7 +116,7 @@ export default function ActivityModal({ activity, onClose }) {
                                 {activity.when}
                             </p>
 
-                            <p>
+                            <p className="leading-relaxed whitespace-pre-line">
                                 <strong>💶 Tarif : </strong><br/>
                                 {activity.price}
                             </p>
@@ -122,7 +136,7 @@ export default function ActivityModal({ activity, onClose }) {
 
                 {/* Pied de modal */}
                 <div className="shrink-0 border-t border-gray-200 bg-white px-5 py-4">
-                    {!isArchived && hasHelloAssoLink && (
+                    {!isArchived && !isCancelled && hasHelloAssoLink && (
                         <div className="text-center">
                             <a
                                 href={activity.helloasso}
