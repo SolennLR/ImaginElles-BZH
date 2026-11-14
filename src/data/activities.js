@@ -44,6 +44,8 @@ export const activities = [
         title: 'Soirée',
         date: "2026-12-31",
         description: "Réveillon de la Saint-Syvestre",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: reveillonImg,
         presentationImages: [
@@ -117,6 +119,8 @@ export const activities = [
         title: 'Marche rapide',
         date: "2026-11-27",
         description: 'Marche rapide',
+        cancelled: false,
+        cancellationReason: "",
         color: '#E40303',
         image: marcheSportiveImg,
         presentationImages: [
@@ -147,6 +151,8 @@ export const activities = [
         title: 'Balade nature et écoresponsable',
         date: "2026-12-5",
         description: 'Nettoyage de plage',
+        cancelled: false,
+        cancellationReason: "",
         color: '#FF8C00',
         image: nettoyageImg,
         presentationImages: [
@@ -179,6 +185,8 @@ export const activities = [
         title: 'Randonnée',
         date: "2026-11-15",
         description: 'Circuit du Lain au Verger',
+        cancelled: true,
+        cancellationReason: "En raison des conditions météorologiques.",
         color: '#FF8C00',
         image: randoImg1,
         presentationImages: [
@@ -208,6 +216,8 @@ export const activities = [
         title: 'Atelier créatif',
         date: "2026-11-21",
         description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: tapisserieImg,
         presentationImages: [
@@ -239,6 +249,8 @@ export const activities = [
         title: 'Brunch',
         date: "2026-11-22",
         description: "Galettes à volonté 😋",
+        cancelled: false,
+        cancellationReason: "",
         color: "#FF8C00",
         image: brunchImg,
         presentationImages: [
@@ -268,6 +280,8 @@ export const activities = [
         title: 'Activité jeux',
         date: "2026-11-27",
         description: 'Soirée belote',
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: beloteImg,
         presentationImages: [
@@ -296,6 +310,8 @@ export const activities = [
         title: 'Activité jeux',
         date: "2026-11-21",
         description: 'Jeux de société, de cartes de dés...',
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: jeuImg,
         presentationImages: [
@@ -326,6 +342,8 @@ export const activities = [
         title: "Activité spectacle",
         date: "2026-11-21",
         description: "Théâtre d'impro",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: spectacleImg,
         presentationImages: [
@@ -353,6 +371,8 @@ export const activities = [
         title: 'Atelier créatif',
         date: "2026-10-29",
         description: "Tapisserie d'ameublement / Restauration de siège ou fauteuil",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: tapisserieImg,
         presentationImages: [
@@ -384,6 +404,8 @@ export const activities = [
         title: 'Activité libre',
         date: "2026-11-24",
         description: "Accueil, activité libre et échange de compétences",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: modelageImg,
         presentationImages: [
@@ -413,6 +435,8 @@ export const activities = [
         title: 'Activité libre',
         date: "2026-12-14",
         description: "Accueil, activité libre et échange de compétences",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: modelageImg,
         presentationImages: [
@@ -442,6 +466,8 @@ export const activities = [
         title: 'Activité libre',
         date: "2027-01-23",
         description: "Accueil, activité libre et échange de compétences",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: modelageImg,
         presentationImages: [
@@ -471,6 +497,8 @@ export const activities = [
         title: 'Activité libre',
         date: "2027-02-11",
         description: "Accueil, activité libre et échange de compétences",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: modelageImg,
         presentationImages: [
@@ -500,6 +528,8 @@ export const activities = [
         title: 'Activité libre',
         date: "2027-03-12",
         description: "Accueil, activité libre et échange de compétences",
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: modelageImg,
         presentationImages: [
@@ -529,6 +559,8 @@ export const activities = [
         title: 'Atelier créatif',
         date: "2026-09-24",
         description: 'Activité manuelle',
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: modelageImg,
         presentationImages: [
@@ -552,6 +584,8 @@ export const activities = [
         title: 'Atelier créatif',
         date: "2027-01-16",
         description: 'Atelier modelage / sculpture',
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: sculptureImg,
         presentationImages: [
@@ -583,6 +617,8 @@ export const activities = [
         title: 'Atelier créatif',
         date: "2026-11-13",
         description: 'Atelier Aquarelle peinture en salle',
+        cancelled: false,
+        cancellationReason: "",
         color: "#008026",
         image: peintureImg,
         presentationImages: [
@@ -614,6 +650,8 @@ export const activities = [
         title: 'Marche sportive',
         date: "2026-10-16",
         description: 'Marche sportive',
+        cancelled: false,
+        cancellationReason: "",
         color: '#E40303',
         image: marcheSportiveImg,
         presentationImages: [
@@ -645,6 +683,8 @@ export const activities = [
         title: 'Marche rapide',
         date: "2026-11-13",
         description: 'Marche rapide',
+        cancelled: false,
+        cancellationReason: "",
         color: '#E40303',
         image: marcheSportiveImg,
         presentationImages: [
@@ -675,6 +715,8 @@ export const activities = [
         title: 'Marche sportive',
         date: "2026-10-2",
         description: "1er rdv de l'asso à la base nautique du Ter",
+        cancelled: false,
+        cancellationReason: "",
         color: '#E40303',
         image: marcheSportiveImg,
         presentationImages: [
@@ -705,6 +747,8 @@ export const activities = [
         title: 'Randonnée',
         date: "2027-04-25",
         description: 'Ria Garden Womens',
+        cancelled: false,
+        cancellationReason: "",
         color: '#FF8C00',
         image: randonneeImg1,
         presentationImages: [
@@ -741,6 +785,8 @@ export const activities = [
         title: 'Activité spectacle',
         date: "2026-11-24",
         description: "Théâtre : CHEVALERESSES",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: theatreImg,
         presentationImages: [
@@ -777,6 +823,8 @@ export const activities = [
         title: 'Activité spectacle',
         date: "2026-11-26",
         description: "Théâtre : EDITH ET MOI",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: theatre2Img,
         presentationImages: [
@@ -802,6 +850,8 @@ export const activities = [
         title: 'Activité ciné / débat',
         date: "2026-11-27",
         description: "Film : Le monde à l'endroit",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: cinedebatImg,
         presentationImages: [
@@ -830,6 +880,8 @@ export const activities = [
         title: 'Soirée',
         date: "2026-11-13",
         description: "Maman va danser",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: mamanVaDanserImg,
         presentationImages: [
@@ -859,6 +911,8 @@ export const activities = [
         title: 'Soirée',
         date: "2026-10-30",
         description: "Elles dansent",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: ellesDansentImg,
         presentationImages: [
@@ -900,6 +954,8 @@ export const activities = [
         title: "Soirée",
         date: "2026-12-04",
         description: "La conviviale de l'asso",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: logoImg,
         presentationImages: [
@@ -931,6 +987,8 @@ export const activities = [
         title: "Soirée",
         date: "2026-10-24",
         description: "La conviviale de l'asso",
+        cancelled: false,
+        cancellationReason: "",
         color: "#24408E",
         image: convivialeImg,
         presentationImages: [
@@ -964,6 +1022,8 @@ export const activities = [
         title: 'La Lorientaise',
         date: "2026-10-4",
         description: "Participation à la Lorientaise",
+        cancelled: false,
+        cancellationReason: "",
         color: "#FD6C9E",
         image: lorientaiseImg,
         presentationImages: [
