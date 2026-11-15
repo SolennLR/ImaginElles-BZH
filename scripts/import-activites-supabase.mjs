@@ -214,12 +214,13 @@ async function main() {
         price_text: source.price ?? null,
         helloasso_url: source.helloasso ?? null,
         details: source.details ?? null,
-        status,
+		cancelled: source.cancelled ?? false,
+		cancellationReason: source.cancellationReason ?? '',
       };
 
       const { data: existing, error: lookupError } = await supabase
         .from('activities')
-        .select('id')
+        .select('id, status')
         .eq('legacy_id', legacyId)
         .maybeSingle();
 
@@ -230,6 +231,7 @@ async function main() {
       }
 
       let activityId;
+	  let importedStatus = status;
 
       if (existing?.id) {
         const { data, error } = await supabase
@@ -248,11 +250,12 @@ async function main() {
           );
         }
 
+		importedStatus = existing.status ?? status;
         activityId = data.id;
       } else {
         const { data, error } = await supabase
           .from('activities')
-          .insert(row)
+          .insert({...row,status,})
           .select('id')
           .single();
 
@@ -342,7 +345,7 @@ async function main() {
       imported++;
 
       console.log(
-        `✓ ${legacyId} — ${eventDate} — ${status} — ` +
+        `✓ ${legacyId} — ${eventDate} — ${importedStatus} — ` +
         `${imageRows.length} image(s)`
       );
     }

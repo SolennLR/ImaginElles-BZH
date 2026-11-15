@@ -4,6 +4,8 @@ import { supabase } from "../lib/supabase";
 const INITIAL_FORM = {
     title: "",
     description: "",
+    cancelled: false,
+    cancellationReason: "",
     event_date: "",
     status: "draft",
     color: "#E879A9",
@@ -15,6 +17,84 @@ const INITIAL_FORM = {
     helloasso_url: "",
     details: "",
 };
+
+const STORAGE_BUCKET = "imaginelles-media";
+
+async function duplicateActivityImages(sourceActivityId, targetActivityId) {
+    const { data: images, error: imagesError } = await supabase
+        .from("activity_images")
+        .select("image_type, storage_path, alt_text, sort_order")
+        .eq("activity_id", sourceActivityId)
+        .order("sort_order", { ascending: true });
+
+    if (imagesError) {
+        throw new Error(
+            `Impossible de récupérer les photos de l'activité d'origine : ${imagesError.message}`
+        );
+    }
+
+    const copiedPaths = [];
+    const imageRows = [];
+
+    try {
+        for (const [index, image] of (images ?? []).entries()) {
+            const fileName = image.storage_path.split("/").pop();
+
+            if (!fileName) {
+                throw new Error(`Chemin de photo invalide : ${image.storage_path}`);
+            }
+
+            const newPath =
+                `activities/${targetActivityId}/` +
+                `${image.image_type}-${String(index + 1).padStart(2, "0")}-${fileName}`;
+
+            const { error: copyError } = await supabase.storage
+                .from(STORAGE_BUCKET)
+                .copy(image.storage_path, newPath);
+
+            if (copyError) {
+                throw new Error(
+                    `Impossible de copier la photo ${fileName} : ${copyError.message}`
+                );
+            }
+
+            copiedPaths.push(newPath);
+
+            imageRows.push({
+                activity_id: targetActivityId,
+                image_type: image.image_type,
+                storage_path: newPath,
+                alt_text: image.alt_text,
+                sort_order: image.sort_order,
+            });
+        }
+
+        if (imageRows.length > 0) {
+            const { error: insertError } = await supabase
+                .from("activity_images")
+                .insert(imageRows);
+
+            if (insertError) {
+                throw new Error(
+                    `Impossible d'associer les photos à la copie : ${insertError.message}`
+                );
+            }
+        }
+    } catch (error) {
+        // Nettoyage des fichiers déjà copiés si une étape échoue.
+        if (copiedPaths.length > 0) {
+            const { error: cleanupError } = await supabase.storage
+                .from(STORAGE_BUCKET)
+                .remove(copiedPaths);
+
+            if (cleanupError) {
+                console.error("Erreur de nettoyage des photos copiées :", cleanupError);
+            }
+        }
+
+        throw error;
+    }
+}
 
 function getInitialForm(activity) {
     if (!activity) {
@@ -29,6 +109,8 @@ function getInitialForm(activity) {
             : "",
         title: activity.title ?? "",
         description: activity.description ?? "",
+        cancelled: activity.cancelled ?? false,
+        cancellationReason: activity.cancellationReason ?? "",
         status: activity.status ?? "draft",
         color: activity.color ?? "#E879A9",
         referente: activity.referente ?? "",
@@ -41,9 +123,9 @@ function getInitialForm(activity) {
     };
 }
 
-
 export default function AdminActivityForm({
                                               activity = null,
+                                              duplicateFromId = null,
                                               onSaved,
                                               onCancel,
                                           }) {
@@ -53,13 +135,14 @@ export default function AdminActivityForm({
     const [success, setSuccess] = useState("");
 
     const isEditing = Boolean(activity?.id);
+    const isDuplicating = Boolean(duplicateFromId);
 
     function handleChange(event) {
-        const { name, value } = event.target;
+        const { name, value, type, checked } = event.target;
 
         setForm((current) => ({
             ...current,
-            [name]: value,
+            [name]: type === "checkbox" ? checked : value,
         }));
 
         setError("");
@@ -110,6 +193,17 @@ export default function AdminActivityForm({
             price_text: form.price_text.trim(),
             helloasso_url: form.helloasso_url.trim(),
             details: form.details.trim(),
+            cancelled: form.cancelled,
+            cancellationReason: form.cancelled
+                ? form.cancellationReason.trim()
+                : "",
+            ...(isDuplicating
+                ? {
+                    cancelled: false,
+                    cancellationReason: "",
+                    helloasso_url: "",
+                }
+                : {}),
         };
 
         setSaving(true);
@@ -147,10 +241,39 @@ export default function AdminActivityForm({
                 return;
             }
 
+            if (isDuplicating && result.data?.id) {
+                try {
+                    await duplicateActivityImages(duplicateFromId, result.data.id);
+                } catch (imageError) {
+                    console.error("Erreur de duplication des photos :", imageError);
+
+                    // La copie n'est pas considérée comme réussie si ses photos
+                    // n'ont pas pu être copiées.
+                    const { error: rollbackError } = await supabase
+                        .from("activities")
+                        .delete()
+                        .eq("id", result.data.id);
+
+                    if (rollbackError) {
+                        console.error("Erreur de nettoyage de l'activité dupliquée :", rollbackError);
+                    }
+
+                    setError(
+                        rollbackError
+                            ? `${imageError.message} La suppression de la copie incomplète a également échoué.`
+                            : `${imageError.message} La copie incomplète a été annulée.`
+                    );
+
+                    return;
+                }
+            }
+
             setSuccess(
                 isEditing
                     ? "L’activité a été modifiée."
-                    : "L’activité a été créée."
+                    : isDuplicating
+                        ? "L’activité a été dupliquée avec ses photos."
+                        : "L’activité a été créée."
             );
 
             if (onSaved) {
@@ -178,9 +301,11 @@ export default function AdminActivityForm({
         <section className="mx-auto max-w-4xl space-y-6">
             <div>
                 <h2 className="text-2xl font-bold text-gray-900">
-                    {isEditing
-                        ? "Modifier une activité"
-                        : "Nouvelle activité"}
+                    {isDuplicating
+                        ? "Dupliquer une activité"
+                        : isEditing
+                            ? "Modifier une activité"
+                            : "Nouvelle activité"}
                 </h2>
 
                 <p className="mt-1 text-sm text-gray-500">
@@ -463,6 +588,49 @@ export default function AdminActivityForm({
                             </div>
                         </div>
                     </div>
+
+                    <div className="rounded-xl border border-gray-200 bg-white p-5">
+                        <h3 className="mb-4 text-lg font-semibold">
+                            Annulation de l'activité
+                        </h3>
+
+                        <div className="space-y-4">
+                            <label className="flex items-center gap-3">
+                                <input
+                                    type="checkbox"
+                                    name="cancelled"
+                                    checked={form.cancelled}
+                                    onChange={handleChange}
+                                    className="h-4 w-4 rounded border-gray-300 text-pink-600"
+                                />
+                                <span className="text-sm font-medium text-gray-700">
+                                    Activité annulée
+                                </span>
+                            </label>
+
+                            {form.cancelled && (
+                                <div>
+                                    <label
+                                        className={labelClass}
+                                        htmlFor="cancellationReason"
+                                    >
+                                        Motif de l'annulation
+                                    </label>
+
+                                    <textarea
+                                        id="cancellationReason"
+                                        name="cancellationReason"
+                                        value={form.cancellationReason}
+                                        onChange={handleChange}
+                                        className={inputClass}
+                                        rows={3}
+                                        placeholder="Indiquer le motif de l'annulation..."
+                                    />
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
                 </fieldset>
 
                 <div className="flex flex-wrap justify-end gap-3">
@@ -484,9 +652,11 @@ export default function AdminActivityForm({
                     >
                         {saving
                             ? "Enregistrement…"
-                            : isEditing
-                                ? "Enregistrer les modifications"
-                                : "Créer l’activité"}
+                            : isDuplicating
+                                ? "Créer la copie"
+                                : isEditing
+                                    ? "Enregistrer les modifications"
+                                    : "Créer l’activité"}
                     </button>
                 </div>
             </form>

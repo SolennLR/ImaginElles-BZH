@@ -4,9 +4,17 @@ import { supabase } from "../lib/supabase";
 
 import AdminActivities from "./AdminActivities";
 
+const MENU_ITEMS = [
+    { id: "activities", label: "Gestion des activités" },
+    { id: "news", label: "Gestion des actualités" },
+    { id: "members", label: "Gestion des membres" },
+    { id: "logs", label: "Accès aux journaux" },
+];
+
 export default function AdminLayout() {
     const [signingOut, setSigningOut] = useState(false);
     const [error, setError] = useState("");
+    const [activeMenu, setActiveMenu] = useState("activities");
 
     async function handleSignOut() {
         setSigningOut(true);
@@ -17,6 +25,27 @@ export default function AdminLayout() {
         if (error) {
             setError("La déconnexion a échoué. Réessaie.");
             setSigningOut(false);
+        }
+    }
+
+    function renderContent() {
+        switch (activeMenu) {
+            case "activities":
+                return <AdminActivities />;
+
+            case "news":
+            case "members":
+            case "logs":
+                return (
+                    <div className="rounded-xl border border-gray-200 bg-white dark:bg-gray-800 p-8 text-center">
+                        <p className="text-gray-500 dark:text-gray-400">
+                            Cette rubrique sera développée prochainement.
+                        </p>
+                    </div>
+                );
+
+            default:
+                return <AdminActivities />;
         }
     }
 
@@ -55,7 +84,27 @@ export default function AdminLayout() {
                     Tableau de bord
                 </h2>
 
-                <AdminActivities />
+                <nav className="mb-6 flex flex-wrap gap-2 border-b border-gray-200 pb-3">
+                    {MENU_ITEMS.map((item) => (
+                        <button
+                            key={item.id}
+                            type="button"
+                            onClick={() => setActiveMenu(item.id)}
+                            aria-current={
+                                activeMenu === item.id ? "page" : undefined
+                            }
+                            className={`rounded-lg px-4 py-2 text-sm font-medium transition ${
+                                activeMenu === item.id
+                                    ? "bg-pink-600 text-white"
+                                    : "bg-white text-gray-700 hover:bg-pink-50 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
+                            }`}
+                        >
+                            {item.label}
+                        </button>
+                    ))}
+                </nav>
+
+                {renderContent()}
             </main>
         </div>
     );

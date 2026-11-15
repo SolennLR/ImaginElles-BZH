@@ -177,6 +177,8 @@ async function getSupabaseActivities() {
             title: row.title,
             date: normalizeDate(row.event_date),
             description: row.description ?? "",
+            cancelled: row.cancelled ?? false,
+            cancellationReason: row.cancellationReason ?? "",
             color: row.color ?? "",
             image:
                 images.main[0] ??
