@@ -37,6 +37,9 @@ import reveillonImg2 from "../assets/1764329666_692988c2712c4.jpg";
 import reveillonImg3 from "../assets/1764329661_692988bde3917.jpg";
 import cinedebatImg from "../assets/cinedebat.png";
 import cinedebat2 from "../assets/image ciné débat Lanester.png";
+import mamanVaDanser2 from "../assets/FB_IMG_1794852205469.jpg";
+import mamanVaDanser3 from "../assets/FB_IMG_1794852213693.jpg";
+import beaujolaisImg from "../assets/IMG-20261116-WA0001.jpg";
 
 export const activities = [
     {
@@ -878,6 +881,35 @@ export const activities = [
             "Une séance organisée par la Ville de Lanester dans le cadre de la Journée internationale de lutte contre les violences faites aux femmes.\n"
     },
     {
+        id: "soiree-2026-11-19",
+        title: 'Soirée',
+        date: "2026-11-19",
+        description: "Beaujolais nouveau",
+        cancelled: false,
+        cancellationReason: "",
+        color: "#24408E",
+        image: beaujolaisImg,
+        presentationImages: [
+            beaujolaisImg,
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Nathalie - Tél : 06 50 23 77 97",
+        who: "Ouvert à toutes les adhérentes et non adhérentes (dès 18 ans)",
+        when: "Jeudi 19 novembre 2026 à partir de 19h",
+        where: "L'Entrepote - 2 rue Florian Laporte - Lorient",
+        price: "Gratuit",
+        helloasso: "",
+
+        details:
+            "Nathalie nous invite à nous retrouver pour célébrer l'arrivée du Beaujolais nouveau !\n" +
+            "\n" +
+            "Pour l'occasion, l'Entrepote propose un blind test spécial chansons françaises.\n" +
+            "Une belle occasion de partager un moment convivial, de tester nos connaissances musicales et de passer une bonne soirée ensemble ! \n"
+    },
+    {
         id: "soiree-2026-11-13",
         title: 'Soirée',
         date: "2026-11-13",
@@ -890,6 +922,8 @@ export const activities = [
             // autre photo éventuellement
         ],
         archiveImages: [
+            mamanVaDanser2,
+            mamanVaDanser3,
             // photos ajoutées après l'activité
         ],
         referente : "Juliette - Tél : 06 09 27 55 56",
