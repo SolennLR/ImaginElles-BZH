@@ -901,7 +901,7 @@ export const activities = [
         when: "Jeudi 19 novembre 2026 à partir de 19h",
         where: "L'Entrepote - 2 rue Florian Laporte - Lorient",
         price: "Gratuit",
-        helloasso: "",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/soiree-beaujolais-nouveau-du-19-11-2026",
 
         details:
             "Nathalie nous invite à nous retrouver pour célébrer l'arrivée du Beaujolais nouveau !\n" +
