@@ -40,6 +40,7 @@ import cinedebat2 from "../assets/image ciné débat Lanester.png";
 import mamanVaDanser2 from "../assets/FB_IMG_1794852205469.jpg";
 import mamanVaDanser3 from "../assets/FB_IMG_1794852213693.jpg";
 import beaujolaisImg from "../assets/IMG-20261116-WA0001.jpg";
+import aquarelleImg from "../assets/6c6b8630-df80-11f1-934a-239129e33fd4.jpg";
 
 export const activities = [
     {
@@ -647,6 +648,33 @@ export const activities = [
 
         details:
             "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 123 à 14h00 pour un atelier de création artistique autour de la peinture aquarelle. Durée : 3h00.\n" +
+            "\n" +
+            "Pour le matériel : prévoir quelques feuilles type Canson et un kit peinture aquarelle de chez Action font l'affaire."
+    },
+    {
+        id: "aquarelle-2026-12-12",
+        title: 'Atelier créatif',
+        date: "2026-12-12",
+        description: 'Aquarelle peinture en salle',
+        cancelled: false,
+        cancellationReason: "",
+        color: "#008026",
+        image: aquarelleImg,
+        presentationImages: [
+            // autre photo éventuellement
+        ],
+        archiveImages: [
+            // photos ajoutées après l'activité
+        ],
+        referente : "Lise - Tél : 06 68 00 34 77",
+        who: "Maximum 10 adhérentes",
+        when: "Samedi 12 décembre 2026 - 10h00 à 12h00",
+        where: "Maison de l'association - Lorient",
+        price: "Gratuit",
+        helloasso: "https://www.helloasso.com/associations/imagin-elles/evenements/atelier-aquarelle-du-12-12-2026",
+
+        details:
+            "Rdv à la maison des associations de Lorient - 5 place Louis Bonneaud - en salle 123 à 10h00 pour un atelier de création artistique autour de la peinture aquarelle. Durée : 2h00.\n" +
             "\n" +
             "Pour le matériel : prévoir quelques feuilles type Canson et un kit peinture aquarelle de chez Action font l'affaire."
     },
